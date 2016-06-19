@@ -1,0 +1,14 @@
+[
+  {
+    "name": "beforeTranslation",
+    "label": "Word that will be translated",
+    "type": "text",
+    "default": "Hola"
+  },
+  {
+    "name": "afterTranslation",
+    "label": "English translation of word",
+    "type": "text",
+    "default": "Hello"
+  }
+]

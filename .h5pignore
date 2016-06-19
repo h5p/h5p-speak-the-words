@@ -1,0 +1,10 @@
+node_modules
+dev
+app
+tests
+.idea
+.h5pignore
+.babelrc
+webpack.config.js
+package.json
+README.md

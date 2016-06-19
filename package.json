@@ -1,0 +1,55 @@
+{
+  "name": "voice-recognition-question",
+  "version": "1.0.0",
+  "description": "A language task where you have to say the correct translation of words",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack -d",
+    "dev": "webpack-dev-server"
+  },
+  "keywords": [
+    "language",
+    "translation",
+    "voice",
+    "recognition",
+    "mic",
+    "microphone",
+    "speech"
+  ],
+  "author": "thomasmars",
+  "license": "MIT",
+  "devDependencies": {
+    "annyang": "^2.4.0",
+    "babel-core": "^6.9.1",
+    "babel-jest": "^12.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "h5p-view": "^1.0.3",
+    "jest-cli": "^12.1.1",
+    "json-loader": "^0.5.4",
+    "react-addons-test-utils": "^15.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "react",
+      "react-dom",
+      "react-addons-test-utils",
+      "<rootDir>/tests/stylesModule.js"
+    ],
+    "moduleNameMapper": {
+      "^.*[.](css|CSS)$": "<rootDir>/tests/stylesModule"
+    }
+  }
+}
