@@ -4,21 +4,28 @@ Welcome, consult the [contribution part](#start-contributing) for info on how to
 
 # Missing features
 
+- [x] Unit tests
 - [ ] Score system
 - [ ] xAPI statements
 - [ ] Multiple language support
 
 # <a name="start-contributing"></a>Start contributing
 
-Npm install
+Run locally
 ```
 npm install
+npm run dev
 ```
 
 1. Check if there is an issue for the contribution in the repository
-..1. If someone is working on it, contact them
-..2. Otherwise start on the issue
+  1. If someone is working on it, contact them
+  2. Otherwise start on the issue
 2. Create an issue if it doesn't exist
 3. Implement missing features
 4. Write tests
 5. Send a pull request
+
+Finally make sure all previous and new tests are run and passes using:
+```
+npm test
+```
