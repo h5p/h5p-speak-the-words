@@ -1,7 +1,7 @@
 {
   "name": "voice-recognition-question",
   "version": "1.0.0",
-  "description": "A language task where you have to say the correct translation of words",
+  "description": "A language task where you have to say the correct translation of a word",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -17,7 +17,7 @@
     "microphone",
     "speech"
   ],
-  "author": "thomasmars",
+  "author": "Thomas Marstrander",
   "license": "MIT",
   "devDependencies": {
     "annyang": "^2.4.0",

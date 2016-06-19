@@ -5,7 +5,6 @@ const params = {
   "afterTranslation": "Hello"
 };
 
-console.log("what is params ? ", params);
 const translateTheWord = new TranslateTheWord(params);
 const app = H5P.jQuery('<div>')
   .appendTo(H5P.jQuery('body'));
