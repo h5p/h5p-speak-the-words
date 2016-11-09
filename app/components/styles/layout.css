@@ -1,0 +1,23 @@
+.h5p-speak-the-words-record:before {
+  font-family: "H5PFontAwesome4";
+  content: "\f130";
+}
+
+.h5p-speak-the-words-record.h5p-disabled,
+.h5p-speak-the-words-record.h5p-disabled:active,
+.h5p-speak-the-words-record.h5p-disabled:hover,
+.h5p-speak-the-words-record.h5p-disabled:focus {
+  background-color: lightgrey;
+  cursor: default;
+  box-shadow: none;
+  outline: none;
+}
+
+.h5p-speak-the-words-record.h5p-listening,
+.h5p-speak-the-words-record.h5p-listening:hover,
+.h5p-speak-the-words-record.h5p-listening:active,
+.h5p-speak-the-words-record.h5p-listening:focus {
+  background-color: red;
+  box-shadow: none;
+}
+

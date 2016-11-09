@@ -1,0 +1,12 @@
+[submodule "dev/libraries/h5p-question"]
+	path = dev/libraries/h5p-question
+	url = https://github.com/h5p/h5p-question.git
+[submodule "dev/libraries/h5p-joubel-ui"]
+	path = dev/libraries/h5p-joubel-ui
+	url = https://github.com/h5p/h5p-joubel-ui.git
+[submodule "dev/libraries/h5p-font-awesome"]
+	path = dev/libraries/h5p-font-awesome
+	url = https://github.com/h5p/font-awesome.git
+[submodule "dev/libraries/h5p-transition"]
+	path = dev/libraries/h5p-transition
+	url = https://github.com/h5p/h5p-transition.git

@@ -2,7 +2,6 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    '../dev/dev': './app/entries/dev-spanish-hello.js',
     dist: './app/entries/dist.js'
   },
   output: {
@@ -22,10 +21,5 @@ module.exports = {
         loader: 'style!css?module'
       }
     ]
-  },
-  devtool: 'source-map',
-  devServer: {
-    port: 8050,
-    contentBase: './dev'
   }
 };

@@ -1,14 +1,57 @@
 [
   {
-    "name": "beforeTranslation",
-    "label": "Word that will be translated",
+    "name": "question",
+    "label": "Describe task",
     "type": "text",
-    "default": "Hola"
+    "default": "Speak the answer. What is 2 + 2 ?"
   },
   {
-    "name": "afterTranslation",
-    "label": "English translation of word",
-    "type": "text",
-    "default": "Hello"
+    "name": "acceptedAnswers",
+    "label": "Accepted answers",
+    "type": "list",
+    "min": 1
+  },
+  {
+    "name": "l10n",
+    "label": "Labels and texts",
+    "type": "group",
+    "fields": [
+      {
+        "name": "retryLabel",
+        "label": "\"Retry\"-button label",
+        "type": "text",
+        "default": "Retry"
+      },
+      {
+        "name": "showSolutionLabel",
+        "label": "\"Show solution\"-button label",
+        "type": "text",
+        "default": "Show solution"
+      },
+      {
+        "name": "speakLabel",
+        "label": "\"Speak\"-button label",
+        "type": "text",
+        "default": "Push to speak"
+      },
+      {
+        "name": "noSound",
+        "label": "Text to display when no sound was registered from user",
+        "type": "text",
+        "default": "I could not hear you, make sure your microphone is enabled"
+      },
+      {
+        "name": "incorrectAnswerText",
+        "label": "Incorrect answer text",
+        "type": "text",
+        "default": "Incorrect answer"
+      },
+      {
+        "name": "correctAnswerText",
+        "label": "Correct answer text",
+        "type": "text",
+        "default": "Correct answer"
+      }
+    ]
   }
 ]

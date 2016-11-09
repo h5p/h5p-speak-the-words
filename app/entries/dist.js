@@ -1,3 +1,3 @@
-import TranslateTheWord from '../scripts/translate-the-word';
+import SpeakTheWords from '../components/speak-the-words';
 
-H5P.TranslateTheWord = TranslateTheWord;
+H5P.SpeakTheWords = SpeakTheWords;

@@ -14,6 +14,7 @@ Welcome, consult the [contribution part](#start-contributing) for info on how to
 Run locally
 ```
 npm install
+npm install -g webpack-dev-server
 npm run dev
 ```
 
