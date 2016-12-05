@@ -108,18 +108,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div>
-        <button
-          type="button"
-          className={"h5p-speak-the-words-record h5p-joubelui-button"
-            + (this.state.processingSound ? " h5p-processing" : "")
-            + (this.state.listening ? " h5p-listening" : "")
-            + (this.state.disabled ? " h5p-disabled" : "")}
-          onMouseDown={this.startTalking.bind(this)}
-        >
-          {this.props.l10n.speakLabel}
-        </button>
-      </div>
+
     );
   }
 }

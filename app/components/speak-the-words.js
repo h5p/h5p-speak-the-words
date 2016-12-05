@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './layout';
 import annyang from 'annyang';
 import './styles/speak-the-words.css';
+
+import RecordButton from './body/record-button';
 
 export default class {
   constructor(params, contentId, contentData) {
     H5P.Question.call(this, 'speak-the-words');
+
+    this.params = params;
+    this.state = {
+      listening: false,
+      processing: false,
+      disabled: false
+    };
 
     this.createIntroduction(params.question);
     this.createContent(params);
@@ -23,15 +31,35 @@ export default class {
   createContent(params) {
     const questionWrapper = document.createElement('div');
     questionWrapper.className = 'h5p-speak-the-words';
-
-    const injections = {
-      annyang,
-      answeredCorrectly: this.answeredCorrectly.bind(this, params.l10n.correctAnswerText),
-      answeredWrong: this.answeredWrong.bind(this, params.l10n.incorrectAnswerText)
-    };
-
-    ReactDOM.render(<Layout {...injections} {...params} />, questionWrapper);
     this.questionWrapper = questionWrapper;
+
+    //console.log("this state ?", this, ...this.state)
+    console.log("this state ?", this, this.state);
+    console.trace()
+
+    this.updateRecordButton(params);
+  }
+
+  updateRecordButton(params) {
+    var props = {
+      ...this.state,
+      startTalking: this.startTalking.bind(this),
+      l10n: params.l10n
+    };
+    console.log("update record button", props)
+
+    ReactDOM.render(<RecordButton {...props}/>, this.questionWrapper);
+  }
+
+  startTalking() {
+    console.log("clicked the button!!!, change state to listening")
+    this.state = {
+      ...this.state,
+      listening: true
+    }
+    this.updateRecordButton(this.params);
+    console.log("this statee", this.state.listening)
+    console.log("what is new state ?", this.state);
   }
 
   createButtonBar(l10n) {
