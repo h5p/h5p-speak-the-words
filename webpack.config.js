@@ -21,5 +21,6 @@ module.exports = {
         loader: 'style!css?module'
       }
     ]
-  }
+  },
+  watch: true
 };
