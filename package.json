@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack -p",
+    "buildDev": "webpack",
     "dev": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --open"
   },
   "keywords": [

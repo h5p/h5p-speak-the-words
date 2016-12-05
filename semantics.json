@@ -9,7 +9,12 @@
     "name": "acceptedAnswers",
     "label": "Accepted answers",
     "type": "list",
-    "min": 1
+    "min": 1,
+    "field": {
+      "name": "acceptedAnswer",
+      "label": "Accepted answer",
+      "type": "text"
+    }
   },
   {
     "name": "l10n",

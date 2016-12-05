@@ -10,5 +10,12 @@
   "machineName": "H5P.SpeakTheWords",
   "preloadedJs": [
     {"path": "dist/dist.js"}
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
   ]
 }
