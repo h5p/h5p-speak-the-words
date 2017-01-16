@@ -16,82 +16,72 @@ export default class {
       disabled: false
     };
 
+    this.createIntroduction = (text) => {
+      const introduction = document.createElement('div');
+      introduction.className = 'h5p-speak-the-words-introduction';
+      introduction.innerHTML = text;
+      this.introduction = introduction;
+    };
+
+    this.createContent = (params) => {
+      const questionWrapper = document.createElement('div');
+      questionWrapper.className = 'h5p-speak-the-words';
+      this.questionWrapper = questionWrapper;
+
+      this.updateRecordButton(params);
+    };
+
+    this.updateRecordButton = (params) => {
+      var props = {
+        ...this.state,
+        startTalking: this.startTalking.bind(this),
+        l10n: params.l10n
+      };
+
+      ReactDOM.render(<RecordButton {...props}/>, this.questionWrapper);
+    };
+
+    this.startTalking = () => {
+      this.state = {
+        ...this.state,
+        listening: true
+      };
+      this.updateRecordButton(this.params);
+    };
+
+    this.createButtonBar = (l10n) => {
+      this.addButton('try-again', l10n.retryLabel, () => {
+        this.hideButton('try-again');
+        this.hideButton('show-solution');
+        this.setFeedback();
+      }, false);
+
+      this.addButton('show-solution', l10n.showSolutionLabel, () => {
+        //TODO: Show view
+        this.hideButton('show-solution');
+
+      }, false);
+    };
+
+    this.answeredCorrectly = (feedbackText) => {
+      this.setFeedback(feedbackText, 1, 1);
+      this.hideButton('try-again');
+      this.hideButton('show-solution');
+    };
+
+    this.answeredWrong = (feedbackText) => {
+      this.setFeedback(feedbackText, 0, 1);
+      this.showButton('try-again');
+      this.showButton('show-solution');
+    };
+
+    this.registerDomElements = () => {
+      this.setIntroduction(this.introduction);
+      this.setContent(this.questionWrapper);
+    };
+
     this.createIntroduction(params.question);
     this.createContent(params);
     this.createButtonBar(params.l10n);
-  }
-
-  createIntroduction(text) {
-    const introduction = document.createElement('div');
-    introduction.className = 'h5p-speak-the-words-introduction';
-    introduction.innerHTML = text;
-    this.introduction = introduction;
-  }
-
-  createContent(params) {
-    const questionWrapper = document.createElement('div');
-    questionWrapper.className = 'h5p-speak-the-words';
-    this.questionWrapper = questionWrapper;
-
-    //console.log("this state ?", this, ...this.state)
-    console.log("this state ?", this, this.state);
-    console.trace()
-
-    this.updateRecordButton(params);
-  }
-
-  updateRecordButton(params) {
-    var props = {
-      ...this.state,
-      startTalking: this.startTalking.bind(this),
-      l10n: params.l10n
-    };
-    console.log("update record button", props)
-
-    ReactDOM.render(<RecordButton {...props}/>, this.questionWrapper);
-  }
-
-  startTalking() {
-    console.log("clicked the button!!!, change state to listening")
-    this.state = {
-      ...this.state,
-      listening: true
-    }
-    this.updateRecordButton(this.params);
-    console.log("this statee", this.state.listening)
-    console.log("what is new state ?", this.state);
-  }
-
-  createButtonBar(l10n) {
-    this.addButton('try-again', l10n.retryLabel, () => {
-      this.hideButton('try-again');
-      this.hideButton('show-solution');
-      this.setFeedback();
-    }, false);
-
-    this.addButton('show-solution', l10n.showSolutionLabel, () => {
-      //TODO: Show view
-      this.hideButton('show-solution');
-
-    }, false);
-  }
-
-  answeredCorrectly(feedbackText) {
-    console.log("answered correctly!, why isnt feedbacktext wroking ?", this);
-    this.setFeedback(feedbackText, 1, 1);
-    this.hideButton('try-again');
-    this.hideButton('show-solution');
-  }
-
-  answeredWrong(feedbackText) {
-    console.log("answered wrong");
-    this.setFeedback(feedbackText, 0, 1);
-    this.showButton('try-again');
-    this.showButton('show-solution');
-  }
-
-  registerDomElements() {
-    this.setIntroduction(this.introduction);
-    this.setContent(this.questionWrapper);
   }
 }

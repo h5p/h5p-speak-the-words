@@ -4,12 +4,9 @@ import './styles/record-button.css';
 export default class RecordButton extends React.Component {
   constructor(params) {
     super();
-    console.log("params ?", params)
   }
 
   render() {
-    console.log("re-rendering this shit ?");
-    console.log("props ?", this.props);
     return (
       <div>
         <button
