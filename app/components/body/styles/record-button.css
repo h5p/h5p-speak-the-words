@@ -13,6 +13,13 @@
   outline: none;
 }
 
+.h5p-speak-the-words-record.h5p-hidden,
+.h5p-speak-the-words-record.h5p-hidden:active,
+.h5p-speak-the-words-record.h5p-hidden:hover,
+.h5p-speak-the-words-record.h5p-hidden:focus {
+  display: none;
+}
+
 .h5p-speak-the-words-record.h5p-listening,
 .h5p-speak-the-words-record.h5p-listening:hover,
 .h5p-speak-the-words-record.h5p-listening:active,

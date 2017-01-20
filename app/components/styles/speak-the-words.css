@@ -20,3 +20,13 @@
   margin: 0;
   padding: 1em;
 }
+
+.unsupported-browser-error {
+  padding: 1em 0;
+  color: darkred;
+}
+
+.unsupported-browser-header,
+.unsupported-browser-body {
+  margin: 1em 0;
+}

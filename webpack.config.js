@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -18,8 +19,13 @@ module.exports = {
       {
         test: /\.css$/,
         include: path.resolve(__dirname, 'app'),
-        loader: 'style!css?module'
+        loader: 'style-loader!css-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+    })
+  ]
 };

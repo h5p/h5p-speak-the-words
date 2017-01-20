@@ -1,0 +1,8 @@
+.solution-area.hidden {
+  display: none;
+}
+
+.user-answer-text,
+.correct-answer-text {
+  margin: 1em 0;
+}

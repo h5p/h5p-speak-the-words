@@ -1,87 +1,100 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import annyang from 'annyang';
 import './styles/speak-the-words.css';
+import annyang from 'annyang';
 
+import SpeechEngine from './body/speech-engine';
 import RecordButton from './body/record-button';
+import ShowSolution from './body/show-solution';
 
 export default class {
-  constructor(params, contentId, contentData) {
-    H5P.Question.call(this, 'speak-the-words');
-
+  constructor(params, question) {
     this.params = params;
-    this.state = {
-      listening: false,
-      processing: false,
-      disabled: false
-    };
+    this.question = question;
 
-    this.createIntroduction = (text) => {
-      const introduction = document.createElement('div');
-      introduction.className = 'h5p-speak-the-words-introduction';
-      introduction.innerHTML = text;
-      this.introduction = introduction;
-    };
+    if (!window.annyang) {
+      return;
+    }
 
-    this.createContent = (params) => {
-      const questionWrapper = document.createElement('div');
-      questionWrapper.className = 'h5p-speak-the-words';
-      this.questionWrapper = questionWrapper;
-
-      this.updateRecordButton(params);
-    };
-
-    this.updateRecordButton = (params) => {
-      var props = {
-        ...this.state,
-        startTalking: this.startTalking.bind(this),
-        l10n: params.l10n
-      };
-
-      ReactDOM.render(<RecordButton {...props}/>, this.questionWrapper);
-    };
-
-    this.startTalking = () => {
-      this.state = {
-        ...this.state,
-        listening: true
-      };
-      this.updateRecordButton(this.params);
-    };
-
-    this.createButtonBar = (l10n) => {
-      this.addButton('try-again', l10n.retryLabel, () => {
-        this.hideButton('try-again');
-        this.hideButton('show-solution');
-        this.setFeedback();
-      }, false);
-
-      this.addButton('show-solution', l10n.showSolutionLabel, () => {
-        //TODO: Show view
-        this.hideButton('show-solution');
-
-      }, false);
-    };
-
-    this.answeredCorrectly = (feedbackText) => {
-      this.setFeedback(feedbackText, 1, 1);
-      this.hideButton('try-again');
-      this.hideButton('show-solution');
-    };
-
-    this.answeredWrong = (feedbackText) => {
-      this.setFeedback(feedbackText, 0, 1);
-      this.showButton('try-again');
-      this.showButton('show-solution');
-    };
-
-    this.registerDomElements = () => {
-      this.setIntroduction(this.introduction);
-      this.setContent(this.questionWrapper);
-    };
-
+    this.speechEventStore = new H5P.EventDispatcher();
     this.createIntroduction(params.question);
     this.createContent(params);
     this.createButtonBar(params.l10n);
+
+    ReactDOM.render(
+      <div>
+        <RecordButton
+          eventStore={this.speechEventStore}
+          l10n={params.l10n}
+          speechEngine={this.speechEngine}
+        />
+        <ShowSolution eventStore={this.speechEventStore} {...params} />
+      </div>, this.questionWrapper);
+
+    this.speechEngine = new SpeechEngine(params, this.speechEventStore);
+    this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, params.l10n.correctAnswerText));
+    this.speechEventStore.on('answered-wrong', this.answeredWrong.bind(this, params.l10n.incorrectAnswerText));
+  }
+
+  createIntroduction(text) {
+    const introduction = document.createElement('div');
+    introduction.className = 'h5p-speak-the-words-introduction';
+    introduction.textContent = text;
+    this.introduction = introduction;
+  }
+
+  createContent() {
+    const questionWrapper = document.createElement('div');
+    questionWrapper.className = 'h5p-speak-the-words';
+    this.questionWrapper = questionWrapper;
+  }
+
+  createButtonBar(l10n) {
+    this.question.addButton('try-again', l10n.retryLabel, () => {
+      this.question.hideButton('try-again');
+      this.question.hideButton('show-solution');
+      this.question.setFeedback();
+      this.speechEventStore.trigger('reset-task');
+    }, false);
+
+    this.question.addButton('show-solution', l10n.showSolutionLabel, () => {
+      this.question.hideButton('show-solution');
+      this.speechEventStore.trigger('show-solution');
+    }, false);
+  }
+
+  answeredCorrectly(feedbackText) {
+    this.question.setFeedback(feedbackText, 1, 1);
+    this.question.hideButton('try-again');
+    this.question.hideButton('show-solution');
+  }
+
+  answeredWrong(feedbackText) {
+    this.question.setFeedback(feedbackText, 0, 1);
+    this.question.showButton('try-again');
+    this.question.showButton('show-solution');
+  }
+
+  registerDomElements() {
+    if (!window.annyang) {
+      const errorElement = document.createElement('div');
+      errorElement.className = 'unsupported-browser-error';
+      const headerError = document.createElement('div');
+      headerError.className = 'unsupported-browser-header';
+      const bodyError = document.createElement('div');
+      bodyError.className = 'unsupported-browser-body';
+
+      errorElement.appendChild(headerError);
+      errorElement.appendChild(bodyError);
+
+      headerError.textContent = this.params.l10n.unsupportedBrowserHeader;
+      bodyError.textContent = this.params.l10n.unsupportedBrowserDetails;
+
+      this.question.setIntroduction(errorElement);
+      return;
+    }
+
+    this.question.setIntroduction(this.introduction);
+    this.question.setContent(this.questionWrapper);
   }
 }

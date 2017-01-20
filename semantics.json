@@ -40,10 +40,40 @@
         "default": "Push to speak"
       },
       {
+        "name": "listeningLabel",
+        "label": "\"Speak\"-button label when listening",
+        "type": "text",
+        "default": "Listening..."
+      },
+      {
+        "name": "correctAnswersText",
+        "label": "Text preceding the correct answers in solution mode",
+        "type": "text",
+        "default": "The correct answer(s):"
+      },
+      {
+        "name": "userAnswersText",
+        "label": "Text telling the user what his answer was interpreted as",
+        "type": "text",
+        "default": "Your answer(s) was interpreted as:"
+      },
+      {
         "name": "noSound",
         "label": "Text to display when no sound was registered from user",
         "type": "text",
         "default": "I could not hear you, make sure your microphone is enabled"
+      },
+      {
+        "name": "unsupportedBrowserHeader",
+        "label": "Header text to display if browser does not support speech recognition",
+        "type": "text",
+        "default": "It looks like your browser does not support speech recognition"
+      },
+      {
+        "name": "unsupportedBrowserDetails",
+        "label": "Body text to display if browser does not support speech recognition",
+        "type": "text",
+        "default": "Please try again in desktop browser like Chrome"
       },
       {
         "name": "incorrectAnswerText",
