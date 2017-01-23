@@ -1,37 +1,52 @@
 export default class SpeechEngine {
   constructor(params, eventStore) {
-    const annyang = window.annyang;
-    const commands = params.acceptedAnswers.reduce((prev, curr) => {
+    this.eventStore = eventStore;
+    this.annyang = window.annyang;
+    this.listening = false;
+    this.commands = this.getCommands(params.acceptedAnswers);
+
+    this.eventStore.on('start-listening', () => {
+      this.init();
+    });
+
+    this.eventStore.on('stop-listening', () => {
+      this.destroy();
+    });
+  }
+
+  init() {
+    this.listening = true;
+    this.annyang.addCallback('resultNoMatch', this.answeredWrong.bind(this));
+    this.annyang.addCommands(this.commands);
+    this.annyang.start();
+  }
+
+  destroy() {
+    this.listening = false;
+    this.annyang.removeCallback('resultNoMatch', this.answeredWrong.bind(this));
+    this.annyang.removeCommands(this.commands);
+    this.annyang.abort();
+  }
+
+  answeredCorrectly() {
+    if (this.listening) {
+      this.eventStore.trigger('answered-correctly');
+      this.destroy();
+    }
+  }
+
+  answeredWrong(results) {
+    if (this.listening) {
+      this.eventStore.trigger('answered-wrong', results);
+    }
+  }
+
+  getCommands(acceptedAnswers) {
+    return acceptedAnswers.reduce((prev, curr) => {
       prev[curr] = () => {
-        eventStore.trigger('answered-correctly');
-        this.annyang.abort();
+        this.answeredCorrectly();
       };
       return prev;
     }, {});
-
-    annyang.addCommands(commands);
-    annyang.addCallback('resultNoMatch', (results) => {
-      eventStore.trigger('answered-wrong', results);
-    });
-
-    // Finished processing result
-    annyang.addCallback('result', () => {
-      eventStore.trigger('got-result');
-    });
-
-    eventStore.on('start-listening', () => {
-      this.listening = true;
-      this.annyang.resume();
-    });
-
-    eventStore.on('stop-listening', () => {
-      this.listening = false;
-      this.annyang.pause();
-    });
-
-    this.annyang = annyang;
-    this.annyang.start();
-    this.annyang.pause();
-    this.listening = false;
   }
 }
