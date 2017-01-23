@@ -1,15 +1,12 @@
-jest.unmock('../translate-the-word');
+jest.unmock('../speak-the-words');
 
-import TranslateTheWord from '../translate-the-word';
+import SpeakTheWords from '../speak-the-words';
 
-describe('Translate The Word', () => {
-  const translateTheWord = new TranslateTheWord();
+describe('Speak The Words', () => {
+  const questionMock = jest.fn();
+  const instance = new SpeakTheWords({}, questionMock);
 
   it('should initialize', () => {
-    expect(translateTheWord).toBeDefined();
-  });
-
-  it('should have an attach function', () => {
-    expect(translateTheWord.attach).toBeDefined();
+    expect(instance).toBeDefined();
   });
 });

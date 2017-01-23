@@ -1,8 +1,23 @@
 import React from 'react';
 import './styles/record-button.css';
 
+/**
+ * Record button component
+ * Switches between task states:
+ * - off
+ * - listening for user input
+ * - disabled
+ */
 export default class RecordButton extends React.Component {
 
+  /**
+   * Initializes component in a passive mode.
+   * Action is required to start recording speech.
+   *
+   * @param {Object} props
+   * @param {Object} props.speechEngine Speech engine functionality
+   * @param {Object} props.eventStore A central store for events
+   */
   constructor(props) {
     super(props);
     this.speechEngine = props.speechEngine;
@@ -17,10 +32,16 @@ export default class RecordButton extends React.Component {
     this.initSpeechEngineListeners();
   }
 
+  /**
+   * Reset state to the initial passive state.
+   */
   resetState() {
     this.setState(this.initialState);
   }
 
+  /**
+   * Disables button from all input.
+   */
   disableButton() {
     this.eventStore.trigger('stop-listening');
     this.setState({
@@ -30,6 +51,9 @@ export default class RecordButton extends React.Component {
     })
   }
 
+  /**
+   * Hides button.
+   */
   hideButton() {
     this.eventStore.trigger('stop-listening');
     this.setState({
@@ -37,6 +61,11 @@ export default class RecordButton extends React.Component {
     })
   }
 
+  /**
+   * Handle keyboard button events.
+   * Space and enter will trigger the handler for the button.
+   * @param {Object} e Keyboard event
+   */
   handleKeyPressed(e) {
     if (e.which === 32 || e.which === 13) {
       this.startListening();
@@ -44,6 +73,11 @@ export default class RecordButton extends React.Component {
     }
   }
 
+  /**
+   * Handles mouse down event.
+   * Left mouse click will trigger the handler for the button.
+   * @param {Object} e Synthetic React event
+   */
   handleMouseDown(e) {
     // left mouse button
     if (e.nativeEvent.which === 1) {
@@ -52,6 +86,9 @@ export default class RecordButton extends React.Component {
     }
   }
 
+  /**
+   * Starts listening for user speech input.
+   */
   startListening() {
     if (this.state.disabled) {
       return;
@@ -68,12 +105,20 @@ export default class RecordButton extends React.Component {
     this.eventStore.trigger('start-listening');
   }
 
+  /**
+   * Initializes listeners that react to speech engine events.
+   */
   initSpeechEngineListeners() {
     this.eventStore.on('reset-task', this.resetState.bind(this));
     this.eventStore.on('answered-correctly', this.hideButton.bind(this));
     this.eventStore.on('answered-wrong', this.disableButton.bind(this));
   }
 
+  /**
+   * Renders the component
+   *
+   * @return {String} JSX component
+   */
   render() {
     const className = "h5p-speak-the-words-record h5p-joubelui-button"
       + (this.state.listening ? " h5p-listening" : "")
@@ -84,16 +129,14 @@ export default class RecordButton extends React.Component {
       this.props.l10n.speakLabel;
 
     return (
-      <div>
-        <button
-          type="button"
-          className={className}
-          onMouseDown={this.handleMouseDown.bind(this)}
-          onKeyDown={this.handleKeyPressed.bind(this)}
-        >
-          {buttonText}
-        </button>
-      </div>
+      <button
+        type="button"
+        className={className}
+        onMouseDown={this.handleMouseDown.bind(this)}
+        onKeyDown={this.handleKeyPressed.bind(this)}
+      >
+        {buttonText}
+      </button>
     )
   }
 }

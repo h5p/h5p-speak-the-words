@@ -1,0 +1,45 @@
+exports[`Show Solution should be hidden initially 1`] = `
+<div
+  className="solution-area hidden">
+  <div
+    className="correct-answer-text">
+    <div />
+    <div>
+      \"Dart\", \"Vader\"
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Show Solution should be shown on show solution event 1`] = `
+<div
+  className="solution-area">
+  <div
+    className="correct-answer-text">
+    <div />
+    <div>
+      \"Dart\", \"Vader\"
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Show Solution should contain user answers when specified 1`] = `
+<div
+  className="solution-area">
+  <div
+    className="user-answer-text">
+    <div />
+    <div>
+      \"Luke\", \"SkyWalker\"
+    </div>
+  </div>
+  <div
+    className="correct-answer-text">
+    <div />
+    <div>
+      \"Dart\", \"Vader\"
+    </div>
+  </div>
+</div>
+`;

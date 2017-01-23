@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "testDev": "jest --watch",
     "build": "cross-env NODE_ENV=production webpack -p",
     "buildDev": "webpack --watch",
     "dev": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --open"
@@ -40,6 +41,7 @@
     "jest-cli": "^17.0.0",
     "json-loader": "^0.5.4",
     "react-addons-test-utils": "^15.1.0",
+    "react-test-renderer": "^15.4.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3"

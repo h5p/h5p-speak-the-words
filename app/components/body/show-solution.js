@@ -1,8 +1,25 @@
 import React from 'react';
 import './styles/show-solution.css';
 
+/**
+ * Show solution component
+ * Renders the interpreted answers from the user
+ * and the correctly specified answers by the author
+ * so they easily can be compared.
+ */
 export default class ShowSolution extends React.Component {
 
+  /**
+   * Initializes component with solutions hidden
+   * Generates a human readable text from accepted answers
+   * Initializes all listeners for relevant events in other components
+   *
+   * @param {Object} props
+   * @param {Object} props.eventStore
+   *  A central event store for all task related events
+   * @param {Array} props.acceptedAnswers
+   *  All accepted answers as specified by the author
+   */
   constructor(props) {
     super(props);
 
@@ -23,6 +40,11 @@ export default class ShowSolution extends React.Component {
     });
   }
 
+  /**
+   * Renders the component
+   *
+   * @return {String} JSX component
+   */
   render() {
     const className = 'solution-area' + (this.state.showSolution ? '' : ' hidden');
 

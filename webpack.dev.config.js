@@ -20,7 +20,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: path.resolve(__dirname, 'app'),
+        include: [
+          path.resolve(__dirname, 'app'),
+          path.resolve(__dirname, 'dev')
+        ],
         loader: 'style!css'
       },
       {
@@ -37,6 +40,16 @@ module.exports = {
         test: /\.png$/,
         include: path.resolve(__dirname, 'dev'),
         loader: "file?name=[name].[ext]"
+      },
+      {
+        test: /\.json$/,
+        include: path.resolve(__dirname),
+        exclude: [
+          path.resolve(__dirname, 'dev'),
+          path.resolve(__dirname, 'node_modules'),
+          path.resolve(__dirname, 'app')
+        ],
+        loader: "json"
       }
     ]
   },
