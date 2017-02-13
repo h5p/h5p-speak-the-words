@@ -55,7 +55,7 @@ export default class ShowSolution extends React.Component {
       userAnswersText = (
         <div className="h5p-speak-the-words-user-answer-text">
           <div>{decode(this.props.l10n.userAnswersText)}</div>
-          <div>{`"${decode(this.state.userAnswers).join('", "')}"`}</div>
+          <div>{`"${this.state.userAnswers.join('", "')}"`}</div>
         </div>
       )
     }
@@ -65,7 +65,7 @@ export default class ShowSolution extends React.Component {
         {userAnswersText}
         <div className="h5p-speak-the-words-correct-answer-text">
           <div>{decode(this.props.l10n.correctAnswersText)}</div>
-          <div>{decode(this.correctAnswersText)}</div>
+          <div>{this.correctAnswersText}</div>
         </div>
       </div>
     )
