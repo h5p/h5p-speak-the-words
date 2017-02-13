@@ -17,6 +17,30 @@
     }
   },
   {
+    "name": "inputLanguage",
+    "label": "Language of speech input",
+    "type": "select",
+    "options": [
+      {
+        "value": "no-NO",
+        "label": "Norwegian"
+      },
+      {
+        "value": "es-ES",
+        "label": "Spanish"
+      },
+      {
+        "value": "sv-SE",
+        "label": "Swedish"
+      },
+      {
+        "value": "en-US",
+        "label": "English(US)"
+      }
+    ],
+    "default": "en-US"
+  },
+  {
     "name": "l10n",
     "label": "Labels and texts",
     "type": "group",
@@ -73,7 +97,7 @@
         "name": "unsupportedBrowserDetails",
         "label": "Body text to display if browser does not support speech recognition",
         "type": "text",
-        "default": "Please try again in desktop browser like Chrome"
+        "default": "Please try again in a browser like Chrome"
       },
       {
         "name": "incorrectAnswerText",

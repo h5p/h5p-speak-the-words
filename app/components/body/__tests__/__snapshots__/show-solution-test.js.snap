@@ -1,8 +1,8 @@
 exports[`Show Solution should be hidden initially 1`] = `
 <div
-  className="solution-area hidden">
+  className="h5p-speak-the-words-solution-area hidden">
   <div
-    className="correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text">
     <div />
     <div>
       \"Dart\", \"Vader\"
@@ -13,9 +13,9 @@ exports[`Show Solution should be hidden initially 1`] = `
 
 exports[`Show Solution should be shown on show solution event 1`] = `
 <div
-  className="solution-area">
+  className="h5p-speak-the-words-solution-area">
   <div
-    className="correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text">
     <div />
     <div>
       \"Dart\", \"Vader\"
@@ -26,16 +26,16 @@ exports[`Show Solution should be shown on show solution event 1`] = `
 
 exports[`Show Solution should contain user answers when specified 1`] = `
 <div
-  className="solution-area">
+  className="h5p-speak-the-words-solution-area">
   <div
-    className="user-answer-text">
+    className="h5p-speak-the-words-user-answer-text">
     <div />
     <div>
       \"Luke\", \"SkyWalker\"
     </div>
   </div>
   <div
-    className="correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text">
     <div />
     <div>
       \"Dart\", \"Vader\"

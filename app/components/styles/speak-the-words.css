@@ -21,12 +21,12 @@
   padding: 1em;
 }
 
-.unsupported-browser-error {
+.h5p-speak-the-words-unsupported-browser-error {
   padding: 1em 0;
   color: darkred;
 }
 
-.unsupported-browser-header,
-.unsupported-browser-body {
+.h5p-speak-the-words-unsupported-browser-header,
+.h5p-speak-the-words-unsupported-browser-body {
   margin: 1em 0;
 }

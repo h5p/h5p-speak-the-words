@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/show-solution.css';
+import { decode } from 'he';
 
 /**
  * Show solution component
@@ -16,9 +17,10 @@ export default class ShowSolution extends React.Component {
    *
    * @param {Object} props
    * @param {Object} props.eventStore
-   *  A central event store for all task related events
+   * A central event store for all task related events
    * @param {Array} props.acceptedAnswers
-   *  All accepted answers as specified by the author
+   * All accepted answers as specified by the author
+   * @params {Translations} l10n Translations for component
    */
   constructor(props) {
     super(props);
@@ -46,14 +48,14 @@ export default class ShowSolution extends React.Component {
    * @return {String} JSX component
    */
   render() {
-    const className = 'solution-area' + (this.state.showSolution ? '' : ' hidden');
+    const className = 'h5p-speak-the-words-solution-area' + (this.state.showSolution ? '' : ' hidden');
 
     let userAnswersText = null;
     if (this.state.userAnswers && this.state.userAnswers.length) {
       userAnswersText = (
-        <div className="user-answer-text">
-          <div>{this.props.l10n.userAnswersText}</div>
-          <div>{`"${this.state.userAnswers.join('", "')}"`}</div>
+        <div className="h5p-speak-the-words-user-answer-text">
+          <div>{decode(this.props.l10n.userAnswersText)}</div>
+          <div>{`"${decode(this.state.userAnswers).join('", "')}"`}</div>
         </div>
       )
     }
@@ -61,9 +63,9 @@ export default class ShowSolution extends React.Component {
     return (
       <div className={className}>
         {userAnswersText}
-        <div className="correct-answer-text">
-          <div>{this.props.l10n.correctAnswersText}</div>
-          <div>{this.correctAnswersText}</div>
+        <div className="h5p-speak-the-words-correct-answer-text">
+          <div>{decode(this.props.l10n.correctAnswersText)}</div>
+          <div>{decode(this.correctAnswersText)}</div>
         </div>
       </div>
     )

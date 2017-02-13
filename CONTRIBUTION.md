@@ -2,13 +2,6 @@
 
 Welcome, consult the [contribution part](#start-contributing) for info on how to contribute.
 
-# Missing features
-
-- [x] Unit tests
-- [ ] Score system
-- [ ] xAPI statements
-- [ ] Multiple language support
-
 # <a name="start-contributing"></a>Start contributing
 
 Run locally
@@ -30,3 +23,14 @@ Finally make sure all previous and new tests are run and passes using:
 ```
 npm test
 ```
+
+# Missing features
+
+- [ ] Multiple language support
+- [ ] Upgrade to webpack 2 and add tree-shaking
+
+# Done
+
+- [x] Unit tests
+- [x] Score system
+- [x] xAPI statements

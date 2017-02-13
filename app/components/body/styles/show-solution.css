@@ -1,8 +1,8 @@
-.solution-area.hidden {
+.h5p-speak-the-words-solution-area.hidden {
   display: none;
 }
 
-.user-answer-text,
-.correct-answer-text {
+.h5p-speak-the-words-user-answer-text,
+.h5p-speak-the-words-correct-answer-text {
   margin: 1em 0;
 }

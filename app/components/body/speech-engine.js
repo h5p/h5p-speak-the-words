@@ -13,9 +13,7 @@ export default class SpeechEngine {
    * The speech engine will wait until it gets the 'start-listening' event
    * before listening for any user speech
    *
-   * @param {Object} params Author defined parameters
-   * @param {Array} params.acceptedAnswers
-   *  All accepted spoken answers as specified by the author
+   * @param {SpeakTheWordsParameters} params
    * @param {Object} eventStore
    *  A central event store that all events are channeled through
    */
@@ -25,6 +23,10 @@ export default class SpeechEngine {
     this.listening = false;
     this.commands = this.getCommands(params.acceptedAnswers);
 
+    if (params.inputLanguage) {
+      this.annyang.setLanguage(params.inputLanguage);
+    }
+
     this.eventStore.on('start-listening', () => {
       this.init();
     });
@@ -33,9 +35,6 @@ export default class SpeechEngine {
       this.destroy();
     });
 
-    this.annyang.addCallback('end', () => {
-
-    })
   }
 
   /**

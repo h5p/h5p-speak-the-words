@@ -7,8 +7,7 @@
     "test": "jest",
     "testDev": "jest --watch",
     "build": "cross-env NODE_ENV=production webpack -p",
-    "buildDev": "webpack --watch",
-    "dev": "webpack-dev-server --config webpack.dev.config.js -d --inline --hot --open"
+    "buildDev": "webpack --watch"
   },
   "keywords": [
     "language",
@@ -33,22 +32,17 @@
     "babel-preset-react": "^6.5.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.25.0",
-    "exports-loader": "^0.6.3",
-    "expose-loader": "^0.7.1",
-    "file-loader": "^0.9.0",
-    "h5p-view": "^1.0.3",
-    "imports-loader": "^0.6.5",
     "jest-cli": "^17.0.0",
-    "json-loader": "^0.5.4",
     "react-addons-test-utils": "^15.1.0",
     "react-test-renderer": "^15.4.2",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.3"
+    "webpack": "^1.14.0"
   },
   "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "he": "^1.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1"
   },
   "jest": {
     "unmockedModulePathPatterns": [

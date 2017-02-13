@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/record-button.css';
+import { decode } from 'he';
 
 /**
  * Record button component
@@ -17,6 +18,7 @@ export default class RecordButton extends React.Component {
    * @param {Object} props
    * @param {Object} props.speechEngine Speech engine functionality
    * @param {Object} props.eventStore A central store for events
+   * @param {SpeakTheWordsTranslations} props.l10n
    */
   constructor(props) {
     super(props);
@@ -135,7 +137,7 @@ export default class RecordButton extends React.Component {
         onMouseDown={this.handleMouseDown.bind(this)}
         onKeyDown={this.handleKeyPressed.bind(this)}
       >
-        {buttonText}
+        {decode(buttonText)}
       </button>
     )
   }

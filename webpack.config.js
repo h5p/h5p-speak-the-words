@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'app'),
@@ -19,7 +19,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: path.resolve(__dirname, 'app'),
-        loader: 'style-loader!css-loader'
+        use: ['style-loader', 'css-loader']
       }
     ]
   },

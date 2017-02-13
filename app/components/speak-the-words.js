@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/speak-the-words.css';
-import annyang from 'annyang';
+import 'annyang';
+import { decode } from 'he';
 
 import SpeechEngine from './body/speech-engine';
 import RecordButton from './body/record-button';
@@ -15,18 +16,35 @@ import ShowSolution from './body/show-solution';
 export default class {
 
   /**
+   * @typedef {Object} SpeakTheWordsParameters
+   *
+   * @property {SpeakTheWordsTranslations} l10n Translation strings
+   * @property {string} question Question text
+   * @property {Array} acceptedAnswers All accepted spoken answers as specified by the author
+   * @property {string} inputLanguage Language that input is expected as
+   */
+
+  /**
+   * @typedef {Object} SpeakTheWordsTranslations
+   *
+   * @property {string} correctAnswerText Text for saying the an answer was correct
+   * @property {string} incorrectAnswerText Text for saying the an answer was incorrect
+   * @property {string} retryLabel Label for 'retry'-button
+   * @property {string} showSolutionLabel Label for 'show solution'-button
+   * @property {Array} acceptedAnswers Accepted answers by the speech engine
+   * @property {string} listeningLabel Button label when listening for speech
+   * @property {string} speakLabel Button label for activating listening for speech
+   * @property {string} unsupportedBrowserHeader
+   * Header text explaining that a browser is unsupported
+   * @property {string} unsupportedBrowserDetails
+   * Text with complementary details for unsupported browsers
+   * @property {string} userAnswersText Text labeling the users answers
+   */
+
+  /**
    * Initialize the main components used within the task
    *
-   * @param {Object} params Author specified parameters
-   * @param {Object} params.l10n Translation strings
-   * @param {string} params.l10n.correctAnswerText Text for saying the an answer was correct
-   * @param {string} params.l10n.incorrectAnswerText Text for saying the an answer was incorrect
-   * @param {string} params.l10n.retryLabel Label for 'retry'-button
-   * @param {string} params.l10n.showSolutionLabel Label for 'show solution'-button
-   * @param {string} params.l10n.unsupportedBrowserHeader
-   *  Header text explaining that a browser is unsupported
-   * @param {string} params.l10n.unsupportedBrowserDetails
-   *  Text with complementary details for unsupported browsers
+   * @param {SpeakTheWordsParameters} params Author specified parameters
    * @param {Object} question H5P Question instance with button and event functionality
    */
   constructor(params, question) {
@@ -44,7 +62,7 @@ export default class {
     this.createButtonBar(params.l10n);
 
     // Renders record button and show solution area into the question main content
-    ReactDOM.render(
+    ReactDOM.render((
       <div>
         <RecordButton
           eventStore={this.speechEventStore}
@@ -52,7 +70,8 @@ export default class {
           speechEngine={this.speechEngine}
         />
         <ShowSolution eventStore={this.speechEventStore} {...params} />
-      </div>, this.questionWrapper);
+      </div>
+    ), this.questionWrapper);
 
     this.speechEngine = new SpeechEngine(params, this.speechEventStore);
     this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, params.l10n.correctAnswerText));
@@ -67,7 +86,7 @@ export default class {
   createIntroduction(text) {
     const introduction = document.createElement('div');
     introduction.className = 'h5p-speak-the-words-introduction';
-    introduction.textContent = text;
+    introduction.textContent = decode(text);
     this.introduction = introduction;
   }
 
@@ -86,14 +105,14 @@ export default class {
    * @param {Object} l10n Translations
    */
   createButtonBar(l10n) {
-    this.question.addButton('try-again', l10n.retryLabel, () => {
+    this.question.addButton('try-again', decode(l10n.retryLabel), () => {
       this.question.hideButton('try-again');
       this.question.hideButton('show-solution');
-      this.question.setFeedback();
+      this.question.setFeedback('', 0, 1);
       this.speechEventStore.trigger('reset-task');
     }, false);
 
-    this.question.addButton('show-solution', l10n.showSolutionLabel, () => {
+    this.question.addButton('show-solution', decode(l10n.showSolutionLabel), () => {
       this.question.hideButton('show-solution');
       this.speechEventStore.trigger('show-solution');
     }, false);
@@ -106,9 +125,10 @@ export default class {
    * @param {string} feedbackText Text telling the user that he has succeeded
    */
   answeredCorrectly(feedbackText) {
-    this.question.setFeedback(feedbackText, 1, 1);
+    this.question.setFeedback(decode(feedbackText), 1, 1);
     this.question.hideButton('try-again');
     this.question.hideButton('show-solution');
+    this.question.triggerXAPIScored(1, 1, 'answered', true, true);
   }
 
   /**
@@ -118,9 +138,10 @@ export default class {
    * @param {String} feedbackText Text telling user that he gave the wrong answer
    */
   answeredWrong(feedbackText) {
-    this.question.setFeedback(feedbackText, 0, 1);
+    this.question.setFeedback(decode(feedbackText), 0, 1);
     this.question.showButton('try-again');
     this.question.showButton('show-solution');
+    this.question.triggerXAPIScored(0, 1, 'answered', true, false);
   }
 
   /**
@@ -130,17 +151,19 @@ export default class {
   registerDomElements() {
     if (!window.annyang) {
       const errorElement = document.createElement('div');
-      errorElement.className = 'unsupported-browser-error';
-      const headerError = document.createElement('div');
-      headerError.className = 'unsupported-browser-header';
-      const bodyError = document.createElement('div');
-      bodyError.className = 'unsupported-browser-body';
 
-      errorElement.appendChild(headerError);
-      errorElement.appendChild(bodyError);
+      // Renders record button and show solution area into the question main content
+      ReactDOM.render((
+        <div className='h5p-speak-the-words-unsupported-browser-error'>
+          <div className='h5p-speak-the-words-unsupported-browser-header'>
+            {decode(this.params.l10n.unsupportedBrowserHeader)}
+          </div>
+          <div className='h5p-speak-the-words-unsupported-browser-body'>
+            {decode(this.params.l10n.unsupportedBrowserDetails)}
+          </div>
+        </div>
+      ), errorElement);
 
-      headerError.textContent = this.params.l10n.unsupportedBrowserHeader;
-      bodyError.textContent = this.params.l10n.unsupportedBrowserDetails;
 
       this.question.setIntroduction(errorElement);
       return;
