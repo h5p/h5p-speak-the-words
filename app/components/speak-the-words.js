@@ -107,6 +107,7 @@ export default class {
    */
   createButtonBar(l10n) {
     this.question.addButton('try-again', decode(l10n.retryLabel), () => {
+      this.questionWrapper.parentNode.classList.remove('empty');
       this.question.hideButton('try-again');
       this.question.hideButton('show-solution');
       this.question.setFeedback('', 0, 1);
@@ -114,6 +115,7 @@ export default class {
     }, false);
 
     this.question.addButton('show-solution', decode(l10n.showSolutionLabel), () => {
+      this.questionWrapper.parentNode.classList.remove('empty');
       this.question.hideButton('show-solution');
       this.speechEventStore.trigger('show-solution');
     }, false);
@@ -126,10 +128,10 @@ export default class {
    * @param {string} feedbackText Text telling the user that he has succeeded
    */
   answeredCorrectly(feedbackText) {
+    this.questionWrapper.parentNode.classList.add('empty');
     this.question.setFeedback(decode(feedbackText), 1, 1);
     this.question.hideButton('try-again');
     this.question.hideButton('show-solution');
-    this.questionWrapper.parentNode.classList.add('answered-correctly');
     this.question.triggerXAPIScored(1, 1, 'answered', true, true);
   }
 
@@ -140,6 +142,7 @@ export default class {
    * @param {String} feedbackText Text telling user that he gave the wrong answer
    */
   answeredWrong(feedbackText) {
+    this.questionWrapper.parentNode.classList.add('empty');
     this.question.setFeedback(decode(feedbackText), 0, 1);
     this.question.showButton('try-again');
     this.question.showButton('show-solution');
