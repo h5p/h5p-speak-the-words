@@ -24,7 +24,7 @@
 .h5p-speak-the-words-record.h5p-listening:hover,
 .h5p-speak-the-words-record.h5p-listening:active,
 .h5p-speak-the-words-record.h5p-listening:focus {
-  background-color: red;
+  background-color: #dd2e2e;
   box-shadow: none;
 }
 

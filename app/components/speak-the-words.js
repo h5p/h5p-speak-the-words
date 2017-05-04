@@ -39,6 +39,7 @@ export default class {
    * @property {string} unsupportedBrowserDetails
    * Text with complementary details for unsupported browsers
    * @property {string} userAnswersText Text labeling the users answers
+   * @property {string} correctAnswersText Text labeling the correct answers
    */
 
   /**
@@ -128,6 +129,7 @@ export default class {
     this.question.setFeedback(decode(feedbackText), 1, 1);
     this.question.hideButton('try-again');
     this.question.hideButton('show-solution');
+    this.questionWrapper.parentNode.classList.add('answered-correctly');
     this.question.triggerXAPIScored(1, 1, 'answered', true, true);
   }
 

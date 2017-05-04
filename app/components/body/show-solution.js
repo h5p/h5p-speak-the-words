@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/show-solution.css';
-import { decode } from 'he';
+import {decode} from 'he';
 
 /**
  * Show solution component
@@ -30,7 +30,6 @@ export default class ShowSolution extends React.Component {
       userAnswers: []
     };
 
-    this.correctAnswersText = `"${props.acceptedAnswers.join('", "')}"`;
     props.eventStore.on('show-solution', () => {
       this.setState({showSolution: true});
     });
@@ -55,7 +54,12 @@ export default class ShowSolution extends React.Component {
       userAnswersText = (
         <div className="h5p-speak-the-words-user-answer-text">
           <div>{decode(this.props.l10n.userAnswersText)}</div>
-          <div>{`"${this.state.userAnswers.join('", "')}"`}</div>
+          {this.state.userAnswers.map(userAnswer => {
+            return (
+              <div key={userAnswer} className="h5p-speak-the-words-interpreted-answer">
+                {userAnswer}
+              </div>);
+          })}
         </div>
       )
     }
@@ -65,7 +69,13 @@ export default class ShowSolution extends React.Component {
         {userAnswersText}
         <div className="h5p-speak-the-words-correct-answer-text">
           <div>{decode(this.props.l10n.correctAnswersText)}</div>
-          <div>{this.correctAnswersText}</div>
+          {this.props.acceptedAnswers.map(acceptedAnswer => {
+            return (
+              <div key={acceptedAnswer} className="h5p-speak-the-words-correct-answer">
+                {acceptedAnswer}
+              </div>
+            );
+          })}
         </div>
       </div>
     )

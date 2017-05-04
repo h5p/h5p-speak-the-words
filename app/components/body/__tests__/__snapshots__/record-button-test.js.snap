@@ -3,7 +3,9 @@ exports[`Record Button should be possible to disable 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-disabled"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;
 
 exports[`Record Button should be possible to hide 1`] = `
@@ -11,7 +13,9 @@ exports[`Record Button should be possible to hide 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-hidden"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;
 
 exports[`Record Button should not start recording on right mouse down 1`] = `
@@ -19,7 +23,9 @@ exports[`Record Button should not start recording on right mouse down 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;
 
 exports[`Record Button should not start recording when pressing "a" 1`] = `
@@ -27,7 +33,9 @@ exports[`Record Button should not start recording when pressing "a" 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;
 
 exports[`Record Button should render initially 1`] = `
@@ -35,7 +43,9 @@ exports[`Record Button should render initially 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;
 
 exports[`Record Button should start recording on left mouse down 1`] = `
@@ -43,7 +53,9 @@ exports[`Record Button should start recording on left mouse down 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-listening"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  listening
+</button>
 `;
 
 exports[`Record Button should start recording when pressing enter 1`] = `
@@ -51,7 +63,9 @@ exports[`Record Button should start recording when pressing enter 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-listening"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  listening
+</button>
 `;
 
 exports[`Record Button should start recording when pressing space 1`] = `
@@ -59,7 +73,9 @@ exports[`Record Button should start recording when pressing space 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-listening"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  listening
+</button>
 `;
 
 exports[`Record Button should stop recording when clicked again 1`] = `
@@ -67,7 +83,9 @@ exports[`Record Button should stop recording when clicked again 1`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button h5p-listening"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  listening
+</button>
 `;
 
 exports[`Record Button should stop recording when clicked again 2`] = `
@@ -75,5 +93,7 @@ exports[`Record Button should stop recording when clicked again 2`] = `
   className="h5p-speak-the-words-record h5p-joubelui-button"
   onKeyDown={[Function]}
   onMouseDown={[Function]}
-  type="button" />
+  type="button">
+  speak
+</button>
 `;

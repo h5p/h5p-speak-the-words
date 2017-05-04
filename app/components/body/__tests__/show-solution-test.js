@@ -8,8 +8,12 @@ describe('Show Solution', () => {
   const eventStoreMock = {on: jest.fn(), trigger: jest.fn()};
   const params = {
     acceptedAnswers: ['Dart', 'Vader'],
-    l10n: {}
+    l10n: {
+      correctAnswersText: 'Correct',
+      userAnswersText: 'User answers'
+    }
   };
+
   const test = (action) => {
     const component = renderer.create(
       <ShowSolution

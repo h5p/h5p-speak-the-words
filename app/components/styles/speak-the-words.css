@@ -30,3 +30,7 @@
 .h5p-speak-the-words-unsupported-browser-body {
   margin: 1em 0;
 }
+
+.h5p-speak-the-words .h5p-question-content.answered-correctly {
+  padding: 0;
+}

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "testDev": "jest --watch",
+    "test:watch": "jest --watch",
     "build": "cross-env NODE_ENV=production webpack -p",
-    "buildDev": "webpack --watch"
+    "build:watch": "webpack --watch"
   },
   "keywords": [
     "language",

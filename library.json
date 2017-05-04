@@ -6,8 +6,11 @@
   "patchVersion": 0,
   "runnable": 1,
   "author": "Thomasmars",
-  "license": "cc-by-sa",
+  "license": "MIT",
   "machineName": "H5P.SpeakTheWords",
+  "embedTypes": [
+    "iframe"
+  ],
   "preloadedJs": [
     {"path": "dist/dist.js"}
   ],
@@ -16,6 +19,11 @@
       "machineName": "H5P.Question",
       "majorVersion": 1,
       "minorVersion": 2
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
     }
   ]
 }
