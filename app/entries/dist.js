@@ -30,7 +30,10 @@ H5P.SpeakTheWords = (function (Question) {
    */
   function sanitize(s) {
     return s.replace(/&quot;/g,'')   // Strip double quotes
-            .replace(/&#039;/g,"'"); // Keep single quotes
+            .replace(/&#039;/g,"'") // Keep single quotes
+            .replace(/&amp;/g,'&')
+            .replace(/&lt;/g,'<')
+            .replace(/&gt;/g,'>');
   }
 
   // Inheritance
