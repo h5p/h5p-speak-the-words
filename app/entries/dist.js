@@ -14,7 +14,6 @@ H5P.SpeakTheWords = (function (Question) {
    */
   function WrapperClass(params) {
     Question.call(this, 'speak-the-words');
-    params.acceptedAnswers = params.acceptedAnswers.map(sanitize);
     const speakTheWords = new SpeakTheWords(params, this);
 
     /**
@@ -23,17 +22,6 @@ H5P.SpeakTheWords = (function (Question) {
     this.registerDomElements = () => {
       speakTheWords.registerDomElements();
     };
-  }
-
-  /**
-   * Sanitize strings
-   */
-  function sanitize(s) {
-    return s.replace(/&quot;/g,'')   // Strip double quotes
-            .replace(/&#039;/g,"'") // Keep single quotes
-            .replace(/&amp;/g,'&')
-            .replace(/&lt;/g,'<')
-            .replace(/&gt;/g,'>');
   }
 
   // Inheritance
