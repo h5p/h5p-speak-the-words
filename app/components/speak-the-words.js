@@ -49,7 +49,7 @@ export default class {
    * @param {Object} question H5P Question instance with button and event functionality
    */
   constructor(params, question) {
-    params.acceptedAnswers = params.acceptedAnswers.map(this.sanitize);
+    params.acceptedAnswers = params.acceptedAnswers.map(decode);
     this.params = params;
     this.question = question;
 
@@ -177,19 +177,5 @@ export default class {
 
     this.question.setIntroduction(this.introduction);
     this.question.setContent(this.questionWrapper);
-  }
-
-  /**
-   * Escapes HTML tags
-   *
-   * @param {string} String to sanitize
-   * @returns {string}
-   */
-  sanitize(s) {
-    return s.replace(/&quot;/g,'')   // Strip double quotes
-            .replace(/&#039;/g,"'") // Keep single quotes
-            .replace(/&amp;/g,'&')
-            .replace(/&lt;/g,'<')
-            .replace(/&gt;/g,'>');
   }
 }
