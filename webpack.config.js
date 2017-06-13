@@ -1,8 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 
-var nodeEnv = JSON.stringify(process.env.NODE_ENV || 'development');
-var isDev = nodeEnv !== 'production';
+var nodeEnv = process.env.NODE_ENV || 'development';
+var isDev = (nodeEnv !== 'production');
 
 var config = {
   entry: {
