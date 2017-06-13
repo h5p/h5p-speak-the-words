@@ -25,12 +25,7 @@ var config = {
         use: ['style-loader', 'css-loader']
       }
     ]
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': nodeEnv
-    })
-  ]
+  }
 };
 
 if (isDev) {
