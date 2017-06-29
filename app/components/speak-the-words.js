@@ -49,6 +49,7 @@ export default class {
    * @param {Object} question H5P Question instance with button and event functionality
    */
   constructor(params, question) {
+    params.acceptedAnswers = params.acceptedAnswers || [];
     params.acceptedAnswers = params.acceptedAnswers.map(decode);
     this.params = params;
     this.question = question;
