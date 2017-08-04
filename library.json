@@ -2,7 +2,7 @@
   "title": "Speak the words",
   "description": "A task where you have to answer a question using speech",
   "majorVersion": 1,
-  "minorVersion": 0,
+  "minorVersion": 1,
   "patchVersion": 1,
   "runnable": 1,
   "author": "Thomasmars",
@@ -12,13 +12,15 @@
     "iframe"
   ],
   "preloadedJs": [
-    {"path": "dist/dist.js"}
+    {
+      "path": "dist/dist.js"
+    }
   ],
   "preloadedDependencies": [
     {
       "machineName": "H5P.Question",
       "majorVersion": 1,
-      "minorVersion": 2
+      "minorVersion": 3
     },
     {
       "machineName": "FontAwesome",
