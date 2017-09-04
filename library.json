@@ -2,20 +2,30 @@
   "title": "Speak the words",
   "description": "A task where you have to answer a question using speech",
   "majorVersion": 1,
-  "minorVersion": 0,
-  "patchVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 2,
   "runnable": 1,
   "author": "Thomasmars",
-  "license": "cc-by-sa",
+  "license": "MIT",
   "machineName": "H5P.SpeakTheWords",
+  "embedTypes": [
+    "iframe"
+  ],
   "preloadedJs": [
-    {"path": "dist/dist.js"}
+    {
+      "path": "dist/dist.js"
+    }
   ],
   "preloadedDependencies": [
     {
       "machineName": "H5P.Question",
       "majorVersion": 1,
-      "minorVersion": 2
+      "minorVersion": 3
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
     }
   ]
 }

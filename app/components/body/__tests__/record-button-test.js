@@ -12,7 +12,10 @@ describe('Record Button', () => {
       <RecordButton
         eventStore={eventStoreMock}
         speechEngine={speechEngineMock}
-        l10n={{}}
+        l10n={{
+          listeningLabel: 'listening',
+          speakLabel: 'speak'
+        }}
       />
     );
 

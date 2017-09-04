@@ -39,6 +39,7 @@ export default class {
    * @property {string} unsupportedBrowserDetails
    * Text with complementary details for unsupported browsers
    * @property {string} userAnswersText Text labeling the users answers
+   * @property {string} correctAnswersText Text labeling the correct answers
    */
 
   /**
@@ -48,6 +49,8 @@ export default class {
    * @param {Object} question H5P Question instance with button and event functionality
    */
   constructor(params, question) {
+    params.acceptedAnswers = params.acceptedAnswers || [];
+    params.acceptedAnswers = params.acceptedAnswers.map(decode);
     this.params = params;
     this.question = question;
 
@@ -106,6 +109,7 @@ export default class {
    */
   createButtonBar(l10n) {
     this.question.addButton('try-again', decode(l10n.retryLabel), () => {
+      this.questionWrapper.parentNode.classList.remove('empty');
       this.question.hideButton('try-again');
       this.question.hideButton('show-solution');
       this.question.setFeedback('', 0, 1);
@@ -113,6 +117,7 @@ export default class {
     }, false);
 
     this.question.addButton('show-solution', decode(l10n.showSolutionLabel), () => {
+      this.questionWrapper.parentNode.classList.remove('empty');
       this.question.hideButton('show-solution');
       this.speechEventStore.trigger('show-solution');
     }, false);
@@ -125,6 +130,7 @@ export default class {
    * @param {string} feedbackText Text telling the user that he has succeeded
    */
   answeredCorrectly(feedbackText) {
+    this.questionWrapper.parentNode.classList.add('empty');
     this.question.setFeedback(decode(feedbackText), 1, 1);
     this.question.hideButton('try-again');
     this.question.hideButton('show-solution');
@@ -138,6 +144,7 @@ export default class {
    * @param {String} feedbackText Text telling user that he gave the wrong answer
    */
   answeredWrong(feedbackText) {
+    this.questionWrapper.parentNode.classList.add('empty');
     this.question.setFeedback(decode(feedbackText), 0, 1);
     this.question.showButton('try-again');
     this.question.showButton('show-solution');

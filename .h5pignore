@@ -11,3 +11,4 @@ package.json
 README.md
 LICENSE.md
 CONTRIBUTION.md
+crowdin.yml

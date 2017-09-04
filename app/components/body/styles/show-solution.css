@@ -6,3 +6,32 @@
 .h5p-speak-the-words-correct-answer-text {
   margin: 1em 0;
 }
+
+.h5p-speak-the-words-correct-answer,
+.h5p-speak-the-words-interpreted-answer {
+  display: inline-block;
+  padding: 0.15em 0.65em;
+  margin: 0 0.25em;
+  border-radius: 0.25em;
+}
+
+.h5p-speak-the-words-interpreted-answer {
+  background-color: #f7d0d0;
+  color: #b71c1c;
+}
+
+.h5p-speak-the-words-correct-answer {
+  border: 0.1em #77b395 dotted;
+  background-color: #E4F4EC;
+}
+
+.h5p-speak-the-words-interpreted-answer:after {
+  font-family: 'H5PFontAwesome4';
+  position: relative;
+  right: 0.1em;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 0.75em;
+  content: "\f00d";
+  color: #b71c1c;
+}

@@ -6,13 +6,7 @@
 .h5p-speak-the-words-record.h5p-disabled,
 .h5p-speak-the-words-record.h5p-disabled:active,
 .h5p-speak-the-words-record.h5p-disabled:hover,
-.h5p-speak-the-words-record.h5p-disabled:focus {
-  background-color: lightgrey;
-  cursor: default;
-  box-shadow: none;
-  outline: none;
-}
-
+.h5p-speak-the-words-record.h5p-disabled:focus,
 .h5p-speak-the-words-record.h5p-hidden,
 .h5p-speak-the-words-record.h5p-hidden:active,
 .h5p-speak-the-words-record.h5p-hidden:hover,
@@ -24,7 +18,7 @@
 .h5p-speak-the-words-record.h5p-listening:hover,
 .h5p-speak-the-words-record.h5p-listening:active,
 .h5p-speak-the-words-record.h5p-listening:focus {
-  background-color: red;
+  background-color: #dd2e2e;
   box-shadow: none;
 }
 

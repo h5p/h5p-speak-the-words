@@ -1,7 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
+var nodeEnv = process.env.NODE_ENV || 'development';
+var isDev = (nodeEnv !== 'production');
+
+var config = {
   entry: {
     dist: './app/entries/dist.js'
   },
@@ -22,10 +25,11 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
-    })
-  ]
+  }
 };
+
+if (isDev) {
+  config.devtool = 'inline-source-map';
+}
+
+module.exports = config;
