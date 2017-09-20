@@ -18,14 +18,11 @@ export default class SpeechEngine {
    *  A central event store that all events are channeled through
    */
   constructor(params, eventStore) {
+    this.params = params;
     this.eventStore = eventStore;
     this.annyang = window.annyang;
     this.listening = false;
     this.commands = this.getCommands(params.acceptedAnswers);
-
-    if (params.inputLanguage) {
-      this.annyang.setLanguage(params.inputLanguage);
-    }
 
     this.eventStore.on('start-listening', () => {
       this.init();
@@ -42,6 +39,9 @@ export default class SpeechEngine {
    * commands and callbacks.
    */
   init() {
+    if (this.params.inputLanguage) {
+      this.annyang.setLanguage(this.params.inputLanguage);
+    }
     this.listening = true;
     this.annyang.addCallback('resultNoMatch', this.answeredWrong.bind(this));
     this.annyang.addCommands(this.commands);
@@ -56,7 +56,7 @@ export default class SpeechEngine {
   destroy() {
     this.listening = false;
     this.annyang.removeCallback('resultNoMatch', this.answeredWrong.bind(this));
-    this.annyang.removeCommands(this.commands);
+    this.annyang.removeCommands();
     this.annyang.abort();
   }
 

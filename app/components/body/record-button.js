@@ -28,7 +28,8 @@ export default class RecordButton extends React.Component {
     this.initialState = {
       listening: false,
       processingSound: false,
-      disabled: false
+      disabled: false,
+      hidden: false
     };
     this.state = this.initialState;
     this.initSpeechEngineListeners();
@@ -60,7 +61,7 @@ export default class RecordButton extends React.Component {
     this.eventStore.trigger('stop-listening');
     this.setState({
       hidden: true
-    })
+    });
   }
 
   /**
@@ -112,6 +113,7 @@ export default class RecordButton extends React.Component {
    */
   initSpeechEngineListeners() {
     this.eventStore.on('reset-task', this.resetState.bind(this));
+    this.eventStore.on('show-solution', this.hideButton.bind(this));
     this.eventStore.on('answered-correctly', this.hideButton.bind(this));
     this.eventStore.on('answered-wrong', this.disableButton.bind(this));
   }

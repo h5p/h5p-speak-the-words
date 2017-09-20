@@ -21,6 +21,8 @@ export default class {
    * @property {SpeakTheWordsTranslations} l10n Translation strings
    * @property {string} question Question text
    * @property {Array} acceptedAnswers All accepted spoken answers as specified by the author
+   * @property {string} incorrectAnswerText Text for saying the an answer was incorrect
+   * @property {string} correctAnswerText Text labeling the correct answers
    * @property {string} inputLanguage Language that input is expected as
    */
 
@@ -28,7 +30,6 @@ export default class {
    * @typedef {Object} SpeakTheWordsTranslations
    *
    * @property {string} correctAnswerText Text for saying the an answer was correct
-   * @property {string} incorrectAnswerText Text for saying the an answer was incorrect
    * @property {string} retryLabel Label for 'retry'-button
    * @property {string} showSolutionLabel Label for 'show solution'-button
    * @property {Array} acceptedAnswers Accepted answers by the speech engine
@@ -39,7 +40,6 @@ export default class {
    * @property {string} unsupportedBrowserDetails
    * Text with complementary details for unsupported browsers
    * @property {string} userAnswersText Text labeling the users answers
-   * @property {string} correctAnswersText Text labeling the correct answers
    */
 
   /**
@@ -53,6 +53,8 @@ export default class {
     params.acceptedAnswers = params.acceptedAnswers.map(decode);
     this.params = params;
     this.question = question;
+    this.hasAnswered = false;
+    this.score = 0;
 
     // Skip rendering components if speech engine does not exist
     if (!window.annyang) {
@@ -77,8 +79,8 @@ export default class {
     ), this.questionWrapper);
 
     this.speechEngine = new SpeechEngine(params, this.speechEventStore);
-    this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, params.l10n.correctAnswerText));
-    this.speechEventStore.on('answered-wrong', this.answeredWrong.bind(this, params.l10n.incorrectAnswerText));
+    this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, params.correctAnswerText));
+    this.speechEventStore.on('answered-wrong', this.answeredWrong.bind(this, params.incorrectAnswerText));
   }
 
   /**
@@ -109,17 +111,11 @@ export default class {
    */
   createButtonBar(l10n) {
     this.question.addButton('try-again', decode(l10n.retryLabel), () => {
-      this.questionWrapper.parentNode.classList.remove('empty');
-      this.question.hideButton('try-again');
-      this.question.hideButton('show-solution');
-      this.question.setFeedback('', 0, 1);
-      this.speechEventStore.trigger('reset-task');
+      this.resetTask();
     }, false);
 
     this.question.addButton('show-solution', decode(l10n.showSolutionLabel), () => {
-      this.questionWrapper.parentNode.classList.remove('empty');
-      this.question.hideButton('show-solution');
-      this.speechEventStore.trigger('show-solution');
+      this.showSolutions();
     }, false);
   }
 
@@ -131,10 +127,15 @@ export default class {
    */
   answeredCorrectly(feedbackText) {
     this.questionWrapper.parentNode.classList.add('empty');
+    if (this.questionWrapper.parentNode.parentNode) {
+      this.questionWrapper.parentNode.parentNode.classList.add('answered');
+    }
     this.question.setFeedback(decode(feedbackText), 1, 1);
     this.question.hideButton('try-again');
     this.question.hideButton('show-solution');
     this.question.triggerXAPIScored(1, 1, 'answered', true, true);
+    this.hasAnswered = true;
+    this.score = 1;
   }
 
   /**
@@ -145,10 +146,15 @@ export default class {
    */
   answeredWrong(feedbackText) {
     this.questionWrapper.parentNode.classList.add('empty');
+    if (this.questionWrapper.parentNode.parentNode) {
+      this.questionWrapper.parentNode.parentNode.classList.add('answered');
+    }
     this.question.setFeedback(decode(feedbackText), 0, 1);
     this.question.showButton('try-again');
     this.question.showButton('show-solution');
     this.question.triggerXAPIScored(0, 1, 'answered', true, false);
+    this.hasAnswered = true;
+    this.score = 0;
   }
 
   /**
@@ -178,5 +184,28 @@ export default class {
 
     this.question.setIntroduction(this.introduction);
     this.question.setContent(this.questionWrapper);
+  }
+
+  resetTask() {
+    this.questionWrapper.parentNode.classList.remove('empty');
+    if (this.questionWrapper.parentNode.parentNode) {
+      this.questionWrapper.parentNode.parentNode.classList.remove('answered', 'showing-solution');
+    }
+    this.question.hideButton('try-again');
+    this.question.hideButton('show-solution');
+    this.question.removeFeedback();
+    this.speechEventStore.trigger('reset-task');
+    this.hasAnswered = false;
+    this.score = 0;
+    this.question.trigger('reset-task');
+  }
+
+  showSolutions() {
+    this.questionWrapper.parentNode.classList.remove('empty');
+    if (this.questionWrapper.parentNode.parentNode) {
+      this.questionWrapper.parentNode.parentNode.classList.add('showing-solution');
+    }
+    this.question.hideButton('show-solution');
+    this.speechEventStore.trigger('show-solution');
   }
 }

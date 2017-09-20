@@ -34,7 +34,10 @@ export default class ShowSolution extends React.Component {
       this.setState({showSolution: true});
     });
     props.eventStore.on('reset-task', () => {
-      this.setState({showSolution: false});
+      this.setState({
+        showSolution: false,
+        userAnswers: []
+      });
     });
     props.eventStore.on('answered-wrong', (e) => {
       this.setState({userAnswers: e.data});

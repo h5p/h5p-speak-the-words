@@ -17,13 +17,25 @@
     }
   },
   {
+    "name": "incorrectAnswerText",
+    "label": "Incorrect answer text",
+    "type": "text",
+    "default": "Incorrect answer"
+  },
+  {
+    "name": "correctAnswerText",
+    "label": "Correct answer text",
+    "type": "text",
+    "default": "Correct answer"
+  },
+  {
     "name": "inputLanguage",
     "label": "Language of speech input",
     "type": "select",
     "options": [
       {
         "label": "Afrikaans",
-        "value": "af"
+        "value": "af-ZA"
       },
       {
         "label": "Amharic",
@@ -99,7 +111,7 @@
       },
       {
         "label": "Basque",
-        "value": "eu"
+        "value": "eu-ES"
       },
       {
         "label": "Bengali (Bangladesh)",
@@ -114,12 +126,8 @@
         "value": "bg-BG"
       },
       {
-        "label": "Bulgarian",
-        "value": "bg"
-      },
-      {
         "label": "Catalan",
-        "value": "ca"
+        "value": "ca-ES"
       },
       {
         "label": "Central Khmer",
@@ -147,7 +155,7 @@
       },
       {
         "label": "Czech",
-        "value": "cs"
+        "value": "cs-CZ"
       },
       {
         "label": "Danish",
@@ -211,7 +219,7 @@
       },
       {
         "label": "Finnish",
-        "value": "fi"
+        "value": "fi-FI"
       },
       {
         "label": "French",
@@ -220,10 +228,6 @@
       {
         "label": "Galician",
         "value": "gl-ES"
-      },
-      {
-        "label": "Galician",
-        "value": "gl"
       },
       {
         "label": "Georgian",
@@ -259,7 +263,7 @@
       },
       {
         "label": "Indonesian",
-        "value": "id"
+        "value": "id-ID"
       },
       {
         "label": "Italian",
@@ -323,7 +327,7 @@
       },
       {
         "label": "Norwegian",
-        "value": "no-NO"
+        "value": "nb-NO"
       },
       {
         "label": "Pig Latin",
@@ -578,18 +582,6 @@
         "label": "Body text to display if browser does not support speech recognition",
         "type": "text",
         "default": "Please try again in a browser like Chrome"
-      },
-      {
-        "name": "incorrectAnswerText",
-        "label": "Incorrect answer text",
-        "type": "text",
-        "default": "Incorrect answer"
-      },
-      {
-        "name": "correctAnswerText",
-        "label": "Correct answer text",
-        "type": "text",
-        "default": "Correct answer"
       }
     ]
   }
