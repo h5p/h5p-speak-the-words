@@ -34,7 +34,7 @@ export default class SpeechEngine {
 
     this.eventStore.on('stop-all-media', () => {
       this.destroy();
-    })
+    });
   }
 
   /**

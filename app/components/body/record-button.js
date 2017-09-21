@@ -38,7 +38,7 @@ export default class RecordButton extends React.Component {
       this.setState({
         listening: false
       });
-    })
+    });
   }
 
   /**
@@ -57,7 +57,7 @@ export default class RecordButton extends React.Component {
       listening: false,
       processingSound: false,
       disabled: true
-    })
+    });
   }
 
   /**
