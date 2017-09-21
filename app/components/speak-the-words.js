@@ -186,6 +186,9 @@ export default class {
     this.question.setContent(this.questionWrapper);
   }
 
+  /**
+   * Resets question.
+   */
   resetTask() {
     this.questionWrapper.parentNode.classList.remove('empty');
     if (this.questionWrapper.parentNode.parentNode) {
@@ -200,6 +203,9 @@ export default class {
     this.question.trigger('reset-task');
   }
 
+  /**
+   * Show solutions
+   */
   showSolutions() {
     this.questionWrapper.parentNode.classList.remove('empty');
     if (this.questionWrapper.parentNode.parentNode) {
@@ -207,5 +213,27 @@ export default class {
     }
     this.question.hideButton('show-solution');
     this.speechEventStore.trigger('show-solution');
+  }
+
+  /**
+   * Force stop listening for voice input.
+   */
+  stopListening() {
+    this.speechEventStore.trigger('stop-all-media');
+  }
+
+  /**
+   * Get current score.
+   */
+  getScore() {
+    return this.score;
+  }
+
+  /**
+   * Check if question is answered.
+   * @returns {boolean}
+   */
+  isQuestionAnswered() {
+    return this.hasAnswered;
   }
 }

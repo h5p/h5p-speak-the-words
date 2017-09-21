@@ -526,8 +526,9 @@
   },
   {
     "name": "l10n",
-    "label": "Labels and texts",
+    "label": "Speak The Words labels and texts",
     "type": "group",
+    "common": true,
     "fields": [
       {
         "name": "retryLabel",

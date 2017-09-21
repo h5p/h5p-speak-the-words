@@ -33,6 +33,12 @@ export default class RecordButton extends React.Component {
     };
     this.state = this.initialState;
     this.initSpeechEngineListeners();
+
+    this.eventStore.on('stop-all-media', () => {
+      this.setState({
+        listening: false
+      });
+    })
   }
 
   /**

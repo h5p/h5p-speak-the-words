@@ -32,6 +32,9 @@ export default class SpeechEngine {
       this.destroy();
     });
 
+    this.eventStore.on('stop-all-media', () => {
+      this.destroy();
+    })
   }
 
   /**
