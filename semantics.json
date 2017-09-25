@@ -3,7 +3,7 @@
     "name": "question",
     "label": "Describe task",
     "type": "text",
-    "placeholder": "How do you say \"Yes\" in Spanish?"
+    "placeholder": "How do you say 'Yes' in Spanish?"
   },
   {
     "name": "acceptedAnswers",
