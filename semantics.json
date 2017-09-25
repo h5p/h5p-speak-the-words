@@ -3,7 +3,7 @@
     "name": "question",
     "label": "Describe task",
     "type": "text",
-    "default": "Speak the answer. What is 2 + 2 ?"
+    "placeholder": "How do you say \"Yes\" in Spanish?"
   },
   {
     "name": "acceptedAnswers",
