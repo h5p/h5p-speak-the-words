@@ -2,8 +2,8 @@
   "title": "Speak the Words",
   "description": "A task where you have to answer a question using speech",
   "majorVersion": 1,
-  "minorVersion": 2,
-  "patchVersion": 1,
+  "minorVersion": 3,
+  "patchVersion": 0,
   "runnable": 1,
   "author": "Thomasmars",
   "license": "MIT",
@@ -20,7 +20,7 @@
     {
       "machineName": "H5P.Question",
       "majorVersion": 1,
-      "minorVersion": 3
+      "minorVersion": 4
     },
     {
       "machineName": "FontAwesome",
