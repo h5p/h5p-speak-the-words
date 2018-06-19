@@ -1,17 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Show Solution should be hidden initially 1`] = `
 <div
-  className="h5p-speak-the-words-solution-area hidden">
+  className="h5p-speak-the-words-solution-area hidden"
+>
   <div
-    className="h5p-speak-the-words-correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text"
+  >
     <div>
       Correct
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Dart
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Vader
     </div>
   </div>
@@ -20,18 +26,22 @@ exports[`Show Solution should be hidden initially 1`] = `
 
 exports[`Show Solution should be shown on show solution event 1`] = `
 <div
-  className="h5p-speak-the-words-solution-area">
+  className="h5p-speak-the-words-solution-area"
+>
   <div
-    className="h5p-speak-the-words-correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text"
+  >
     <div>
       Correct
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Dart
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Vader
     </div>
   </div>
@@ -40,32 +50,39 @@ exports[`Show Solution should be shown on show solution event 1`] = `
 
 exports[`Show Solution should contain user answers when specified 1`] = `
 <div
-  className="h5p-speak-the-words-solution-area">
+  className="h5p-speak-the-words-solution-area"
+>
   <div
-    className="h5p-speak-the-words-user-answer-text">
+    className="h5p-speak-the-words-user-answer-text"
+  >
     <div>
       User answers
     </div>
     <div
-      className="h5p-speak-the-words-interpreted-answer">
+      className="h5p-speak-the-words-interpreted-answer"
+    >
       Luke
     </div>
     <div
-      className="h5p-speak-the-words-interpreted-answer">
+      className="h5p-speak-the-words-interpreted-answer"
+    >
       SkyWalker
     </div>
   </div>
   <div
-    className="h5p-speak-the-words-correct-answer-text">
+    className="h5p-speak-the-words-correct-answer-text"
+  >
     <div>
       Correct
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Dart
     </div>
     <div
-      className="h5p-speak-the-words-correct-answer">
+      className="h5p-speak-the-words-correct-answer"
+    >
       Vader
     </div>
   </div>

@@ -56,6 +56,9 @@ export default class {
     this.hasAnswered = false;
     this.score = 0;
 
+    // Set question to empty string if undefined
+    this.params.question = this.params.question || '';
+
     // Skip rendering components if speech engine does not exist
     if (!window.annyang) {
       return;

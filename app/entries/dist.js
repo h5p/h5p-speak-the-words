@@ -14,7 +14,7 @@ H5P.SpeakTheWords = (function (Question) {
    * @param contentId
    * @constructor
    */
-  function WrapperClass(params, contentId) {
+  function WrapperClass(params) {
     Question.call(this, 'speak-the-words');
     const speakTheWords = new SpeakTheWords(params, this);
 
@@ -63,7 +63,7 @@ H5P.SpeakTheWords = (function (Question) {
      */
     this.stop = () => {
       speakTheWords.stopListening();
-    }
+    };
   }
 
   // Inheritance
