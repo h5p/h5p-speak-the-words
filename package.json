@@ -22,9 +22,9 @@
   "license": "MIT",
   "devDependencies": {
     "annyang": "^2.4.0",
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.26.3",
     "babel-jest": "^17.0.0",
-    "babel-loader": "^6.2.4",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-destructuring": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-polyfill": "^6.9.1",
@@ -32,11 +32,11 @@
     "babel-preset-react": "^6.5.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.25.0",
-    "jest-cli": "^17.0.0",
+    "jest-cli": "^23.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-test-renderer": "^15.4.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0"
+    "webpack": "^3.5.5"
   },
   "dependencies": {
     "he": "^1.1.1",
