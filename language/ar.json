@@ -1,0 +1,434 @@
+{
+  "semantics": [
+    {
+      "label": "وصف المهمة",
+      "placeholder": "How do you say 'Yes' in Spanish?"
+    },
+    {
+      "label": "الإجابات المقبولة",
+      "field": {
+        "label": "الاجابة المقبولة"
+      }
+    },
+    {
+      "label": "Incorrect answer text",
+      "default": "Incorrect answer"
+    },
+    {
+      "label": "نص الإجابة الصحيحة",
+      "default": "Correct answer"
+    },
+    {
+      "label": "ادخال لغة الكلام",
+      "options": [
+        {
+          "label": "الافريقانية"
+        },
+        {
+          "label": "الامهرية"
+        },
+        {
+          "label": "عربية ( الجزائر)"
+        },
+        {
+          "label": "عربية ( البحرين)"
+        },
+        {
+          "label": "عربية (مصر )"
+        },
+        {
+          "label": " عربية ( العراق )"
+        },
+        {
+          "label": "عربية ( الاردن )"
+        },
+        {
+          "label": "عربية ( الكويت )"
+        },
+        {
+          "label": "عربية ( لبنان)"
+        },
+        {
+          "label": "عربية ( ليبيا)"
+        },
+        {
+          "label": "عربية ( المغرب )"
+        },
+        {
+          "label": "عربية ( عمان )"
+        },
+        {
+          "label": "عربية ( قطر )"
+        },
+        {
+          "label": "عربية ( السعودية )"
+        },
+        {
+          "label": "عربية ( تونس )"
+        },
+        {
+          "label": "عربية ( الامارات العربية المتحدة )"
+        },
+        {
+          "label": "عربية ( اليمن )"
+        },
+        {
+          "label": "الارمينية"
+        },
+        {
+          "label": "أذربيجانية"
+        },
+        {
+          "label": "الباسكية"
+        },
+        {
+          "label": "البنغالية ( بنغلادش )"
+        },
+        {
+          "label": "البنغالية ( الهند)"
+        },
+        {
+          "label": "البلغارية"
+        },
+        {
+          "label": "الكاتالونية"
+        },
+        {
+          "label": "الخميرية"
+        },
+        {
+          "label": "الصينية ، الماندرين (التقليدية ، تايوان)"
+        },
+        {
+          "label": "الصينية والكانتونية (التقليدية ، وهونغ كونغ)"
+        },
+        {
+          "label": "الصينية ، الماندرين (المبسطة ، الصين)"
+        },
+        {
+          "label": "الصينية ، الماندرين (المبسطة ، هونغ كونغ)"
+        },
+        {
+          "label": "الكرواتية"
+        },
+        {
+          "label": " التشيكوسلوفاكية"
+        },
+        {
+          "label": " الدانمركية"
+        },
+        {
+          "label": "هولندية"
+        },
+        {
+          "label": "الإنجليزية (أستراليا)"
+        },
+        {
+          "label": "الإنجليزية (كندا)"
+        },
+        {
+          "label": "الإنجليزية (غانا)"
+        },
+        {
+          "label": "الإنجليزية (الهند)"
+        },
+        {
+          "label": "الإنجليزية (كينيا)"
+        },
+        {
+          "label": "الإنجليزية (نيوزيلندا)"
+        },
+        {
+          "label": "الإنجليزية (نيجيريا)"
+        },
+        {
+          "label": "الإنجليزية (الفلبين)"
+        },
+        {
+          "label": "الإنجليزية (جنوب إفريقيا)"
+        },
+        {
+          "label": "الإنجليزية (تنزانيا)"
+        },
+        {
+          "label": "الانكليزية ( المملكة المتحدة)"
+        },
+        {
+          "label": "الانجليزية (الولايات المتحدة)"
+        },
+        {
+          "label": "الفلبينية"
+        },
+        {
+          "label": " الفنلندية"
+        },
+        {
+          "label": "الفرنسية"
+        },
+        {
+          "label": "الجاليكية"
+        },
+        {
+          "label": "الجورجية"
+        },
+        {
+          "label": "الالمانية"
+        },
+        {
+          "label": " اليونانية"
+        },
+        {
+          "label": "الغوجاراتية"
+        },
+        {
+          "label": " العبرية"
+        },
+        {
+          "label": "الهندية (الهند)"
+        },
+        {
+          "label": "الهنغارية"
+        },
+        {
+          "label": "أيسلندية"
+        },
+        {
+          "label": "الأندونيسية"
+        },
+        {
+          "label": "الإيطالية"
+        },
+        {
+          "label": "الايطالية (سويسرا)"
+        },
+        {
+          "label": "اليابانية"
+        },
+        {
+          "label": "الجاوية"
+        },
+        {
+          "label": "الكانادية"
+        },
+        {
+          "label": "الكورية"
+        },
+        {
+          "label": "اللاوية"
+        },
+        {
+          "label": "اللاتينية"
+        },
+        {
+          "label": "اللاتفية"
+        },
+        {
+          "label": "اللتوانية"
+        },
+        {
+          "label": "المالايالامية"
+        },
+        {
+          "label": "الماليزية"
+        },
+        {
+          "label": "الماندرين الصينية"
+        },
+        {
+          "label": "المهاراتية"
+        },
+        {
+          "label": "النيبالية"
+        },
+        {
+          "label": "النرويجية"
+        },
+        {
+          "label": "البغلاتينية"
+        },
+        {
+          "label": "البولندية"
+        },
+        {
+          "label": "البرتغالية"
+        },
+        {
+          "label": "البرتغالية (البرازيل)."
+        },
+        {
+          "label": "رومانية"
+        },
+        {
+          "label": "الروسية"
+        },
+        {
+          "label": "الصربية"
+        },
+        {
+          "label": "السنهالية"
+        },
+        {
+          "label": "السلوفاكية"
+        },
+        {
+          "label": " السلوفينية"
+        },
+        {
+          "label": "الاسبانية (الارجنتين)"
+        },
+        {
+          "label": "الاسبانية (بوليفيا)"
+        },
+        {
+          "label": "الاسبانية (تشيلي)"
+        },
+        {
+          "label": "إسباني (كولومبيا)"
+        },
+        {
+          "label": "الأسبانية (كوستاريكا)"
+        },
+        {
+          "label": "Spanish (Dominican Republic)"
+        },
+        {
+          "label": "Spanish (Ecuador)"
+        },
+        {
+          "label": "Spanish (El Salvador)"
+        },
+        {
+          "label": "Spanish (Guatemala)"
+        },
+        {
+          "label": "Spanish (Honduras)"
+        },
+        {
+          "label": "Spanish (Mexico)"
+        },
+        {
+          "label": "Spanish (Nicaragua)"
+        },
+        {
+          "label": "Spanish (Panama)"
+        },
+        {
+          "label": "Spanish (Paraguay)"
+        },
+        {
+          "label": "Spanish (Peru)"
+        },
+        {
+          "label": "Spanish (Puerto Rico)"
+        },
+        {
+          "label": "Spanish (Spain)"
+        },
+        {
+          "label": "Spanish (US)"
+        },
+        {
+          "label": "Spanish (Uruguay)"
+        },
+        {
+          "label": "Spanish (Venezuela)"
+        },
+        {
+          "label": "Sundanese"
+        },
+        {
+          "label": "Swahili (Kenya)"
+        },
+        {
+          "label": "Swahili (Tanzania)"
+        },
+        {
+          "label": "Swedish"
+        },
+        {
+          "label": "Tamil (India)"
+        },
+        {
+          "label": "Tamil (Malaysia)"
+        },
+        {
+          "label": "Tamil (Singapore)"
+        },
+        {
+          "label": "Tamil (Sri Lanka)"
+        },
+        {
+          "label": "Telugu"
+        },
+        {
+          "label": "Thai (Thailand)"
+        },
+        {
+          "label": "Traditional Taiwan"
+        },
+        {
+          "label": "Turkish"
+        },
+        {
+          "label": "Ukrainian (Ukraine)"
+        },
+        {
+          "label": "Urdu (India)"
+        },
+        {
+          "label": "Urdu (Pakistan)"
+        },
+        {
+          "label": "Vietnamese"
+        },
+        {
+          "label": "Yue Chinese (Traditional Hong Kong)"
+        },
+        {
+          "label": "Zulu"
+        }
+      ]
+    },
+    {
+      "label": "Speak The Words labels and texts",
+      "fields": [
+        {
+          "label": "\"Retry\"-button label",
+          "default": "Retry"
+        },
+        {
+          "label": "\"Show solution\"-button label",
+          "default": "Show solution"
+        },
+        {
+          "label": "\"Speak\"-button label",
+          "default": "Push to speak"
+        },
+        {
+          "label": "\"Speak\"-button label when listening",
+          "default": "Listening..."
+        },
+        {
+          "label": "Text preceding the correct answers in solution mode",
+          "default": "The correct answer(s):"
+        },
+        {
+          "label": "Text telling the user what his answer was interpreted as",
+          "default": "Your answer(s) was interpreted as:"
+        },
+        {
+          "label": "Text to display when no sound was registered from user",
+          "default": "I could not hear you, make sure your microphone is enabled"
+        },
+        {
+          "label": "Header text to display if browser does not support speech recognition",
+          "default": "It looks like your browser does not support speech recognition"
+        },
+        {
+          "label": "Body text to display if browser does not support speech recognition",
+          "default": "Please try again in a browser like Chrome"
+        }
+      ]
+    }
+  ]
+}
