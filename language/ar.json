@@ -289,143 +289,143 @@
           "label": "الأسبانية (كوستاريكا)"
         },
         {
-          "label": "Spanish (Dominican Republic)"
+          "label": "الأسبانية (الجمهورية الدومينيكية)"
         },
         {
-          "label": "Spanish (Ecuador)"
+          "label": "الاسبانية (الاكوادور)"
         },
         {
-          "label": "Spanish (El Salvador)"
+          "label": "الإسبانية (السلفادور)"
         },
         {
-          "label": "Spanish (Guatemala)"
+          "label": "الاسبانية (غواتيمالا)"
         },
         {
-          "label": "Spanish (Honduras)"
+          "label": "إسباني (هندوراس)"
         },
         {
-          "label": "Spanish (Mexico)"
+          "label": "الاسبانية (المكسيك)"
         },
         {
-          "label": "Spanish (Nicaragua)"
+          "label": "الاسبانية (نيكاراغوا)"
         },
         {
-          "label": "Spanish (Panama)"
+          "label": "الاسبانية (بنما)"
         },
         {
-          "label": "Spanish (Paraguay)"
+          "label": "الاسبانية (باراغواي)"
         },
         {
-          "label": "Spanish (Peru)"
+          "label": "الاسبانية (بيرو)"
         },
         {
-          "label": "Spanish (Puerto Rico)"
+          "label": "الاسبانية (بورتوريكو)"
         },
         {
-          "label": "Spanish (Spain)"
+          "label": "الاسبانية (اسبانيا)"
         },
         {
-          "label": "Spanish (US)"
+          "label": "الأسبانية (الولايات المتحدة)"
         },
         {
-          "label": "Spanish (Uruguay)"
+          "label": "الإسبانية (أوروغواي)"
         },
         {
-          "label": "Spanish (Venezuela)"
+          "label": "الاسبانية (فنزويلا)"
         },
         {
-          "label": "Sundanese"
+          "label": "السودانية"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "السواحلية (كينيا)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "السواحلية (تنزانيا)"
         },
         {
-          "label": "Swedish"
+          "label": " السويدية"
         },
         {
-          "label": "Tamil (India)"
+          "label": "التاميلية (الهند)"
         },
         {
-          "label": "Tamil (Malaysia)"
+          "label": "التاميلية (ماليزيا)"
         },
         {
-          "label": "Tamil (Singapore)"
+          "label": "التاميلية (سنغافورة)"
         },
         {
-          "label": "Tamil (Sri Lanka)"
+          "label": "التاميلية (سري لانكا)"
         },
         {
-          "label": "Telugu"
+          "label": "التيلجو"
         },
         {
-          "label": "Thai (Thailand)"
+          "label": "التايلاندية (تايلاند)"
         },
         {
-          "label": "Traditional Taiwan"
+          "label": "تايوان التقليدية"
         },
         {
-          "label": "Turkish"
+          "label": "التركية"
         },
         {
-          "label": "Ukrainian (Ukraine)"
+          "label": "الأوكرانية (أوكرانيا)"
         },
         {
-          "label": "Urdu (India)"
+          "label": "الأردية (الهند)"
         },
         {
-          "label": "Urdu (Pakistan)"
+          "label": "الأردية (باكستان)"
         },
         {
-          "label": "Vietnamese"
+          "label": "الفيتنامية"
         },
         {
-          "label": "Yue Chinese (Traditional Hong Kong)"
+          "label": "يوي الصينية (هونج كونج التقليدية)"
         },
         {
-          "label": "Zulu"
+          "label": "الزولو"
         }
       ]
     },
     {
-      "label": "Speak The Words labels and texts",
+      "label": "تحدث الكلمات تسميات ونصوص",
       "fields": [
         {
-          "label": "\"Retry\"-button label",
+          "label": "لافتة زر \" اعادة المحاولة\"",
           "default": "Retry"
         },
         {
-          "label": "\"Show solution\"-button label",
+          "label": "لافتة زر \" اظهر الحل\"",
           "default": "Show solution"
         },
         {
-          "label": "\"Speak\"-button label",
+          "label": "لافتة زر \" تحدث \"",
           "default": "Push to speak"
         },
         {
-          "label": "\"Speak\"-button label when listening",
+          "label": "لافتة الزر \"تكلم \" عند الاستماع",
           "default": "Listening..."
         },
         {
-          "label": "Text preceding the correct answers in solution mode",
+          "label": "نص يسبق الإجابات الصحيحة في وضع الحل",
           "default": "The correct answer(s):"
         },
         {
-          "label": "Text telling the user what his answer was interpreted as",
+          "label": "نص يخبر المستخدمبأبنه تم تفسير إجابته على النحو :",
           "default": "Your answer(s) was interpreted as:"
         },
         {
-          "label": "Text to display when no sound was registered from user",
+          "label": "النص الذي يتم عرضه عند عدم تسجيل أي صوت من المستخدم",
           "default": "I could not hear you, make sure your microphone is enabled"
         },
         {
-          "label": "Header text to display if browser does not support speech recognition",
+          "label": "نص ترويسة يتم عرضه إذا كان المستعرض لا يدعم التعرف على الكلام",
           "default": "It looks like your browser does not support speech recognition"
         },
         {
-          "label": "Body text to display if browser does not support speech recognition",
+          "label": "نص أساسي يتم عرضه إذا كان المستعرض لا يدعم التعرف على الكلام",
           "default": "Please try again in a browser like Chrome"
         }
       ]
