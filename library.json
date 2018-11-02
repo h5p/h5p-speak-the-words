@@ -3,7 +3,7 @@
   "description": "A task where you have to answer a question using speech",
   "majorVersion": 1,
   "minorVersion": 3,
-  "patchVersion": 0,
+  "patchVersion": 2,
   "runnable": 1,
   "author": "Thomasmars",
   "license": "MIT",
