@@ -1,25 +1,25 @@
 {
   "semantics": [
     {
-      "label": "Describe task",
-      "placeholder": "How do you say 'Yes' in Spanish?"
+      "label": "Mô tả nhiệm vụ",
+      "placeholder": "Bạn nói từ 'Vâng' trong tiếng Anh như thế nào?"
     },
     {
-      "label": "Accepted answers",
+      "label": "Câu trả lời được chấp nhận",
       "field": {
-        "label": "Accepted answer"
+        "label": "Câu trả lời được chấp nhận"
       }
     },
     {
-      "label": "Incorrect answer text",
-      "default": "Incorrect answer"
+      "label": "Câu trả lời sai",
+      "default": "Câu trả lời sai"
     },
     {
-      "label": "Correct answer text",
-      "default": "Correct answer"
+      "label": "Câu trả lời đúng",
+      "default": "Câu trả lời đúng"
     },
     {
-      "label": "Language of speech input",
+      "label": "Ngôn ngữ đầu vào bằng giọng nói",
       "options": [
         {
           "label": "Afrikaans"
@@ -390,43 +390,43 @@
       ]
     },
     {
-      "label": "Speak The Words labels and texts",
+      "label": "Nhãn và văn bản Luyện nói Các Từ",
       "fields": [
         {
-          "label": "\"Retry\"-button label",
-          "default": "Retry"
+          "label": "\"Thử lại\"-nhãn nút",
+          "default": "Thử lại"
         },
         {
-          "label": "\"Show solution\"-button label",
-          "default": "Show solution"
+          "label": "\"Hiển thị lời giải\"-nhãn nút ",
+          "default": "Hiển thị lời giải"
         },
         {
-          "label": "\"Speak\"-button label",
-          "default": "Push to speak"
+          "label": "\"Nói\"-nhãn nút",
+          "default": "Nhấn để nói"
         },
         {
-          "label": "\"Speak\"-button label when listening",
-          "default": "Listening..."
+          "label": "\"Nói \"-nhãn nút khi đang nghe ",
+          "default": "Đang nghe..."
         },
         {
-          "label": "Text preceding the correct answers in solution mode",
-          "default": "The correct answer(s):"
+          "label": "Văn bản trước câu trả lời đúng trong chế độ lời giải",
+          "default": "Câu trả lời đúng:"
         },
         {
-          "label": "Text telling the user what his answer was interpreted as",
-          "default": "Your answer(s) was interpreted as:"
+          "label": "Văn bản cho người dùng biết câu trả lời của anh ta được hiểu là",
+          "default": "Câu trả lời của bạn đã được hiểu là:"
         },
         {
-          "label": "Text to display when no sound was registered from user",
-          "default": "I could not hear you, make sure your microphone is enabled"
+          "label": "Văn bản để hiển thị khi không có âm thanh được ghi nhận từ người dùng",
+          "default": "Tôi không thể nghe thấy bạn, đảm bảo micrô của bạn được bật"
         },
         {
-          "label": "Header text to display if browser does not support speech recognition",
-          "default": "It looks like your browser does not support speech recognition"
+          "label": "Văn bản tiêu đề để hiển thị nếu trình duyệt không hỗ trợ nhận dạng giọng nói",
+          "default": "Có vẻ như trình duyệt của bạn không hỗ trợ nhận dạng giọng nói"
         },
         {
-          "label": "Body text to display if browser does not support speech recognition",
-          "default": "Please try again in a browser like Chrome"
+          "label": "Nội dung để hiển thị nếu trình duyệt không hỗ trợ nhận dạng giọng nói",
+          "default": "Vui lòng thử lại trong trình duyệt như Chrome"
         }
       ]
     }

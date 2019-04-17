@@ -1,25 +1,25 @@
 {
   "semantics": [
     {
-      "label": "Describe task",
-      "placeholder": "How do you say 'Yes' in Spanish?"
+      "label": "Kirjelda ülesanne",
+      "placeholder": "Kuidas sa ütled 'jah' Hispaania keeles?"
     },
     {
-      "label": "Accepted answers",
+      "label": "Aktsepteeritud vastused",
       "field": {
-        "label": "Accepted answer"
+        "label": "Aktsepteeritud vastus"
       }
     },
     {
-      "label": "Incorrect answer text",
-      "default": "Incorrect answer"
+      "label": "Vale vastuse tekst",
+      "default": "Vale vastus"
     },
     {
-      "label": "Correct answer text",
-      "default": "Correct answer"
+      "label": "Õige vastuse tekst",
+      "default": "Õige vastus"
     },
     {
-      "label": "Language of speech input",
+      "label": "Kõnesisendi keel",
       "options": [
         {
           "label": "Afrikaans"
@@ -390,43 +390,43 @@
       ]
     },
     {
-      "label": "Speak The Words labels and texts",
+      "label": "Räägi sildid ja tekstid",
       "fields": [
         {
-          "label": "\"Retry\"-button label",
-          "default": "Retry"
+          "label": "\"Proovi uuesti\"-nupu silt",
+          "default": "Proovi uuesti"
         },
         {
-          "label": "\"Show solution\"-button label",
-          "default": "Show solution"
+          "label": "\"Näita lahendust\"-nupu silt",
+          "default": "Näita lahendust"
         },
         {
-          "label": "\"Speak\"-button label",
-          "default": "Push to speak"
+          "label": "\"Räägi\"-nupu silt",
+          "default": "Rääkimiseks vajuta"
         },
         {
-          "label": "\"Speak\"-button label when listening",
-          "default": "Listening..."
+          "label": "\"Räägi\"-nupu silt kuulamise ajal",
+          "default": "Kuulab..."
         },
         {
-          "label": "Text preceding the correct answers in solution mode",
-          "default": "The correct answer(s):"
+          "label": "Õigetele vastustele eelnev tekst lahendusmoodis",
+          "default": "Õige(d) vastus(ed):"
         },
         {
-          "label": "Text telling the user what his answer was interpreted as",
-          "default": "Your answer(s) was interpreted as:"
+          "label": "Tekst, mis ütleb kasutajale, et tema vastust tõlgendati nagu",
+          "default": "Sinu vastust/vastuseid tõlgendati:"
         },
         {
-          "label": "Text to display when no sound was registered from user",
-          "default": "I could not hear you, make sure your microphone is enabled"
+          "label": "Tekst, mida näidatakse, kui kasutajalt ei täheldatud helisisendit",
+          "default": "Ma ei kuulnud sind - pakun kontrolli, et mikrofon on lubatud"
         },
         {
-          "label": "Header text to display if browser does not support speech recognition",
-          "default": "It looks like your browser does not support speech recognition"
+          "label": "Päisetekst, mida näidatakse, kui brauser ei toeta kõnetuvastust",
+          "default": "Näib, et su brauser ei toeta kõnetuvastust"
         },
         {
-          "label": "Body text to display if browser does not support speech recognition",
-          "default": "Please try again in a browser like Chrome"
+          "label": "Tekst, mida näidatakse, kui brauser ei toeta kõnetuvastust",
+          "default": "Palun proovi uuesti teise brauseriga (näiteks Chrome)"
         }
       ]
     }

@@ -1,25 +1,25 @@
 {
   "semantics": [
     {
-      "label": "Describe task",
-      "placeholder": "How do you say 'Yes' in Spanish?"
+      "label": "Опишите задачу",
+      "placeholder": "Как сказать 'Да' на Испанском?"
     },
     {
-      "label": "Accepted answers",
+      "label": "Принятые ответы",
       "field": {
-        "label": "Accepted answer"
+        "label": "Ответ принят"
       }
     },
     {
-      "label": "Incorrect answer text",
-      "default": "Incorrect answer"
+      "label": "Текст неправильного ответа",
+      "default": "Неправильный ответ"
     },
     {
-      "label": "Correct answer text",
-      "default": "Correct answer"
+      "label": "Текст правильного ответа",
+      "default": "Правильный ответ"
     },
     {
-      "label": "Language of speech input",
+      "label": "Язык голосового ввода",
       "options": [
         {
           "label": "Afrikaans"
@@ -390,43 +390,43 @@
       ]
     },
     {
-      "label": "Speak The Words labels and texts",
+      "label": "Произношение слов, надписи и тексты",
       "fields": [
         {
-          "label": "\"Retry\"-button label",
-          "default": "Retry"
+          "label": "Надпись кнопки \"Повторить\"",
+          "default": "Повторить"
         },
         {
-          "label": "\"Show solution\"-button label",
-          "default": "Show solution"
+          "label": "Надпись кнопки \"Показать ответ\"",
+          "default": "Показать ответ"
         },
         {
-          "label": "\"Speak\"-button label",
-          "default": "Push to speak"
+          "label": "Надпись кнопки \"Сказать\"",
+          "default": "Нажмите чтобы сказать"
         },
         {
-          "label": "\"Speak\"-button label when listening",
-          "default": "Listening..."
+          "label": "Надпись кнопки \"Сказать\" при прослушивании",
+          "default": "Прослушивание ..."
         },
         {
-          "label": "Text preceding the correct answers in solution mode",
-          "default": "The correct answer(s):"
+          "label": "Текст, предшествующий правильным ответам в режиме решения",
+          "default": "Правильный ответ (ы):"
         },
         {
-          "label": "Text telling the user what his answer was interpreted as",
-          "default": "Your answer(s) was interpreted as:"
+          "label": "Текст, сообщающий пользователю, что его ответ был интерпретирован как",
+          "default": "Ваш ответ был интерпретирован как:"
         },
         {
-          "label": "Text to display when no sound was registered from user",
-          "default": "I could not hear you, make sure your microphone is enabled"
+          "label": "Отображаемый текст, когда звук от пользователя не был зафиксирован",
+          "default": "Я вас не услышал, убедитесь, что ваш микрофон включен"
         },
         {
-          "label": "Header text to display if browser does not support speech recognition",
-          "default": "It looks like your browser does not support speech recognition"
+          "label": "Отбражаемый текст заголовка, если браузер не поддерживает распознавание речи",
+          "default": "Похоже, ваш браузер не поддерживает распознавание речи"
         },
         {
-          "label": "Body text to display if browser does not support speech recognition",
-          "default": "Please try again in a browser like Chrome"
+          "label": "Основной текст для отображения, если браузер не поддерживает распознавание речи",
+          "default": "Пожалуйста, попробуйте еще раз в браузере, как Chrome"
         }
       ]
     }
