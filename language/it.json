@@ -40,7 +40,7 @@
           "label": "Arabo (Iraq)"
         },
         {
-          "label": "Arabo (Giodania)"
+          "label": "Arabo (Giordania)"
         },
         {
           "label": "Arabo (Kuwait)"
@@ -67,7 +67,7 @@
           "label": "Arabo (Tunisia)"
         },
         {
-          "label": "Arabo (Emirati Arabi Uniti)"
+          "label": "Arabo (Emirati Arabi)"
         },
         {
           "label": "Arabo (Yemen)"
@@ -151,10 +151,10 @@
           "label": "Inglese (Tanzania)"
         },
         {
-          "label": "Inglese (UK)"
+          "label": "Inglese (GB)"
         },
         {
-          "label": "Inglese (US)"
+          "label": "Inglese (USA)"
         },
         {
           "label": "Tagalog"
@@ -361,7 +361,7 @@
           "label": "Telugu"
         },
         {
-          "label": "Thailandese (Tailandia)"
+          "label": "Thailandese (Thailandia)"
         },
         {
           "label": "Taiwanese tradizionale"
@@ -382,7 +382,7 @@
           "label": "Vietnamita"
         },
         {
-          "label": "Cantonese, dialetto Yue (Hong Kong, tradizionale)"
+          "label": "Yue Cantonese (Hong Kong, tradizionale)"
         },
         {
           "label": "Zulu"
@@ -417,7 +417,7 @@
           "default": "La/e tua/e risposta/e è/sono stata/e interpretata/e come:"
         },
         {
-          "label": "Testo da mostrare quando nessun suono è stato registrato",
+          "label": "Testo da mostrare quando non è stato registrato niente",
           "default": "Non sono riuscito a sentirti. Assicurati che il tuo microfono sia abilitato"
         },
         {
