@@ -394,39 +394,39 @@
       "fields": [
         {
           "label": "\"Retry\"-button label",
-          "default": "Retry"
+          "default": "Prøv igjen"
         },
         {
           "label": "\"Show solution\"-button label",
-          "default": "Show solution"
+          "default": "Vis løysing"
         },
         {
           "label": "\"Speak\"-button label",
-          "default": "Push to speak"
+          "default": "Trykk for å snakke"
         },
         {
           "label": "\"Speak\"-button label when listening",
-          "default": "Listening..."
+          "default": "Høyrer..."
         },
         {
           "label": "Text preceding the correct answers in solution mode",
-          "default": "The correct answer(s):"
+          "default": "Det rette svaret/svara:"
         },
         {
           "label": "Text telling the user what his answer was interpreted as",
-          "default": "Your answer(s) was interpreted as:"
+          "default": "Svaret ditt/svara dine blei tolka som:"
         },
         {
           "label": "Text to display when no sound was registered from user",
-          "default": "I could not hear you, make sure your microphone is enabled"
+          "default": "Eg kunne ikkje høyre deg, pass på at mikrofonen din er slått på"
         },
         {
           "label": "Header text to display if browser does not support speech recognition",
-          "default": "It looks like your browser does not support speech recognition"
+          "default": "Det ser ut som om nettlesaren din ikkje støttar talegjenkjenning."
         },
         {
           "label": "Body text to display if browser does not support speech recognition",
-          "default": "Please try again in a browser like Chrome"
+          "default": "Prøv igjen med ein nettlesar som Chrome"
         }
       ]
     }
