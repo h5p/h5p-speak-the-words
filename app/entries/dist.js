@@ -52,7 +52,7 @@ H5P.SpeakTheWords = (function (Question) {
       speakTheWords.question.hideButton('try-again');
 
       if (!speakTheWords.isQuestionAnswered()) {
-        this.setFeedback(decode(params.l10n.incorrectAnswerText), 0, 1);
+        this.setFeedback(decode(params.incorrectAnswerText), 0, 1);
       }
     };
 
