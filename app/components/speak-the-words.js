@@ -285,7 +285,7 @@ export default class {
   getXAPIAnswerEvent(wrapper) {
     const xAPIEvent = this.createXAPIEvent('answered', wrapper);
 
-    xAPIEvent.setScoredResult(this.getScore(), this.getMaxScore(), this,
+    xAPIEvent.setScoredResult(this.getScore(), this.getMaxScore(), wrapper,
       true, this.getScore() === this.getMaxScore());
 
     return xAPIEvent;
