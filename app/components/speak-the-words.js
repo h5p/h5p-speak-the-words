@@ -56,6 +56,14 @@ export default class {
     this.hasAnswered = false;
     this.score = 0;
 
+    params = {
+      l10n: {
+        a11yShowSolution: 'Show Solution',
+        a11yRetry: 'Retry',
+        ...params.l10n,
+      },
+      ...params,
+    };
     // Set question to empty string if undefined
     this.params.question = this.params.question || '';
 
@@ -115,11 +123,15 @@ export default class {
   createButtonBar(l10n) {
     this.question.addButton('try-again', decode(l10n.retryLabel), () => {
       this.resetTask();
-    }, false);
+    }, false, {
+      'aria-label': l10n.a11yRetry,
+    });
 
     this.question.addButton('show-solution', decode(l10n.showSolutionLabel), () => {
       this.showSolutions();
-    }, false);
+    }, false, {
+      'aria-label': l10n.a11yShowSolution,
+    });
   }
 
   /**

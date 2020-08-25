@@ -427,6 +427,14 @@
         {
           "label": "Основен текст, който се показва в случай, че браузърът не поддържа разпознаване на реч",
           "default": "Моля, опитай отново с браузър като Chrome."
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     }

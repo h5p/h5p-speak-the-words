@@ -427,6 +427,14 @@
         {
           "label": "Text der Meldung, wenn der Browser Spracherkennung nicht unterstützt",
           "default": "Probiere es bitte erneut in einem Browser wie Google Chrome"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     }

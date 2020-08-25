@@ -427,6 +427,14 @@
         {
           "label": "Besedilo vsebine sporočila, če brskalnik ne podpira prepoznavanja govora",
           "default": "Predlagam uporabo brskalnika Chrome."
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     }
