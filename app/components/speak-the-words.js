@@ -57,12 +57,12 @@ export default class {
     this.score = 0;
 
     params = {
+      ...params,
       l10n: {
         a11yShowSolution: 'Show Solution',
         a11yRetry: 'Retry',
         ...params.l10n,
       },
-      ...params,
     };
     // Set question to empty string if undefined
     this.params.question = this.params.question || '';
