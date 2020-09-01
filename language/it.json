@@ -427,6 +427,14 @@
         {
           "label": "Corpo del testo da mostrare se il browser non supporta il riconoscimento vocale",
           "default": "Prova di nuovo usando un browser come Chrome"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     }

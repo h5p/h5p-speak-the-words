@@ -427,6 +427,14 @@
         {
           "label": "Kappaleteksti joka näytetään kun käyttäjän selain ei tue äänentunnistusta",
           "default": "Ole hyvä ja kokeile esimerkiksi Chrome-selaimella"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show Solution"
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry"
         }
       ]
     }
