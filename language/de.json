@@ -429,12 +429,12 @@
           "default": "Probiere es bitte erneut in einem Browser wie Google Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Beschreibung des \"Lösung anzeigen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
+          "default": "Die Lösung anzeigen."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Beschreibung des \"Wiederholen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
+          "default": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
         }
       ]
     }
