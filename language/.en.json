@@ -1,25 +1,25 @@
 {
   "semantics": [
     {
-      "label": "Describe task",
-      "placeholder": "How do you say 'Yes' in Spanish?"
+      "label": "과제 설명",
+      "placeholder": "스페인어로 '예'를 어떻게 말하나요?"
     },
     {
-      "label": "Accepted answers",
+      "label": "정확한 답변",
       "field": {
-        "label": "Accepted answer"
+        "label": "정확한 답변"
       }
     },
     {
-      "label": "Incorrect answer text",
-      "default": "Incorrect answer"
+      "label": "부정확한 답변",
+      "default": "부정확한 답변"
     },
     {
-      "label": "Correct answer text",
-      "default": "Correct answer"
+      "label": "정답 텍스트",
+      "default": "정답"
     },
     {
-      "label": "Language of speech input",
+      "label": "언어 입력",
       "options": [
         {
           "label": "Afrikaans"
@@ -390,51 +390,52 @@
       ]
     },
     {
-      "label": "Speak The Words labels and texts",
+      "label": "단어말하기 활동 라벨 및 텍스트",
       "fields": [
         {
-          "label": "\"Retry\"-button label",
-          "default": "Retry"
+          "label": "\"Retry\" 버튼 라벨",
+          "default": "재시도"
         },
         {
-          "label": "\"Show solution\"-button label",
-          "default": "Show solution"
+          "label": "\"Show solution\" 버튼 라벨",
+          "default": "해답 보이기"
         },
         {
-          "label": "\"Speak\"-button label",
-          "default": "Push to speak"
+          "label": "\"Speak\" 버튼 라벨",
+          "default": "눌러서 말하세요."
         },
         {
-          "label": "\"Speak\"-button label when listening",
-          "default": "Listening..."
+          "label": " 듣기 중 \"Speak\" 버튼 라벨",
+          "default": "듣기 중.."
         },
         {
-          "label": "Text preceding the correct answers in solution mode",
-          "default": "The correct answer(s):"
+          "label": "솔루션 모드에서 정답 앞에 있는 텍스트",
+          "default": "정답:"
         },
         {
-          "label": "Text telling the user what his answer was interpreted as",
-          "default": "Your answer(s) was interpreted as:"
+          "label": "사용자에게 자신의 답변이 무엇으로 해석되었는지 알려주는 텍스트",
+          "default": "당신의 대답은 다음과 같이 해석되었다:"
         },
         {
-          "label": "Text to display when no sound was registered from user",
-          "default": "I could not hear you, make sure your microphone is enabled"
+          "label": "사용자로부터 소리가 등록되지 않았을 때 표시할 텍스트",
+          "default": "소리를 듣지 못습니다. 마이크가 활성화되어 있는지 확인하십시오."
         },
         {
-          "label": "Header text to display if browser does not support speech recognition",
-          "default": "It looks like your browser does not support speech recognition"
+          "label": "브라우저가 음성 인식을 지원하지 않을 경우 표시할 머리글 텍스트",
+          "default": "브라우저가 음성 인식을 지원하지 않는 것 같습니다."
         },
         {
-          "label": "Body text to display if browser does not support speech recognition",
-          "default": "Please try again in a browser like Chrome"
+          "label": "브라우저가 음성 인식을 지원하지 않는 경우 표시할 본문 텍스트",
+          "default": "크롬과 같은 브라우저에서 다시 시도하십시오"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "\"Show Solution\" 버튼에 대한 보조 기술 설명",
+          "default": "해답 보이기. 올바른 해답과 함께 표기될 것입니다."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+         "label": "\"Retry\" 버튼에 대한 보조 기술 설명",
+          "default": "재시도하세요. 모든 답변을 초기화하고 새로 시도하세요."
+
         }
       ]
     }
