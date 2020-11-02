@@ -427,6 +427,14 @@
         {
           "label": "Text der Meldung, wenn der Browser Spracherkennung nicht unterstützt",
           "default": "Probiere es bitte erneut in einem Browser wie Google Chrome"
+        },
+        {
+          "label": "Beschreibung des \"Lösung anzeigen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
+          "default": "Die Lösung anzeigen."
+        },
+        {
+          "label": "Beschreibung des \"Wiederholen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
+          "default": "Die Aufgabe wiederholen. Alle Versuche werden zurückgesetzt und die Aufgabe wird erneut gestartet."
         }
       ]
     }

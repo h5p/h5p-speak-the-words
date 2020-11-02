@@ -583,6 +583,20 @@
         "label": "Body text to display if browser does not support speech recognition",
         "type": "text",
         "default": "Please try again in a browser like Chrome"
+      },
+      {
+        "name": "a11yShowSolution",
+        "type": "text",
+        "label": "Assistive technology description for \"Show Solution\" button",
+        "default": "Show the solution. The task will be marked with its correct solution.",
+        "importance": "low"
+      },
+      {
+        "name": "a11yRetry",
+        "type": "text",
+        "label": "Assistive technology description for \"Retry\" button",
+        "default": "Retry the task. Reset all responses and start the task over again.",
+        "importance": "low"
       }
     ]
   }

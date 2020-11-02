@@ -427,6 +427,14 @@
         {
           "label": "Corpo del testo da mostrare se il browser non supporta il riconoscimento vocale",
           "default": "Prova di nuovo usando un browser come Chrome"
+        },
+        {
+          "label": "Descrizione delle tecnologie assistive per il pulsante \"Mostra soluzione\"",
+          "default": "Mostra soluzione"
+        },
+        {
+          "label": "Descrizione delle tecnologie assistive per il pulsante \"Riprova\"",
+          "default": "Riprova"
         }
       ]
     }

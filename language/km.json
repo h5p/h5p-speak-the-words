@@ -1,25 +1,25 @@
 {
   "semantics": [
     {
-      "label": "Опишете задачата",
-      "placeholder": "Как казвате 'Да' на български?"
+      "label": "Describe task",
+      "placeholder": "How do you say 'Yes' in Spanish?"
     },
     {
-      "label": "Приети отговори",
+      "label": "Accepted answers",
       "field": {
-        "label": "Приет отговор"
+        "label": "Accepted answer"
       }
     },
     {
-      "label": "Текст за съобщение за грешен отговор",
-      "default": "Грешен отговор"
+      "label": "Incorrect answer text",
+      "default": "ចម្លើយមិនត្រឹមត្រូវ"
     },
     {
-      "label": "Текст за съобщение за верен отговор",
-      "default": "Верен отговор"
+      "label": "Correct answer text",
+      "default": "ចម្លើយត្រឹមត្រូវ"
     },
     {
-      "label": "Език на въвеждане на говор",
+      "label": "Language of speech input",
       "options": [
         {
           "label": "Afrikaans"
@@ -390,43 +390,43 @@
       ]
     },
     {
-      "label": "Етикети и текстове",
+      "label": "Speak The Words labels and texts",
       "fields": [
         {
-          "label": "Бутон \"Опитай пак\"",
-          "default": "Опитай пак"
+          "label": "\"Retry\"-button label",
+          "default": "សាកម្តងទៀត"
         },
         {
-          "label": "Бутон \"Покажи решение\"",
-          "default": "Покажи решение"
+          "label": "\"Show solution\"-button label",
+          "default": "បង្ហាញចម្លើយត្រឹមត្រូវ"
         },
         {
-          "label": "Бутон \"Говори\"",
-          "default": "Натисни, за да говориш"
+          "label": "\"Speak\"-button label",
+          "default": "ចុចដើម្បីនិយាយ"
         },
         {
-          "label": "Бутон \"Говори\" със слушане",
-          "default": "Слушане..."
+          "label": "\"Speak\"-button label when listening",
+          "default": "កំពុងស្តាប់..."
         },
         {
-          "label": "Текст, който предхожда верния отговор в режим покажи решение",
-          "default": "Верният отговор:"
+          "label": "Text preceding the correct answers in solution mode",
+          "default": "ចម្លើយត្រឹមត្រូវគឺ:"
         },
         {
-          "label": "Текст, който съобщава на ученика, че отговора е интерпретиран като",
-          "default": "Вашият отговор е интерпретиран като:"
+          "label": "Text telling the user what his answer was interpreted as",
+          "default": "ចម្លើយរបស់អ្នកគឺ:"
         },
         {
-          "label": "Текстът се показва, когато не е регистриран звук от ученика",
-          "default": "Не мога да те чуя, провери дали микрофона е включен."
+          "label": "Text to display when no sound was registered from user",
+          "default": "ខ្ញុំស្តាប់អ្នកមិនបានទេ។ សូមប្រាកដថាឧបករណ៍ថតសម្លេងរបស់អ្នកបានបើក។"
         },
         {
-          "label": "Заглавен текст, който се показва, когато браузерът не поддържа разпознаване на реч",
-          "default": "Най-вероятно браузерът не поддържа разпознаване на реч."
+          "label": "Header text to display if browser does not support speech recognition",
+          "default": "កម្មវិធីបើកវេបសាយរបស់អ្នកមិនអាចប្រើមុខងារសម្គាល់សម្លេងបានទេ។"
         },
         {
-          "label": "Основен текст, който се показва в случай, че браузърът не поддържа разпознаване на реч",
-          "default": "Моля, опитай отново с браузър като Chrome."
+          "label": "Body text to display if browser does not support speech recognition",
+          "default": "សូមព្យាយាមម្តងទៀតដោយប្រើកម្មវិធីបើកវេបសាយដូចជា Chrome"
         },
         {
           "label": "Assistive technology description for \"Show Solution\" button",

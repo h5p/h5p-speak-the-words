@@ -427,6 +427,14 @@
         {
           "label": "Nội dung để hiển thị nếu trình duyệt không hỗ trợ nhận dạng giọng nói",
           "default": "Vui lòng thử lại trong trình duyệt như Chrome"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show the solution. The task will be marked with its correct solution."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     }

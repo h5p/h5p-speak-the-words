@@ -427,6 +427,14 @@
         {
           "label": "Texto del cuerpo a mostrar si el navegador no soporta reconocimiento del habla",
           "default": "Por favor inténtelo nuevamente en otro navegador como por ejemplo Chrome"
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show the solution. The task will be marked with its correct solution."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     }
