@@ -59,8 +59,8 @@ export default class {
     params = {
       ...params,
       l10n: {
-        a11yShowSolution: 'Show Solution',
-        a11yRetry: 'Retry',
+        a11yShowSolution: 'Show the solution. The task will be marked with its correct solution.',
+        a11yRetry: 'Retry the task. Reset all responses and start the task over again.',
         ...params.l10n,
       },
     };
