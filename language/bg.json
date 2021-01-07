@@ -429,12 +429,12 @@
           "default": "Моля, опитай отново с браузър като Chrome."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Етикет за помощни технологии бутон \"Покажи решението\" ",
+          "default": "Покажи решението. Задачата ще бъде показана с правилното решение."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Етикет за помощни технологии бутон \"Опитай пак\" ",
+          "default": "Опитай задачата отново. Изчистване на всички отговори и започване на задачата отначало."
         }
       ]
     }
