@@ -429,12 +429,12 @@
           "default": "Por favor inténtelo nuevamente en otro navegador como por ejemplo Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\" ",
+          "default": "Mostrar la solución. El trabajo será marcado con su solución correcta."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Descripción de tecnología asistiva para botón \"Reintentar\" ",
+          "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
         }
       ]
     }
