@@ -67,6 +67,9 @@ export default class {
     // Set question to empty string if undefined
     this.params.question = this.params.question || '';
 
+    // Set media
+    this.params.media = this.params.media || {};
+
     // Skip rendering components if speech engine does not exist
     if (!window.annyang) {
       return;
@@ -195,6 +198,29 @@ export default class {
 
       this.question.setIntroduction(errorElement);
       return;
+    }
+
+    // Register optional media
+    let media = this.params.media;
+    if (media && media.type && media.type.library) {
+      media = media.type;
+      const type = media.library.split(' ')[0];
+      if (type === 'H5P.Image') {
+        if (media.params.file) {
+          // Register task image
+          this.question.setImage(media.params.file.path, {
+            disableImageZooming: this.params.media.disableImageZooming || false,
+            alt: media.params.alt,
+            title: media.params.title
+          });
+        }
+      }
+      else if (type === 'H5P.Video') {
+        if (media.params.sources) {
+          // Register task video
+          this.question.setVideo(media);
+        }
+      }
     }
 
     this.question.setIntroduction(this.introduction);
