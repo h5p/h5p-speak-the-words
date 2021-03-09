@@ -429,12 +429,12 @@
           "default": "Zkuste to prosím znovu v prohlížeči, jako je Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Popisek podpůrné technologie pro tlačítko \"Zobrazit řešení\"",
+          "default": "Zobrazit řešení. Úkol bude zobrazen se správným řešením."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Popisek podpůrné technologie pro tlačítko \"Opakovat\"",
+          "default": "Zopakovat úkol. Resetovat všechny odpovědi a spustit úlohu znovu."
         }
       ]
     }
