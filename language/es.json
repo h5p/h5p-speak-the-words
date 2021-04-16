@@ -1,8 +1,8 @@
 {
   "semantics": [
     {
-      "label": "Describir tarea",
-      "placeholder": "¿Cómo dice 'Si' en Español?"
+      "label": "Describir trabajo",
+      "placeholder": "¿Cómo dice 'Yes' en Español?"
     },
     {
       "label": "Respuestas aceptadas",
@@ -19,10 +19,10 @@
       "default": "Respuesta correcta"
     },
     {
-      "label": "Idioma de ingreso de habla",
+      "label": "Idioma de ingreso de voz",
       "options": [
         {
-          "label": "Afrikaans"
+          "label": "Afrikáans"
         },
         {
           "label": "Amhárico"
@@ -76,7 +76,7 @@
           "label": "Armenio"
         },
         {
-          "label": "Azerbaijani"
+          "label": "Azerbaiyano"
         },
         {
           "label": "Vasco"
@@ -208,7 +208,7 @@
           "label": "Javanés"
         },
         {
-          "label": "Kannada"
+          "label": "Canarés (kannada)"
         },
         {
           "label": "Coreano"
@@ -226,7 +226,7 @@
           "label": "Lithuano"
         },
         {
-          "label": "Malayalam"
+          "label": "Malabar (Malayalam)"
         },
         {
           "label": "Malayo"
@@ -235,7 +235,7 @@
           "label": "Chino Mandarín"
         },
         {
-          "label": "Marathi"
+          "label": "Maratí"
         },
         {
           "label": "Nepalés"
@@ -289,7 +289,7 @@
           "label": "Español (Costa Rica)"
         },
         {
-          "label": "Español (Dominican Republic)"
+          "label": "Español (República Dominicana)"
         },
         {
           "label": "Español (Ecuador)"
@@ -340,7 +340,7 @@
           "label": "Swahili (Kenia)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Suajili (Tanzania)"
         },
         {
           "label": "Sueco"
@@ -358,7 +358,7 @@
           "label": "Tamil (Sri Lanka)"
         },
         {
-          "label": "Telugu"
+          "label": "Télugu"
         },
         {
           "label": "Thailandés (Thailandia)"
@@ -382,15 +382,15 @@
           "label": "Vietnamés"
         },
         {
-          "label": "Chino Yue  (Tradicional Hong Kong)"
+          "label": "Chino Yue (Tradicional Hong Kong)"
         },
         {
-          "label": "Zulu"
+          "label": "Zulú"
         }
       ]
     },
     {
-      "label": "Etiquetas y textos para Pronuncie las palabras",
+      "label": "Etiquetas y textos para Pronuncie Las Palabras",
       "fields": [
         {
           "label": "\"Reintentar\"-etiqueta del botón",
@@ -418,7 +418,7 @@
         },
         {
           "label": "Texto a mostrar cuando no fue registrado sonido alguno del usuario",
-          "default": "No te pude oir, asegúrate de que tu micrófono esté habilitado"
+          "default": "No te pude oír, asegúrate de que tu micrófono esté habilitado"
         },
         {
           "label": "Texto del encabezado a mostrar si el navegador no soporta reconocimiento del habla",
@@ -429,11 +429,11 @@
           "default": "Por favor inténtelo nuevamente en otro navegador como por ejemplo Chrome"
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\" ",
-          "default": "Mostrar la solución. El trabajo será marcado con su solución correcta."
+          "label": "Descripción de tecnología asistiva para botón \"Mostrar Solución\"",
+          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Reintentar\" ",
+          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
           "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
         }
       ]

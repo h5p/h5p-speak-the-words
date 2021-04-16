@@ -1,7 +1,7 @@
 {
   "semantics": [
     {
-      "label": "Descriu la tasca.",
+      "label": "Descriu la tasca",
       "placeholder": "Com es diu \"Sí\" en espanyol?"
     },
     {
@@ -418,15 +418,15 @@
         },
         {
           "label": "Text per mostrar quan no es grava so de l’usuari",
-          "default": "No us sento. Comproveu que el micròfon estigui activat."
+          "default": "No us sento. Comproveu que el micròfon estigui activat"
         },
         {
           "label": "Text d’encapçalament a mostrar si el navegador no admet el reconeixement de veu",
-          "default": "Sembla que el navegador no admet el reconeixement de veu."
+          "default": "Sembla que el navegador no admet el reconeixement de veu"
         },
         {
           "label": "Text per indicar que el navegador no admet el reconeixement de veu",
-          "default": "Torneu-ho a provar en un navegador com ara Chrome."
+          "default": "Torneu-ho a provar en un navegador com ara Chrome"
         },
         {
           "label": "Descripció de la tecnologia d’assistència per al botó \"Mostra la solució\"",
