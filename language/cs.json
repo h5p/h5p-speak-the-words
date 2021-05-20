@@ -2,7 +2,7 @@
   "semantics": [
     {
       "label": "Popište úlohu",
-      "placeholder": "Jak řeknete 'Ano' ve španělštině?"
+      "placeholder": "Jak řeknete \"Ano\" ve španělštině?"
     },
     {
       "label": "Přijaté odpovědi",
@@ -12,7 +12,7 @@
     },
     {
       "label": "Text Nesprávná odpověď",
-      "default": "Nesprávná odpověďr"
+      "default": "Nesprávná odpověď"
     },
     {
       "label": "Text Správná odpověď",
@@ -393,19 +393,19 @@
       "label": "Popisky a texty Namluvte slova",
       "fields": [
         {
-          "label": "Popisek tlačítka \"Opakovat\"-",
+          "label": "Popisek tlačítka \"Opakovat\"",
           "default": "Opakovat"
         },
         {
-          "label": "Popisek tlačítka \"Zobrazit řešení\"-",
+          "label": "Popisek tlačítka \"Zobrazit řešení\"",
           "default": "Zobrazit řešení"
         },
         {
-          "label": "Popisek tlačítka \"Mluvit\"-",
+          "label": "Popisek tlačítka \"Mluvit\"",
           "default": "Stiskněte pro namluvení"
         },
         {
-          "label": "Popisek tlačítka Při poslechu \"Poslouchejte\" ",
+          "label": "Popisek tlačítka při poslechu \"Poslouchejte\"",
           "default": "Poslouchání..."
         },
         {
