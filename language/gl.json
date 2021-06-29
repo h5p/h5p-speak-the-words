@@ -1,94 +1,82 @@
 {
   "semantics": [
     {
-      "label": "Media",
-      "fields": [
-        {
-          "label": "Type",
-          "description": "Optional media to display above the question."
-        },
-        {
-          "label": "Disable image zooming"
-        }
-      ]
+      "label": "Describe a tarefa",
+      "placeholder": "Como se di ola en español?"
     },
     {
-      "label": "Describir trabajo",
-      "placeholder": "¿Cómo dice 'Yes' en Español?"
-    },
-    {
-      "label": "Respuestas aceptadas",
+      "label": "Respostas aceptadas",
       "field": {
-        "label": "Respuesta aceptada"
+        "label": "Resposta aceptada"
       }
     },
     {
-      "label": "Texto de respuesta incorrecta",
-      "default": "Respuesta incorrecta"
+      "label": "Texto para resposta incorrecta",
+      "default": "Resposta incorrecta"
     },
     {
-      "label": "Texto de respuesta correcta",
-      "default": "Respuesta correcta"
+      "label": "Texto para resposta correcta",
+      "default": "Resposta correcta"
     },
     {
-      "label": "Idioma de ingreso de voz",
+      "label": "Idioma da entrada de texto falado",
       "options": [
         {
-          "label": "Afrikáans"
+          "label": "Afrikaans"
         },
         {
-          "label": "Amhárico"
+          "label": "Amharic"
         },
         {
-          "label": "Arábico (Algeria)"
+          "label": "Árabe (Alxer)"
         },
         {
-          "label": "Arábico (Bahrain)"
+          "label": "Árabe (Bahrain)"
         },
         {
-          "label": "Arábico (Egipto)"
+          "label": "Árabe (Exipto)"
         },
         {
-          "label": "Arábico (Iraq)"
+          "label": "Árabe (Iraq)"
         },
         {
-          "label": "Arábico (Jordán)"
+          "label": "Árabe (Xordania)"
         },
         {
-          "label": "Arábico (Kuwait)"
+          "label": "Árabe (Kuwait)"
         },
         {
-          "label": "Arábico (Líbano)"
+          "label": "Árabe (Líbano)"
         },
         {
-          "label": "Arábico (Libia)"
+          "label": "Árabe (Libia)"
         },
         {
-          "label": "Arábico (Marruecos)"
+          "label": "Árabe (Marrocos)"
         },
         {
-          "label": "Arábico (Omán)"
+          "label": "Árabe (Omán)"
         },
         {
-          "label": "Arábico (Qatar)"
+          "label": "Árabe (Qatar)"
         },
         {
-          "label": "Arábico (Arabia Saudita)"
+          "label": "Árabe (Arabia Saudí)"
         },
         {
-          "label": "Arábico (Tunisia)"
+          "label": "Árabe (Tunes)"
         },
         {
-          "label": "Arábico (UAE)"
+          "label": "Árabe (UAE)"
         },
         {
-          "label": "Arábico (Yemen)"
+          "label": "Árabe (Yemen)"
         },
         {
           "label": "Armenio"
         },
         {
-          "label": "Azerbaiyano"
+          "label": "Azerbaijani"
         },
         {
           "label": "Vasco"
@@ -106,19 +94,19 @@
           "label": "Catalán"
         },
         {
-          "label": "Khmer Central"
+          "label": "Khmer central"
         },
         {
-          "label": "Chino, Mandarín (Tradicional, Taiwan)"
+          "label": "Chinés, Mandarin (Tradicional, Taiwan)"
         },
         {
-          "label": "Chino, Cantonés (Tradicional, Hong Kong)"
+          "label": "Chinés, Cantonés (Tradicional, Hong Kong)"
         },
         {
-          "label": "Chino, Mandarín (Simplificado, China)"
+          "label": "Chinés, Mandarín (Simplificado, China)"
         },
         {
-          "label": "Chino, Mandarín (Simplificado, Hong Kong)"
+          "label": "Chinés, Mandarín (Simplificado, Hong Kong)"
         },
         {
           "label": "Croata"
@@ -145,52 +133,52 @@
           "label": "Inglés (India)"
         },
         {
-          "label": "Inglés (Kenia)"
+          "label": "Inglés (Kenya)"
         },
         {
-          "label": "Inglés (Nueva Zelanda)"
+          "label": "Inglés (Nova Zelanda)"
         },
         {
-          "label": "Inglés (Nigeria)"
+          "label": "Inglés (Nixeria)"
         },
         {
           "label": "Inglés (Filipinas)"
         },
         {
-          "label": "Inglés (Sud África)"
+          "label": "Inglés (Suráfrica)"
         },
         {
           "label": "Inglés (Tanzania)"
         },
         {
-          "label": "Inglés (UK)"
+          "label": "Inglés (Reino Unido)"
         },
         {
-          "label": "Inglés(US)"
+          "label": "Inglés (Estados Unidos)"
         },
         {
           "label": "Filipino"
         },
         {
-          "label": "Finlandés"
+          "label": "Finés"
         },
         {
           "label": "Francés"
         },
         {
-          "label": "Gallego"
+          "label": "Galego"
         },
         {
-          "label": "Georgiano"
+          "label": "Xeorgiano"
         },
         {
           "label": "Alemán"
         },
         {
-          "label": "Griego"
+          "label": "Grego"
         },
         {
-          "label": "Gujarati"
+          "label": "Gujaratí"
         },
         {
           "label": "Hebreo"
@@ -214,19 +202,19 @@
           "label": "Italiano (Suiza)"
         },
         {
-          "label": "Japonés"
+          "label": "Xaponés"
         },
         {
-          "label": "Javanés"
+          "label": "Xavanés"
         },
         {
-          "label": "Canarés (kannada)"
+          "label": "Kannada"
         },
         {
           "label": "Coreano"
         },
         {
-          "label": "Laosiano"
+          "label": "Lao"
         },
         {
           "label": "Latín"
@@ -235,28 +223,28 @@
           "label": "Latvio"
         },
         {
-          "label": "Lithuano"
+          "label": "Lituano"
         },
         {
-          "label": "Malabar (Malayalam)"
+          "label": "Malaio"
         },
         {
-          "label": "Malayo"
+          "label": "Malaisiano"
         },
         {
-          "label": "Chino Mandarín"
+          "label": "Chinés mandarín"
         },
         {
-          "label": "Maratí"
+          "label": "Marathi"
         },
         {
-          "label": "Nepalés"
+          "label": "Nepales"
         },
         {
           "label": "Noruego"
         },
         {
-          "label": "Latín Cerdo"
+          "label": "Latín vulgar"
         },
         {
           "label": "Polaco"
@@ -265,10 +253,10 @@
           "label": "Portugués"
         },
         {
-          "label": "Portugués (Brasil)"
+          "label": "Portugués (Brasileiro)"
         },
         {
-          "label": "Rumano"
+          "label": "Romanés"
         },
         {
           "label": "Ruso"
@@ -277,16 +265,16 @@
           "label": "Serbio"
         },
         {
-          "label": "Sinhalése"
+          "label": "Sinalés"
         },
         {
           "label": "Eslovaco"
         },
         {
-          "label": "Sloveco"
+          "label": "Esloveno"
         },
         {
-          "label": "Español (Argentina)"
+          "label": "Español (Arxentina)"
         },
         {
           "label": "Español (Bolivia)"
@@ -337,7 +325,7 @@
           "label": "Español (España)"
         },
         {
-          "label": "Español (US)"
+          "label": "Español (Estados Unidos)"
         },
         {
           "label": "Español (Uruguay)"
@@ -349,10 +337,10 @@
           "label": "Sundanés"
         },
         {
-          "label": "Swahili (Kenia)"
+          "label": "Swahili (Kenya)"
         },
         {
-          "label": "Suajili (Tanzania)"
+          "label": "Swahili (Tanzania)"
         },
         {
           "label": "Sueco"
@@ -370,19 +358,19 @@
           "label": "Tamil (Sri Lanka)"
         },
         {
-          "label": "Télugu"
+          "label": "Telugu"
         },
         {
-          "label": "Thailandés (Thailandia)"
+          "label": "Thai (Tailandia)"
         },
         {
-          "label": "Taiwanés Tradicional"
+          "label": "Taiwanés tradicional"
         },
         {
           "label": "Turco"
         },
         {
-          "label": "Ukrainiano (Ukrania)"
+          "label": "Ucraniano (Ucrania)"
         },
         {
           "label": "Urdu (India)"
@@ -391,10 +379,10 @@
           "label": "Urdu (Pakistán)"
         },
         {
-          "label": "Vietnamés"
+          "label": "Vietnamita"
         },
         {
-          "label": "Chino Yue (Tradicional Hong Kong)"
+          "label": "Chinés Yue (Hong Kong tradicional)"
         },
         {
           "label": "Zulú"
@@ -402,51 +390,51 @@
       ]
     },
     {
-      "label": "Etiquetas y textos para Pronuncie Las Palabras",
+      "label": "Etiquetas e textos para Di As Palabras",
       "fields": [
         {
-          "label": "\"Reintentar\"-etiqueta del botón",
+          "label": "\"Reintentar\"-etiqueta do botón",
           "default": "Reintentar"
         },
         {
-          "label": "\"Mostrar solución\"-etiqueta del botón",
-          "default": "Mostrar solución"
+          "label": "\"Amosar solución\"-etiqueta do botón",
+          "default": "Amosar Solución"
         },
         {
-          "label": "\"Hablar\"-etiqueta del botón",
-          "default": "Presione para hablar"
+          "label": "\"Fala\"-etiqueta do botón",
+          "default": "Preme para falar"
         },
         {
-          "label": "\"Hablar\"-etiqueta del botón al escuchar",
-          "default": "Escuchando..."
+          "label": "\"Fala\"-etiqueta do botón mentres se escoita",
+          "default": "Escoitando..."
         },
         {
-          "label": "Texto que precede las respuestas correctas en modo solución",
-          "default": "La(s) respuesta(s) correcta(s):"
+          "label": "Texto que precede ás respostas correctas en modo solución",
+          "default": "A(s) resposta(s) correcta(s):"
         },
         {
-          "label": "Texto que le dice al usuario que su respuesta fue interpretada como",
-          "default": "Su(s) respuesta(s) fue(ron) interpretada(s) como:"
+          "label": "Texto que informa ao usuario de como se interpretou a súa resposta",
+          "default": "A túa resposta interpretouse como:"
         },
         {
-          "label": "Texto a mostrar cuando no fue registrado sonido alguno del usuario",
-          "default": "No te pude oír, asegúrate de que tu micrófono esté habilitado"
+          "label": "Texto amosado cando non se rexistra son algún do usuario",
+          "default": "Non fun que de oir o que dixeches, asegúrate de que tes o micrófono encendido"
         },
         {
-          "label": "Texto del encabezado a mostrar si el navegador no soporta reconocimiento del habla",
-          "default": "Al parecer su navegador no soporta reconocimiento del habla"
+          "label": "Texto da cabeceira se o navegador non soporta recoñecemento da fala",
+          "default": "Parece que o teu navegador non soporta recoñecemento da fala"
         },
         {
-          "label": "Texto del cuerpo a mostrar si el navegador no soporta reconocimiento del habla",
-          "default": "Por favor inténtelo nuevamente en otro navegador como por ejemplo Chrome"
+          "label": "Texto do corpo amosado se o navegador non soporta recoñecemento da fala",
+          "default": "Por favor, volve a intentalo en Chrome"
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Mostrar Solución\"",
-          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
+          "label": "Descrición para as tecnoloxías de asistencia para o botón \"Amosar solución\"",
+          "default": "Amosar a solución. A tarefa marcarase coa súa solución correcta."
         },
         {
-          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
-          "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
+          "label": "Descrición para as tecnoloxías de asistencia para o botón \"Reintentar\"",
+          "default": "Reintenta a tarefa. Borra todas as respostas e comenza a tarefa de novo."
         }
       ]
     }
