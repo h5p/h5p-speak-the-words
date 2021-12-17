@@ -2,7 +2,7 @@
   "semantics": [
     {
       "label": "Опиши задатак",
-      "placeholder": "How do you say 'Yes' in Spanish?"
+      "placeholder": "Како се каже 'Да' на шпанском језику?"
     },
     {
       "label": "Прихваћени одговори",
@@ -22,16 +22,16 @@
       "label": "Језик уноса говора",
       "options": [
         {
-          "label": "Afrikaans"
+          "label": "афрички"
         },
         {
           "label": "Amharic"
         },
         {
-          "label": "Arabic (Algeria)"
+          "label": "арапски (Алжир)"
         },
         {
-          "label": "Arabic (Bahrain)"
+          "label": "арапски (Бахреин)"
         },
         {
           "label": "Arabic (Egypt)"
