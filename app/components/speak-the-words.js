@@ -221,6 +221,12 @@ export default class {
           this.question.setVideo(media);
         }
       }
+      else if (type === 'H5P.Audio') {
+        if (media.params.files) {
+          // Register task audio
+          this.question.setAudio(media);
+        }
+      }
     }
 
     this.question.setIntroduction(this.introduction);
