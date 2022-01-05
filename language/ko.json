@@ -1,6 +1,18 @@
 {
   "semantics": [
     {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Optional media to display above the question."
+        },
+        {
+          "label": "Disable image zooming"
+        }
+      ]
+    },
+    {
       "label": "과제 설명",
       "placeholder": "스페인어로 '예'를 어떻게 말하나요?"
     },
@@ -433,9 +445,8 @@
           "default": "해답 보이기. 올바른 해답과 함께 표기될 것입니다."
         },
         {
-         "label": "\"Retry\" 버튼에 대한 보조 기술 설명",
+          "label": "\"Retry\" 버튼에 대한 보조 기술 설명",
           "default": "재시도하세요. 모든 답변을 초기화하고 새로 시도하세요."
-
         }
       ]
     }
