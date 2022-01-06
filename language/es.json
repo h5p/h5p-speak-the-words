@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipo",
+          "description": "Medio opcional a mostrar arriba de la pregunta."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Deshabilitar acercamiento de imagen"
         }
       ]
     },
@@ -40,49 +40,49 @@
           "label": "Amhárico"
         },
         {
-          "label": "Arábico (Algeria)"
+          "label": "Árabe (Algeria)"
         },
         {
-          "label": "Arábico (Bahrain)"
+          "label": "Árabe (Bahrain)"
         },
         {
-          "label": "Arábico (Egipto)"
+          "label": "Árabe (Egipto)"
         },
         {
-          "label": "Arábico (Iraq)"
+          "label": "Árabe (Iraq)"
         },
         {
-          "label": "Arábico (Jordán)"
+          "label": "Árabe (Jordán)"
         },
         {
-          "label": "Arábico (Kuwait)"
+          "label": "Árabe (Kuwait)"
         },
         {
-          "label": "Arábico (Líbano)"
+          "label": "Árabe (Líbano)"
         },
         {
-          "label": "Arábico (Libia)"
+          "label": "Árabe (Libia)"
         },
         {
-          "label": "Arábico (Marruecos)"
+          "label": "Árabe (Marruecos)"
         },
         {
-          "label": "Arábico (Omán)"
+          "label": "Árabe (Omán)"
         },
         {
-          "label": "Arábico (Qatar)"
+          "label": "Árabe (Qatar)"
         },
         {
-          "label": "Arábico (Arabia Saudita)"
+          "label": "Árabe (Arabia Saudita)"
         },
         {
-          "label": "Arábico (Tunisia)"
+          "label": "Árabe (Tunisia)"
         },
         {
-          "label": "Arábico (UAE)"
+          "label": "Árabe (UAE)"
         },
         {
-          "label": "Arábico (Yemen)"
+          "label": "Árabe (Yemen)"
         },
         {
           "label": "Armenio"
@@ -283,7 +283,7 @@
           "label": "Eslovaco"
         },
         {
-          "label": "Sloveco"
+          "label": "Esloveco"
         },
         {
           "label": "Español (Argentina)"
