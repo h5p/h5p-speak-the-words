@@ -1,14 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "미디어",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "유형",
+          "description": "문항 위에 표시할 선택적 미디어"
         },
         {
-          "label": "Disable image zooming"
+          "label": "이미지 확대/축소 비활성화"
         }
       ]
     },
