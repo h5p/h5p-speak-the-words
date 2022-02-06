@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Mota",
+          "description": "Galderaren gainean bistaratzeko aukerako multimedia."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Desgaitu irudien zooma"
         }
       ]
     },
@@ -196,7 +196,7 @@
           "label": "Hebreera"
         },
         {
-          "label": "Hindi (India)"
+          "label": "Hindia (India)"
         },
         {
           "label": "Hungariera"
@@ -238,7 +238,7 @@
           "label": "Lituaniera"
         },
         {
-          "label": "Malayalam"
+          "label": "Malabarera"
         },
         {
           "label": "Malaysiera"
@@ -349,10 +349,10 @@
           "label": "Sundaniera"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Swahilia (Kenya)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Swahilia (Tanzania)"
         },
         {
           "label": "Suediera"
@@ -370,7 +370,7 @@
           "label": "Tamilera (Sri Lanka)"
         },
         {
-          "label": "Telugu"
+          "label": "Telugua"
         },
         {
           "label": "Thailandiera (Thailandia)"
@@ -385,10 +385,10 @@
           "label": "Ukrainera (Ukrainia)"
         },
         {
-          "label": "Urdu (India)"
+          "label": "Urdua (India)"
         },
         {
-          "label": "Urdu (Pakistan)"
+          "label": "Urdua (Pakistan)"
         },
         {
           "label": "Vietnamera"
