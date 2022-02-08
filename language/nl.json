@@ -73,7 +73,7 @@
           "label": "Arabisch (Qatar)"
         },
         {
-          "label": "Arabisch (Saudi Arabië)"
+          "label": "Arabisch (Saudi-Arabië)"
         },
         {
           "label": "Arabisch (Tunesië)"
@@ -85,7 +85,7 @@
           "label": "Arabisch (Yemen)"
         },
         {
-          "label": "Armeneens"
+          "label": "Armeens"
         },
         {
           "label": "Azerbeidzjaans"
@@ -97,7 +97,7 @@
           "label": "Bengaals (Bangladesh)"
         },
         {
-          "label": "Bengals (India)"
+          "label": "Bengaals (India)"
         },
         {
           "label": "Bulgaars"
@@ -112,13 +112,13 @@
           "label": "Chinees, Mandarijns (Traditioneel, Taiwan)"
         },
         {
-          "label": "Chinees, Kantonees (Traditional, Hong Kong)"
+          "label": "Chinees, Kantonees (Traditioneel, Hong Kong)"
         },
         {
           "label": "Chinees, Mandarijns (Vereenvoudigd, China)"
         },
         {
-          "label": "Chinees, Mandarijns (Vereenvoudgid, Hong Kong)"
+          "label": "Chinees, Mandarijns (Vereenvoudigd, Hong Kong)"
         },
         {
           "label": "Kroatisch"
@@ -148,7 +148,7 @@
           "label": "Engels (Kenya)"
         },
         {
-          "label": "Engels (Nieuw Zeeland)"
+          "label": "Engels (Nieuw-Zeeland)"
         },
         {
           "label": "Engels (Nigeria)"
@@ -157,7 +157,7 @@
           "label": "Engels (Filipijnen)"
         },
         {
-          "label": "Engels (Zuid Afrika)"
+          "label": "Engels (Zuid-Afrika)"
         },
         {
           "label": "Engels (Tanzania)"
@@ -220,7 +220,7 @@
           "label": "Javaans"
         },
         {
-          "label": "Canadees"
+          "label": "Kannada"
         },
         {
           "label": "Koreaans"
@@ -241,10 +241,10 @@
           "label": "Malayalam"
         },
         {
-          "label": "Maleisisch"
+          "label": "Maleis"
         },
         {
-          "label": "Mandarijns Chinees"
+          "label": "Mandarijn Chinees"
         },
         {
           "label": "Marathi"
@@ -376,7 +376,7 @@
           "label": "Thais (Thailand)"
         },
         {
-          "label": "Traditioneel Taiwans"
+          "label": "Traditioneel Taiwanees"
         },
         {
           "label": "Turks"
@@ -402,51 +402,51 @@
       ]
     },
     {
-      "label": "Spreek de woorden labels en teksten",
+      "label": "Labels en teksten van Spreek de woorden",
       "fields": [
         {
-          "label": "Label \"Opnieuw\"-knop",
+          "label": "Label van \"Opnieuw\"-knop",
           "default": "Opnieuw"
         },
         {
-          "label": "Label \"Toon oplossing\"-knop",
+          "label": "Label van \"Toon oplossing\"-knop",
           "default": "Toon oplossing"
         },
         {
-          "label": "Label \"Spreek\"-knop",
+          "label": "Label van \"Spreek\"-knop",
           "default": "Klik om te spreken"
         },
         {
-          "label": "Label \"Spreek\"-knop tijdens het luisteren",
+          "label": "Label van \"Spreek\"-knop tijdens het luisteren",
           "default": "Luisteren..."
         },
         {
           "label": "Tekst voorafgaand aan de juiste antwoorden in oplossingsmodus",
-          "default": "Het(De) juiste antwoord(en):"
+          "default": "Het (De) juiste antwoord(en):"
         },
         {
           "label": "Tekst die de gebruiker vertelt hoe zijn antwoord is geïnterpreteerd",
-          "default": "Je antwoord is geïnterpreteerd als:"
+          "default": "Je antwoord(en) is (zijn) geïnterpreteerd als:"
         },
         {
-          "label": "Tekst die moet worden weergegeven wanneer er geen geluid van de gebruiker is geregistreerd.",
+          "label": "Tekst die wordt getoond wanneer er geen geluid van de gebruiker is geregistreerd",
           "default": "Ik kon je niet horen, zorg ervoor dat je microfoon is ingeschakeld"
         },
         {
-          "label": "Tekst in de kopregel die moet worden weergegeven als de browser spraakherkenning niet ondersteunt",
+          "label": "Koptekst die getoond wordt als de browser spraakherkenning niet ondersteunt",
           "default": "Het lijkt erop dat je browser spraakherkenning niet ondersteunt"
         },
         {
-          "label": "Basistekst die moet worden weergegeven als de browser spraakherkenning niet ondersteunt",
-          "default": "Probeer het opnieuw in de Chrome browser"
+          "label": "Hoofdtekst die getoond wordt als de browser spraakherkenning niet ondersteunt",
+          "default": "Probeer het opnieuw in een browser zoals Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Ondersteunende technologie beschrijving voor \"Toon oplossing\"-knop",
+          "default": "Toon de oplossing. De taak wordt gemarkeerd met de juiste oplossing."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Ondersteunende technologie beschrijving voor \"Opnieuw\"-knop",
+          "default": "Probeer de taak opnieuw. Reset alle antwoorden en start de taak opnieuw."
         }
       ]
     }

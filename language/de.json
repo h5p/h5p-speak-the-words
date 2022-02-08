@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Typ",
+          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Bild-Zoom deaktivieren"
         }
       ]
     },

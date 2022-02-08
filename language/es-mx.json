@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipo",
+          "description": "Medio opcional a mostrar arriba de la pregunta."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Deshabilitar acercamiento de imagen"
         }
       ]
     },
@@ -166,7 +166,7 @@
           "label": "Inglés (UK)"
         },
         {
-          "label": "Inglés(US)"
+          "label": "Inglés (US)"
         },
         {
           "label": "Filipino"
@@ -283,7 +283,7 @@
           "label": "Eslovaco"
         },
         {
-          "label": "Sloveco"
+          "label": "Esloveco"
         },
         {
           "label": "Español (Argentina)"

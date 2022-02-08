@@ -409,8 +409,8 @@
           "default": "Saiatu berriro"
         },
         {
-          "label": "\"Erakutsi soluzioa\"-botoiaren etiketa",
-          "default": "Erakutsi soluzioa"
+          "label": "\"Erakutsi emaitza\" botoiaren etiketa",
+          "default": "Erakutsi emaitza"
         },
         {
           "label": "\"Ahoskatu\"-botoiaren etiketa",
@@ -441,11 +441,11 @@
           "default": "Saiatu zaitez berriro Firefox edo Chrome bezalako nabigatzaile batean"
         },
         {
-          "label": "\"Erakutsi erantzun zuzena\" botoiaren laguntza-teknologientzako etiketa",
+          "label": "\"Erakutsi emaitza\" botoiaren laguntza-teknologientzako etiketa",
           "default": "Erakutsi erantzun zuzena. Zereginaren erantzun zuzena markatuko da."
         },
         {
-          "label": "\"Berriz saiatu\" botoiaren laguntza-teknologientzako etiketa",
+          "label": "\"Saiatu berriro\" botoiaren laguntza-teknologientzako etiketa",
           "default": "Zeregina berriz egiten saiatu. Berrabiarazi erantzun guztiak eta hasi zeregina berriz."
         }
       ]
