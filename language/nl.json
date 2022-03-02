@@ -5,10 +5,10 @@
       "fields": [
         {
           "label": "Type",
-          "description": "Optional media to display above the question."
+          "description": "Optionele media, die boven de vraag wordt getoond."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Beeld zoomen uitschakelen"
         }
       ]
     },
@@ -82,7 +82,7 @@
           "label": "Arabisch (UAE)"
         },
         {
-          "label": "Arabisch (Yemen)"
+          "label": "Arabisch (Jemen)"
         },
         {
           "label": "Armeens"
@@ -109,16 +109,16 @@
           "label": "Centraal Khmer"
         },
         {
-          "label": "Chinees, Mandarijns (Traditioneel, Taiwan)"
+          "label": "Chinees, Mandarijn (Traditioneel, Taiwan)"
         },
         {
           "label": "Chinees, Kantonees (Traditioneel, Hong Kong)"
         },
         {
-          "label": "Chinees, Mandarijns (Vereenvoudigd, China)"
+          "label": "Chinees, Mandarijn (Vereenvoudigd, China)"
         },
         {
-          "label": "Chinees, Mandarijns (Vereenvoudigd, Hong Kong)"
+          "label": "Chinees, Mandarijn (Vereenvoudigd, Hong Kong)"
         },
         {
           "label": "Kroatisch"
@@ -145,7 +145,7 @@
           "label": "Engels (India)"
         },
         {
-          "label": "Engels (Kenya)"
+          "label": "Engels (Kenia)"
         },
         {
           "label": "Engels (Nieuw-Zeeland)"
@@ -163,7 +163,7 @@
           "label": "Engels (Tanzania)"
         },
         {
-          "label": "Engels (United Kingdom)"
+          "label": "Engels (Verenigd Koninkrijk)"
         },
         {
           "label": "Engels (US)"
@@ -349,7 +349,7 @@
           "label": "Sundanees"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Swahili (Kenia)"
         },
         {
           "label": "Swahili (Tanzania)"
