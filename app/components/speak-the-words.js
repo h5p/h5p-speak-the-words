@@ -80,6 +80,12 @@ export default class {
     this.createContent(params);
     this.createButtonBar(params.l10n);
 
+    // Display message if accepted answer has not been set
+    if (params.acceptedAnswers.length === 0) {
+      this.questionWrapper.textContent = 'Missing accepted answer.';
+      return;
+    }
+
     // Renders record button and show solution area into the question main content
     ReactDOM.render((
       <div>
