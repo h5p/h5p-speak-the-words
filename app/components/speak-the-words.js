@@ -51,12 +51,11 @@ export default class {
   constructor(params, question) {
     params.acceptedAnswers = params.acceptedAnswers || [];
     params.acceptedAnswers = params.acceptedAnswers.map(decode);
-    this.params = params;
     this.question = question;
     this.hasAnswered = false;
     this.score = 0;
 
-    params = {
+    this.params = {
       ...params,
       l10n: {
         a11yShowSolution: 'Show the solution. The task will be marked with its correct solution.',
@@ -76,12 +75,12 @@ export default class {
     }
 
     this.speechEventStore = new H5P.EventDispatcher();
-    this.createIntroduction(params.question);
-    this.createContent(params);
-    this.createButtonBar(params.l10n);
+    this.createIntroduction(this.params.question);
+    this.createContent(this.params);
+    this.createButtonBar(this.params.l10n);
 
     // Display message if accepted answer has not been set
-    if (params.acceptedAnswers.length === 0) {
+    if (this.params.acceptedAnswers.length === 0) {
       this.questionWrapper.textContent = 'Missing accepted answer.';
       return;
     }
@@ -91,16 +90,16 @@ export default class {
       <div>
         <RecordButton
           eventStore={this.speechEventStore}
-          l10n={params.l10n}
+          l10n={this.params.l10n}
           speechEngine={this.speechEngine}
         />
-        <ShowSolution eventStore={this.speechEventStore} {...params} />
+        <ShowSolution eventStore={this.speechEventStore} {...this.params} />
       </div>
     ), this.questionWrapper);
 
-    this.speechEngine = new SpeechEngine(params, this.speechEventStore);
-    this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, params.correctAnswerText));
-    this.speechEventStore.on('answered-wrong', this.answeredWrong.bind(this, params.incorrectAnswerText));
+    this.speechEngine = new SpeechEngine(this.params, this.speechEventStore);
+    this.speechEventStore.on('answered-correctly', this.answeredCorrectly.bind(this, this.params.correctAnswerText));
+    this.speechEventStore.on('answered-wrong', this.answeredWrong.bind(this, this.params.incorrectAnswerText));
   }
 
   /**
