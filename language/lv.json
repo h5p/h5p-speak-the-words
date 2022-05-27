@@ -27,11 +27,11 @@
       "default": "Nepareiza atbilde"
     },
     {
-      "label": "Correct answer text",
-      "default": "Correct answer"
+      "label": "Pareizās atbildes teksts",
+      "default": "Pareiza atbilde"
     },
     {
-      "label": "Pareizās atbildes teksts",
+      "label": "Balss ievades valoda",
       "options": [
         {
           "label": "Afrikandu"
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "label": "Balss ievades valoda",
+      "label": "\"Izrunājiet vārdus\" etiķetes un teksti",
       "fields": [
         {
           "label": "Pogas \"Mēģināt vēlreiz\" etiķete",
