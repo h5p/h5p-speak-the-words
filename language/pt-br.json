@@ -1,20 +1,20 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Mídia",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipo",
+          "description": "Mídia opcional para exibir acima da pergunta."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Desativar o zoom da imagem"
         }
       ]
     },
     {
-      "label": "Descrever tarefa",
-      "placeholder": "Como você diz 'Sim' em espanhol?"
+      "label": "Descrever a tarefa",
+      "placeholder": "Como você diz 'Sim' em Espanhol?"
     },
     {
       "label": "Respostas aceitas",
@@ -31,340 +31,340 @@
       "default": "Resposta correta"
     },
     {
-      "label": "Linguagem de entrada da fala",
+      "label": "Idioma de entrada da fala",
       "options": [
         {
           "label": "Afrikaans"
         },
         {
-          "label": "Amharic"
+          "label": "Amárico"
         },
         {
-          "label": "Arabic (Algeria)"
+          "label": "Árabe (Argélia)"
         },
         {
-          "label": "Arabic (Bahrain)"
+          "label": "Árabe (Bahrein)"
         },
         {
-          "label": "Arabic (Egypt)"
+          "label": "Árabe (Egito)"
         },
         {
-          "label": "Arabic (Iraq)"
+          "label": "Árabe (Iraque)"
         },
         {
-          "label": "Arabic (Jordan)"
+          "label": "Árabe (Jordânia)"
         },
         {
-          "label": "Arabic (Kuwait)"
+          "label": "Árabe (Kuwait)"
         },
         {
-          "label": "Arabic (Lebanon)"
+          "label": "Árabe (Líbano)"
         },
         {
-          "label": "Arabic (Lybia)"
+          "label": "Árabe (Líbia)"
         },
         {
-          "label": "Arabic (Morocco)"
+          "label": "Árabe (Marrocos)"
         },
         {
-          "label": "Arabic (Oman)"
+          "label": "Árabe (Oman)"
         },
         {
-          "label": "Arabic (Qatar)"
+          "label": "Árabe (Catar)"
         },
         {
-          "label": "Arabic (Saudi Arabia)"
+          "label": "Árabe (Arábia Saudita)"
         },
         {
-          "label": "Arabic (Tunisia)"
+          "label": "Árabe (Tunísia)"
         },
         {
-          "label": "Arabic (UAE)"
+          "label": "Árabe (Emirados Árabes Unidos)"
         },
         {
-          "label": "Arabic (Yemen)"
+          "label": "Árabe (Iêmem)"
         },
         {
-          "label": "Armenian"
+          "label": "Armênio"
         },
         {
-          "label": "Azerbaijani"
+          "label": "Azerbaijano"
         },
         {
-          "label": "Basque"
+          "label": "Basco"
         },
         {
           "label": "Bengali (Bangladesh)"
         },
         {
-          "label": "Bengali (India)"
+          "label": "Bengali (Índia)"
         },
         {
-          "label": "Bulgarian"
+          "label": "Búlgaro"
         },
         {
-          "label": "Catalan"
+          "label": "Catalão"
         },
         {
-          "label": "Central Khmer"
+          "label": "Khmer Central"
         },
         {
-          "label": "Chinese, Mandarin (Traditional, Taiwan)"
+          "label": "Chinês, Mandarim (Tradicional, Taiwan)"
         },
         {
-          "label": "Chinese, Cantonese (Traditional, Hong Kong)"
+          "label": "Chinês, Cantonês (Tradicional, Hong Kong)"
         },
         {
-          "label": "Chinese, Mandarin (Simplified, China)"
+          "label": "Chinês, Mandarim (Simplificado, China)"
         },
         {
-          "label": "Chinese, Mandarin (Simplified, Hong Kong)"
+          "label": "Chinês, Mandarim (Simplificado, Hong Kong)"
         },
         {
-          "label": "Croatian"
+          "label": "Croata"
         },
         {
-          "label": "Czech"
+          "label": "Tcheco"
         },
         {
-          "label": "Danish"
+          "label": "Dinamarquês"
         },
         {
-          "label": "Dutch"
+          "label": "Holandês"
         },
         {
-          "label": "English (Australia)"
+          "label": "Inglês (Austrália)"
         },
         {
-          "label": "English (Canada)"
+          "label": "Inglês (Canadá)"
         },
         {
-          "label": "English (Ghana)"
+          "label": "Inglês (Gana)"
         },
         {
-          "label": "English (India)"
+          "label": "Inglês (Índia)"
         },
         {
-          "label": "English (Kenya)"
+          "label": "Inglês (Quênia)"
         },
         {
-          "label": "English (New Zealand)"
+          "label": "Inglês (Nova Zelândia)"
         },
         {
-          "label": "English (Nigeria)"
+          "label": "Inglês (Nigéria)"
         },
         {
-          "label": "English (Philippines)"
+          "label": "Inglês (Filipinas)"
         },
         {
-          "label": "English (South Africa)"
+          "label": "Inglês (África do Sul)"
         },
         {
-          "label": "English (Tanzania)"
+          "label": "Inglês (Tanzânia)"
         },
         {
-          "label": "English(UK)"
+          "label": "Inglês (Reino Unido)"
         },
         {
-          "label": "English(US)"
+          "label": "Inglês (Americano)"
         },
         {
           "label": "Filipino"
         },
         {
-          "label": "Finnish"
+          "label": "Finlandês"
         },
         {
-          "label": "French"
+          "label": "Francês"
         },
         {
-          "label": "Galician"
+          "label": "Galego"
         },
         {
-          "label": "Georgian"
+          "label": "Georgiano"
         },
         {
-          "label": "German"
+          "label": "Alemão"
         },
         {
-          "label": "Greek"
+          "label": "Grego"
         },
         {
           "label": "Gujarati"
         },
         {
-          "label": "Hebrew"
+          "label": "Hebraico"
         },
         {
-          "label": "Hindi (India)"
+          "label": "Hindi (Índia)"
         },
         {
-          "label": "Hungarian"
+          "label": "Húngaro"
         },
         {
-          "label": "Icelandic"
+          "label": "Islandês"
         },
         {
-          "label": "Indonesian"
+          "label": "Indonésio"
         },
         {
-          "label": "Italian"
+          "label": "Italiano"
         },
         {
-          "label": "Italian (Switzerland)"
+          "label": "Italiano (Suiça)"
         },
         {
-          "label": "Japanese"
+          "label": "Japonês"
         },
         {
-          "label": "Javanese"
+          "label": "Javanês"
         },
         {
           "label": "Kannada"
         },
         {
-          "label": "Korean"
+          "label": "Coreano"
         },
         {
           "label": "Lao"
         },
         {
-          "label": "Latin"
+          "label": "Latim"
         },
         {
-          "label": "Latvian"
+          "label": "Letão"
         },
         {
-          "label": "Lithuanian"
+          "label": "Lituano"
         },
         {
-          "label": "Malayalam"
+          "label": "Malaiala"
         },
         {
-          "label": "Malaysian"
+          "label": "Malaio"
         },
         {
-          "label": "Mandarin Chinese"
+          "label": "Mandarim Chinês"
         },
         {
           "label": "Marathi"
         },
         {
-          "label": "Nepali"
+          "label": "Nepalês"
         },
         {
-          "label": "Norwegian"
+          "label": "Norueguês"
         },
         {
-          "label": "Pig Latin"
+          "label": "Pig Latim"
         },
         {
-          "label": "Polish"
+          "label": "Polonês"
         },
         {
-          "label": "Portuguese"
+          "label": "Português"
         },
         {
-          "label": "Portuguese (Brazil)"
+          "label": "Português (Brasil)"
         },
         {
-          "label": "Romanian"
+          "label": "Romeno"
         },
         {
-          "label": "Russian"
+          "label": "Russo"
         },
         {
-          "label": "Serbian"
+          "label": "Sérvio"
         },
         {
-          "label": "Sinhalese"
+          "label": "Sinhalês"
         },
         {
-          "label": "Slovak"
+          "label": "Eslovaco"
         },
         {
-          "label": "Slovenian"
+          "label": "Esloveno"
         },
         {
-          "label": "Spanish (Argentina)"
+          "label": "Espanhol (Argentina)"
         },
         {
-          "label": "Spanish (Bolivia)"
+          "label": "Espanhol (Bolívia)"
         },
         {
-          "label": "Spanish (Chile)"
+          "label": "Espanhol (Chile)"
         },
         {
-          "label": "Spanish (Colombia)"
+          "label": "Espanhol (Colômbia)"
         },
         {
-          "label": "Spanish (Costa Rica)"
+          "label": "Espanhol (Costa Rica)"
         },
         {
-          "label": "Spanish (Dominican Republic)"
+          "label": "Espanhol (República Dominicana)"
         },
         {
-          "label": "Spanish (Ecuador)"
+          "label": "Espanhol (Equador)"
         },
         {
-          "label": "Spanish (El Salvador)"
+          "label": "Espanhol (El Salvador)"
         },
         {
-          "label": "Spanish (Guatemala)"
+          "label": "Espanhol (Guatemala)"
         },
         {
-          "label": "Spanish (Honduras)"
+          "label": "Espanhol (Honduras)"
         },
         {
-          "label": "Spanish (Mexico)"
+          "label": "Espanhol (México)"
         },
         {
-          "label": "Spanish (Nicaragua)"
+          "label": "Espanhol (Nicarágua)"
         },
         {
-          "label": "Spanish (Panama)"
+          "label": "Espanhol (Panamá)"
         },
         {
-          "label": "Spanish (Paraguay)"
+          "label": "Espanhol (Paraguai)"
         },
         {
-          "label": "Spanish (Peru)"
+          "label": "Espanhol (Peru)"
         },
         {
-          "label": "Spanish (Puerto Rico)"
+          "label": "Espanhol (Porto Rico)"
         },
         {
-          "label": "Spanish (Spain)"
+          "label": "Espanhol (Espanha)"
         },
         {
-          "label": "Spanish (US)"
+          "label": "Espanhol (Estados Unidos)"
         },
         {
-          "label": "Spanish (Uruguay)"
+          "label": "Espanhol (Uruguai)"
         },
         {
-          "label": "Spanish (Venezuela)"
+          "label": "Espanhol (Venezuela)"
         },
         {
-          "label": "Sundanese"
+          "label": "Sundanês"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Swahili (Quênia)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Swahili (Tanzânia)"
         },
         {
-          "label": "Swedish"
+          "label": "Sueco"
         },
         {
-          "label": "Tamil (India)"
+          "label": "Tamil (Índia)"
         },
         {
-          "label": "Tamil (Malaysia)"
+          "label": "Tamil (Malásia)"
         },
         {
-          "label": "Tamil (Singapore)"
+          "label": "Tamil (Cingapura)"
         },
         {
           "label": "Tamil (Sri Lanka)"
@@ -373,28 +373,28 @@
           "label": "Telugu"
         },
         {
-          "label": "Thai (Thailand)"
+          "label": "Thai (Tailândia)"
         },
         {
-          "label": "Traditional Taiwan"
+          "label": "Taiwan Tradicional"
         },
         {
-          "label": "Turkish"
+          "label": "Turco"
         },
         {
-          "label": "Ukrainian (Ukraine)"
+          "label": "Ucraniano (Ucrânia)"
         },
         {
-          "label": "Urdu (India)"
+          "label": "Urdu (índia)"
         },
         {
-          "label": "Urdu (Pakistan)"
+          "label": "Urdu (Paquistão)"
         },
         {
-          "label": "Vietnamese"
+          "label": "Vietnamita"
         },
         {
-          "label": "Yue Chinese (Traditional Hong Kong)"
+          "label": "Chinês Yue (Tradicional de Hong Kong)"
         },
         {
           "label": "Zulu"
@@ -405,11 +405,11 @@
       "label": "Rótulos e textos de Fale as Palavras",
       "fields": [
         {
-          "label": "Rótulo do botão \"Tentar novamente\"",
-          "default": "Tentar novamente"
+          "label": "Rótulo do botão \"Tentar Novamente\"",
+          "default": "Tentar Novamente"
         },
         {
-          "label": "Rótulo do botão \"Mostrar solução\"",
+          "label": "Rótulo do botão \"Mostrar Solução\"",
           "default": "Mostrar solução"
         },
         {
@@ -417,36 +417,36 @@
           "default": "Aperte para falar"
         },
         {
-          "label": "Rótulo do botão \"Falar\" quando estiver ouvindo",
+          "label": "Rótulo do botão \"Falar\" enquanto estiver ouvindo",
           "default": "Ouvindo..."
         },
         {
-          "label": "Texto que precede as respostas corretas no modo de solução",
+          "label": "Texto que antecede as respostas corretas no modo de solução",
           "default": "Resposta(s) correta(s):"
         },
         {
-          "label": "Texto dizendo ao usuário como sua resposta foi interpretada",
-          "default": "Sua(s) resposta(s) foi/foram interpretada(s) como:"
+          "label": "Texto informando ao usuário como sua resposta foi interpretada",
+          "default": "Suas respostas foram interpretadas como:"
         },
         {
-          "label": "Texto exibido quando nenhum som foi registrado do usuário",
-          "default": "Não foi possível ouvir, certifique-se de que o microfone está ativado"
+          "label": "Texto exibido quando nenhum som vindo do usuário foi registrado",
+          "default": "Não foi possível ouvir, certifique-se de que o seu microfone está ativado"
         },
         {
-          "label": "Texto de cabeçalho exibido se navegador não suporta reconhecimento de voz",
+          "label": "Texto de cabeçalho exibido se o navegador não suportar reconhecimento de voz",
           "default": "Parece que seu navegador não suporta reconhecimento de voz"
         },
         {
-          "label": "Texto de corpo exibido se navegador não suporta reconhecimento de voz",
-          "default": "Por favor tente novamente em um navegador como o Google Chrome"
+          "label": "Texto de corpo exibido se navegador não suportar reconhecimento de voz",
+          "default": "Por favor, tente novamente em um navegador como o Google Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Descrição da tecnologia de assistência para o botão \"Mostrar Solução\"",
+          "default": "Mostrar a solução. A tarefa será marcada com sua solução correta."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Descrição da tecnologia de assistência para o botão \"Tentar Novamente\"",
+          "default": "Tente realizar a tarefa novamente. Reinicialize todas as respostas e recomece."
         }
       ]
     }
