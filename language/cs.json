@@ -1,8 +1,20 @@
 {
   "semantics": [
     {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Optional media to display above the question."
+        },
+        {
+          "label": "Disable image zooming"
+        }
+      ]
+    },
+    {
       "label": "Popište úlohu",
-      "placeholder": "Jak řeknete 'Ano' ve španělštině?"
+      "placeholder": "Jak řeknete \"Ano\" ve španělštině?"
     },
     {
       "label": "Přijaté odpovědi",
@@ -12,7 +24,7 @@
     },
     {
       "label": "Text Nesprávná odpověď",
-      "default": "Nesprávná odpověďr"
+      "default": "Nesprávná odpověď"
     },
     {
       "label": "Text Správná odpověď",
@@ -25,52 +37,52 @@
           "label": "Afrikaans"
         },
         {
-          "label": "Amharic"
+          "label": "Amharština"
         },
         {
-          "label": "Arabic (Algeria)"
+          "label": "Arabština (Algeria)"
         },
         {
-          "label": "Arabic (Bahrain)"
+          "label": "Arabština (Bahrain)"
         },
         {
-          "label": "Arabic (Egypt)"
+          "label": "Arabština (Egypt)"
         },
         {
-          "label": "Arabic (Iraq)"
+          "label": "Arabština (Iraq)"
         },
         {
-          "label": "Arabic (Jordan)"
+          "label": "Arabština (Jordan)"
         },
         {
-          "label": "Arabic (Kuwait)"
+          "label": "Arabština (Kuwait)"
         },
         {
-          "label": "Arabic (Lebanon)"
+          "label": "Arabština (Libanon)"
         },
         {
-          "label": "Arabic (Lybia)"
+          "label": "Arabština (Lybia)"
         },
         {
-          "label": "Arabic (Morocco)"
+          "label": "Arabština (Morocco)"
         },
         {
-          "label": "Arabic (Oman)"
+          "label": "Arabština (Oman)"
         },
         {
-          "label": "Arabic (Qatar)"
+          "label": "Arabština (Qatar)"
         },
         {
-          "label": "Arabic (Saudi Arabia)"
+          "label": "Arabština (Saudi Arabia)"
         },
         {
-          "label": "Arabic (Tunisia)"
+          "label": "Arabština (Tunisia)"
         },
         {
-          "label": "Arabic (UAE)"
+          "label": "Arabština (UAE)"
         },
         {
-          "label": "Arabic (Yemen)"
+          "label": "Arabština (Yemen)"
         },
         {
           "label": "Armenian"
@@ -109,100 +121,100 @@
           "label": "Chinese, Mandarin (Simplified, Hong Kong)"
         },
         {
-          "label": "Croatian"
+          "label": "Chorvatština"
         },
         {
-          "label": "Czech"
+          "label": "Čeština"
         },
         {
-          "label": "Danish"
+          "label": "Dánština"
         },
         {
-          "label": "Dutch"
+          "label": "Holandština"
         },
         {
-          "label": "English (Australia)"
+          "label": "Angličtina(Australia)"
         },
         {
-          "label": "English (Canada)"
+          "label": "Angličtina(Canada)"
         },
         {
-          "label": "English (Ghana)"
+          "label": "Angličtina(Ghana)"
         },
         {
-          "label": "English (India)"
+          "label": "Angličtina (India)"
         },
         {
-          "label": "English (Kenya)"
+          "label": "Angličtina (Kenya)"
         },
         {
-          "label": "English (New Zealand)"
+          "label": "Angličtina (New Zealand)"
         },
         {
-          "label": "English (Nigeria)"
+          "label": "Angličtina (Nigeria)"
         },
         {
-          "label": "English (Philippines)"
+          "label": "Angličtina (Philippines)"
         },
         {
-          "label": "English (South Africa)"
+          "label": "Angličtina (South Africa)"
         },
         {
-          "label": "English (Tanzania)"
+          "label": "Angličtina (Tanzania)"
         },
         {
-          "label": "English(UK)"
+          "label": "Angličtina (UK)"
         },
         {
-          "label": "English(US)"
+          "label": "Angličtina (US)"
         },
         {
           "label": "Filipino"
         },
         {
-          "label": "Finnish"
+          "label": "Finština"
         },
         {
-          "label": "French"
+          "label": "Francouzština"
         },
         {
           "label": "Galician"
         },
         {
-          "label": "Georgian"
+          "label": "Gruzínština"
         },
         {
-          "label": "German"
+          "label": "Němčina"
         },
         {
-          "label": "Greek"
+          "label": "Řečtina"
         },
         {
           "label": "Gujarati"
         },
         {
-          "label": "Hebrew"
+          "label": "Hebrejština"
         },
         {
           "label": "Hindi (India)"
         },
         {
-          "label": "Hungarian"
+          "label": "Maďarština"
         },
         {
-          "label": "Icelandic"
+          "label": "Islandština"
         },
         {
           "label": "Indonesian"
         },
         {
-          "label": "Italian"
+          "label": "Italština"
         },
         {
-          "label": "Italian (Switzerland)"
+          "label": "Italština (Switzerland)"
         },
         {
-          "label": "Japanese"
+          "label": "Japonština"
         },
         {
           "label": "Javanese"
@@ -211,19 +223,19 @@
           "label": "Kannada"
         },
         {
-          "label": "Korean"
+          "label": "Korejština"
         },
         {
           "label": "Lao"
         },
         {
-          "label": "Latin"
+          "label": "Latina"
         },
         {
-          "label": "Latvian"
+          "label": "Lotyština"
         },
         {
-          "label": "Lithuanian"
+          "label": "Litevština"
         },
         {
           "label": "Malayalam"
@@ -241,97 +253,97 @@
           "label": "Nepali"
         },
         {
-          "label": "Norwegian"
+          "label": "Norština"
         },
         {
           "label": "Pig Latin"
         },
         {
-          "label": "Polish"
+          "label": "Polština"
         },
         {
-          "label": "Portuguese"
+          "label": "Portugalština"
         },
         {
-          "label": "Portuguese (Brazil)"
+          "label": "Portugalština (Brazil)"
         },
         {
-          "label": "Romanian"
+          "label": "Rumunština"
         },
         {
-          "label": "Russian"
+          "label": "Ruština"
         },
         {
-          "label": "Serbian"
+          "label": "Srbština"
         },
         {
           "label": "Sinhalese"
         },
         {
-          "label": "Slovak"
+          "label": "Slovenština"
         },
         {
-          "label": "Slovenian"
+          "label": "Slovinština"
         },
         {
-          "label": "Spanish (Argentina)"
+          "label": "Španělština (Argentina)"
         },
         {
-          "label": "Spanish (Bolivia)"
+          "label": "Španělština (Bolivia)"
         },
         {
-          "label": "Spanish (Chile)"
+          "label": "Španělština (Chile)"
         },
         {
-          "label": "Spanish (Colombia)"
+          "label": "Španělština (Colombia)"
         },
         {
-          "label": "Spanish (Costa Rica)"
+          "label": "Španělština (Costa Rica)"
         },
         {
-          "label": "Spanish (Dominican Republic)"
+          "label": "Španělština (Dominican Republic)"
         },
         {
-          "label": "Spanish (Ecuador)"
+          "label": "Španělština (Ecuador)"
         },
         {
-          "label": "Spanish (El Salvador)"
+          "label": "Španělština (El Salvador)"
         },
         {
-          "label": "Spanish (Guatemala)"
+          "label": "Španělština (Guatemala)"
         },
         {
-          "label": "Spanish (Honduras)"
+          "label": "Španělština (Honduras)"
         },
         {
-          "label": "Spanish (Mexico)"
+          "label": "Španělština (Mexico)"
         },
         {
-          "label": "Spanish (Nicaragua)"
+          "label": "Španělština (Nicaragua)"
         },
         {
-          "label": "Spanish (Panama)"
+          "label": "Španělština (Panama)"
         },
         {
-          "label": "Spanish (Paraguay)"
+          "label": "Španělština (Paraguay)"
         },
         {
-          "label": "Spanish (Peru)"
+          "label": "Španělština (Peru)"
         },
         {
-          "label": "Spanish (Puerto Rico)"
+          "label": "Španělština (Puerto Rico)"
         },
         {
-          "label": "Spanish (Spain)"
+          "label": "Španělština (Španělsko)"
         },
         {
-          "label": "Spanish (US)"
+          "label": "Španělština (US)"
         },
         {
-          "label": "Spanish (Uruguay)"
+          "label": "Španělština (Uruguay)"
         },
         {
-          "label": "Spanish (Venezuela)"
+          "label": "Španělština (Venezuela)"
         },
         {
           "label": "Sundanese"
@@ -343,7 +355,7 @@
           "label": "Swahili (Tanzania)"
         },
         {
-          "label": "Swedish"
+          "label": "Švédština"
         },
         {
           "label": "Tamil (India)"
@@ -367,10 +379,10 @@
           "label": "Traditional Taiwan"
         },
         {
-          "label": "Turkish"
+          "label": "Turečtina"
         },
         {
-          "label": "Ukrainian (Ukraine)"
+          "label": "Ukrajinština (Ukrajina)"
         },
         {
           "label": "Urdu (India)"
@@ -393,19 +405,19 @@
       "label": "Popisky a texty Namluvte slova",
       "fields": [
         {
-          "label": "Popisek tlačítka \"Opakovat\"-",
+          "label": "Popisek tlačítka \"Opakovat\"",
           "default": "Opakovat"
         },
         {
-          "label": "Popisek tlačítka \"Zobrazit řešení\"-",
+          "label": "Popisek tlačítka \"Zobrazit řešení\"",
           "default": "Zobrazit řešení"
         },
         {
-          "label": "Popisek tlačítka \"Mluvit\"-",
+          "label": "Popisek tlačítka \"Mluvit\"",
           "default": "Stiskněte pro namluvení"
         },
         {
-          "label": "Popisek tlačítka Při poslechu \"Poslouchejte\" ",
+          "label": "Popisek tlačítka při poslechu \"Poslouchejte\"",
           "default": "Poslouchání..."
         },
         {
@@ -429,12 +441,12 @@
           "default": "Zkuste to prosím znovu v prohlížeči, jako je Chrome"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show Solution"
+          "label": "Popis podpůrné technologie pro tlačítko „Zobrazit řešení“",
+          "default": "Zobrazit řešení. Úkol bude zobrazen se správným řešením."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry"
+          "label": "Popisek podpůrné technologie pro tlačítko „Opakovat“",
+          "default": "Zopakovat úkol. Resetovat všechny odpovědi a spustit úlohu znovu."
         }
       ]
     }

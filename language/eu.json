@@ -1,6 +1,18 @@
 {
   "semantics": [
     {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Mota",
+          "description": "Galderaren gainean bistaratzeko aukerako multimedia."
+        },
+        {
+          "label": "Desgaitu irudien zooma"
+        }
+      ]
+    },
+    {
       "label": "Deskribatu zeregina",
       "placeholder": "Nola esaten duzu 'Bai' ingelesez?"
     },
@@ -184,7 +196,7 @@
           "label": "Hebreera"
         },
         {
-          "label": "Hindi (India)"
+          "label": "Hindia (India)"
         },
         {
           "label": "Hungariera"
@@ -226,7 +238,7 @@
           "label": "Lituaniera"
         },
         {
-          "label": "Malayalam"
+          "label": "Malabarera"
         },
         {
           "label": "Malaysiera"
@@ -337,10 +349,10 @@
           "label": "Sundaniera"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Swahilia (Kenya)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Swahilia (Tanzania)"
         },
         {
           "label": "Suediera"
@@ -358,7 +370,7 @@
           "label": "Tamilera (Sri Lanka)"
         },
         {
-          "label": "Telugu"
+          "label": "Telugua"
         },
         {
           "label": "Thailandiera (Thailandia)"
@@ -373,10 +385,10 @@
           "label": "Ukrainera (Ukrainia)"
         },
         {
-          "label": "Urdu (India)"
+          "label": "Urdua (India)"
         },
         {
-          "label": "Urdu (Pakistan)"
+          "label": "Urdua (Pakistan)"
         },
         {
           "label": "Vietnamera"
@@ -397,8 +409,8 @@
           "default": "Saiatu berriro"
         },
         {
-          "label": "\"Erakutsi soluzioa\"-botoiaren etiketa",
-          "default": "Erakutsi soluzioa"
+          "label": "\"Erakutsi emaitza\" botoiaren etiketa",
+          "default": "Erakutsi emaitza"
         },
         {
           "label": "\"Ahoskatu\"-botoiaren etiketa",
@@ -429,12 +441,12 @@
           "default": "Saiatu zaitez berriro Firefox edo Chrome bezalako nabigatzaile batean"
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show Solution"
+          "label": "\"Erakutsi emaitza\" botoiaren laguntza-teknologientzako etiketa",
+          "default": "Erakutsi erantzun zuzena. Zereginaren erantzun zuzena markatuko da."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry"
+          "label": "\"Saiatu berriro\" botoiaren laguntza-teknologientzako etiketa",
+          "default": "Zeregina berriz egiten saiatu. Berrabiarazi erantzun guztiak eta hasi zeregina berriz."
         }
       ]
     }

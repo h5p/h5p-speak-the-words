@@ -1,6 +1,18 @@
 {
   "semantics": [
     {
+      "label": "Medieelement",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Valfritt medieelement. Elementet vil bli plassert over spørsmålet."
+        },
+        {
+          "label": "Deaktiver zoomingfunksjon."
+        }
+      ]
+    },
+    {
       "label": "Beskriv oppgave",
       "placeholder": "How do you say 'Yes' in Spanish?"
     },
@@ -430,11 +442,11 @@
         },
         {
           "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show Solution"
+          "default": "Show the solution. The task will be marked with its correct solution."
         },
         {
           "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry"
+          "default": "Retry the task. Reset all responses and start the task over again."
         }
       ]
     }

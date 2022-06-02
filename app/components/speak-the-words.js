@@ -76,16 +76,19 @@ export default class {
     this.hasAnswered = false;
     this.score = 0;
 
-    params = {
+    this.params = {
       ...params,
       l10n: {
-        a11yShowSolution: 'Show Solution',
-        a11yRetry: 'Retry',
+        a11yShowSolution: 'Show the solution. The task will be marked with its correct solution.',
+        a11yRetry: 'Retry the task. Reset all responses and start the task over again.',
         ...params.l10n,
       },
     };
     // Set question to empty string if undefined
     this.params.question = this.params.question || '';
+
+    // Set media
+    this.params.media = this.params.media || {};
 
     // Skip rendering components if speech engine does not exist
     if (!window.annyang) {
@@ -96,6 +99,12 @@ export default class {
     this.createIntroduction(this.params.question);
     this.createContent(this.params);
     this.createButtonBar(this.params.l10n);
+
+    // Display message if accepted answer has not been set
+    if (this.params.acceptedAnswers.length === 0) {
+      this.questionWrapper.textContent = 'Missing accepted answer.';
+      return;
+    }
 
     // Renders record button and show solution area into the question main content
     ReactDOM.render((
@@ -215,6 +224,35 @@ export default class {
 
       this.question.setIntroduction(errorElement);
       return;
+    }
+
+    // Register optional media
+    let media = this.params.media;
+    if (media && media.type && media.type.library) {
+      media = media.type;
+      const type = media.library.split(' ')[0];
+      if (type === 'H5P.Image') {
+        if (media.params.file) {
+          // Register task image
+          this.question.setImage(media.params.file.path, {
+            disableImageZooming: this.params.media.disableImageZooming || false,
+            alt: media.params.alt,
+            title: media.params.title
+          });
+        }
+      }
+      else if (type === 'H5P.Video') {
+        if (media.params.sources) {
+          // Register task video
+          this.question.setVideo(media);
+        }
+      }
+      else if (type === 'H5P.Audio') {
+        if (media.params.files) {
+          // Register task audio
+          this.question.setAudio(media);
+        }
+      }
     }
 
     this.question.setIntroduction(this.introduction);

@@ -1,5 +1,43 @@
 [
   {
+    "name": "media",
+    "type": "group",
+    "label": "Media",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "type",
+        "type": "library",
+        "label": "Type",
+        "importance": "medium",
+        "options": [
+          "H5P.Image 1.1",
+          "H5P.Video 1.6",
+          "H5P.Audio 1.5"
+        ],
+        "optional": true,
+        "description": "Optional media to display above the question."
+      },
+      {
+        "name": "disableImageZooming",
+        "type": "boolean",
+        "label": "Disable image zooming",
+        "importance": "low",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "type",
+              "equals": "H5P.Image 1.1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "question",
     "label": "Describe task",
     "type": "text",
@@ -588,14 +626,14 @@
         "name": "a11yShowSolution",
         "type": "text",
         "label": "Assistive technology description for \"Show Solution\" button",
-        "default": "Show Solution",
+        "default": "Show the solution. The task will be marked with its correct solution.",
         "importance": "low"
       },
       {
         "name": "a11yRetry",
         "type": "text",
         "label": "Assistive technology description for \"Retry\" button",
-        "default": "Retry",
+        "default": "Retry the task. Reset all responses and start the task over again.",
         "importance": "low"
       }
     ]
