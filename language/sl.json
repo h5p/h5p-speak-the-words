@@ -1,20 +1,20 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Mediji",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tip",
+          "description": "Neobvezna nastavitev dodatnega medija za prikaz nad vprašanjem."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Onemogoči povečavo slike"
         }
       ]
     },
     {
       "label": "Navodilo udeležencem",
-      "placeholder": "Kako se s 'Hvala' zahvalijo Španci?"
+      "placeholder": "Kako se s 'hvala' zahvalijo Španci?"
     },
     {
       "label": "Možni odgovori",
@@ -441,12 +441,12 @@
           "default": "Predlagam uporabo brskalnika Chrome."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Besedilo za gumb \"Prikaži rešitev\" za bralnike zaslona",
+          "default": "Prikaži rešitev."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Besedilo za gumb \"Poskusi ponovno\" za bralnike zaslona",
+          "default": "Poskusi ponovno."
         }
       ]
     }
