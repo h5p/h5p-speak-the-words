@@ -13,7 +13,12 @@
   ],
   "preloadedJs": [
     {
-      "path": "dist/dist.js"
+      "path": "dist/h5p-speak-the-words.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-speak-the-words.css"
     }
   ],
   "preloadedDependencies": [

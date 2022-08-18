@@ -1,5 +1,5 @@
 var path = require('path');
-var webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 var nodeEnv = process.env.NODE_ENV || 'development';
 var isDev = (nodeEnv !== 'production');
@@ -10,7 +10,7 @@ var config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: 'h5p-speak-the-words.js'
   },
   module: {
     rules: [
@@ -22,7 +22,12 @@ var config = {
       {
         test: /\.css$/,
         include: path.resolve(__dirname, 'app'),
-        use: ['style-loader', 'css-loader']
+        use: [
+          {
+            loader: isDev ? 'style-loader' : MiniCssExtractPlugin.loader
+          },
+          'css-loader'
+        ]
       }
     ]
   }
@@ -30,6 +35,11 @@ var config = {
 
 if (isDev) {
   config.devtool = 'inline-source-map';
+}
+else {
+  config.plugins = [new MiniCssExtractPlugin({
+    filename: 'h5p-speak-the-words.css'
+  })];
 }
 
 module.exports = config;
