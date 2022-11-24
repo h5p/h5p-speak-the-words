@@ -22,7 +22,6 @@ export default class SpeechEngine {
     this.eventStore = eventStore;
     this.annyang = window.annyang;
     this.listening = false;
-    this.commands = this.getCommands(params.acceptedAnswers);
 
     this.eventStore.on('start-listening', () => {
       this.init();
@@ -46,8 +45,7 @@ export default class SpeechEngine {
       this.annyang.setLanguage(this.params.inputLanguage);
     }
     this.listening = true;
-    this.annyang.addCallback('resultNoMatch', this.answeredWrong.bind(this));
-    this.annyang.addCommands(this.commands);
+    this.annyang.addCallback('result', this.handleResults.bind(this));
     this.annyang.start();
   }
 
@@ -58,49 +56,35 @@ export default class SpeechEngine {
    */
   destroy() {
     this.listening = false;
-    this.annyang.removeCallback('resultNoMatch', this.answeredWrong.bind(this));
-    this.annyang.removeCommands();
+    this.annyang.removeCallback('result', this.handleResults.bind(this));
     this.annyang.abort();
   }
 
   /**
-   * Notify listeners that user has answered correctly.
-   * Destroy speech engine
+   * Check if a user's answer is correct
+   * @param {string} userSaid 
+   * @returns {bool}
    */
-  answeredCorrectly() {
-    if (this.listening) {
-      this.eventStore.trigger('answered-correctly');
-      this.destroy();
-    }
+  isCorrectAnswer(userSaid) {
+    return this.params.acceptedAnswers.some(function (correct) {
+      // Remove dots, trim it, and ignore case
+      return userSaid.replace(/\./g, '').trim().toLowerCase() === correct.replace(/\./g, '').trim().toLowerCase();
+    })
   }
 
   /**
-   * Notify listeners that user has answered wrong.
-   *
-   * @param {Array} results
-   *  User answers as interpreted by the speech engine
+   * Handle results from annyang
+   * @param {Array} results 
    */
-  answeredWrong(results) {
+  handleResults(results) {
     if (this.listening) {
-      this.eventStore.trigger('answered-wrong', results);
+      // Go through results
+      let correct = results.some(userSaid => {
+        return this.isCorrectAnswer(userSaid);
+      });
+
+      this.eventStore.trigger(correct ? 'answered-correctly' : 'answered-wrong', results);
       this.destroy();
     }
-  }
-
-  /**
-   * Generate commands from author specified answers
-   * If a user answers gives of the accepted answers it should be interpreted
-   * as a correctly answered task
-   *
-   * @param {Array} acceptedAnswers Author specified list of accepted answers
-   * @return {Object} Consumable commands for the speech engine
-   */
-  getCommands(acceptedAnswers) {
-    return acceptedAnswers.reduce((prev, curr) => {
-      prev[curr] = () => {
-        this.answeredCorrectly();
-      };
-      return prev;
-    }, {});
   }
 }
