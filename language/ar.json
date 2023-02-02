@@ -4,11 +4,11 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "النوع",
+          "description": "وسائط إضافية اختيارية تُعرض أعلى السؤال."
         },
         {
-          "label": "Disable image zooming"
+          "label": "إيقاف ميزة تكبير الصور"
         }
       ]
     },
