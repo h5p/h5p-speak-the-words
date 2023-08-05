@@ -4,16 +4,16 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Typ",
+          "description": "Volitelná média pro zobrazení nad otázkou."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Zakázat přiblížení obrázku"
         }
       ]
     },
     {
-      "label": "Popište úlohu",
+      "label": "Popsat úlohu",
       "placeholder": "Jak řeknete \"Ano\" ve španělštině?"
     },
     {
@@ -34,7 +34,7 @@
       "label": "Jazyk řeči na vstupu",
       "options": [
         {
-          "label": "Afrikaans"
+          "label": "Afrikánština"
         },
         {
           "label": "Amharština"
@@ -85,40 +85,40 @@
           "label": "Arabština (Yemen)"
         },
         {
-          "label": "Armenian"
+          "label": "Arménština"
         },
         {
-          "label": "Azerbaijani"
+          "label": "Ázerbájdžánština"
         },
         {
-          "label": "Basque"
+          "label": "Baskitština"
         },
         {
-          "label": "Bengali (Bangladesh)"
+          "label": "Bengálština (Bangladesh)"
         },
         {
-          "label": "Bengali (India)"
+          "label": "Bengálština (India)"
         },
         {
-          "label": "Bulgarian"
+          "label": "Bulharština"
         },
         {
-          "label": "Catalan"
+          "label": "Katalánština"
         },
         {
           "label": "Central Khmer"
         },
         {
-          "label": "Chinese, Mandarin (Traditional, Taiwan)"
+          "label": "čínština, mandarínština (Traditional, Taiwan)"
         },
         {
-          "label": "Chinese, Cantonese (Traditional, Hong Kong)"
+          "label": "čínština, kantonština (Traditional, Hong Kong)"
         },
         {
-          "label": "Chinese, Mandarin (Simplified, China)"
+          "label": "čínština, mandarínština (Simplified, China)"
         },
         {
-          "label": "Chinese, Mandarin (Simplified, Hong Kong)"
+          "label": "čínština, mandarínština (Simplified, Hong Kong)"
         },
         {
           "label": "Chorvatština"
@@ -169,7 +169,7 @@
           "label": "Angličtina (US)"
         },
         {
-          "label": "Filipino"
+          "label": "Filipínština"
         },
         {
           "label": "Finština"
@@ -178,7 +178,7 @@
           "label": "Francouzština"
         },
         {
-          "label": "Galician"
+          "label": "Galicijština"
         },
         {
           "label": "Gruzínština"
@@ -190,13 +190,13 @@
           "label": "Řečtina"
         },
         {
-          "label": "Gujarati"
+          "label": "Gudžarátština"
         },
         {
           "label": "Hebrejština"
         },
         {
-          "label": "Hindi (India)"
+          "label": "Hindština (India)"
         },
         {
           "label": "Maďarština"
@@ -205,7 +205,7 @@
           "label": "Islandština"
         },
         {
-          "label": "Indonesian"
+          "label": "Indonéština"
         },
         {
           "label": "Italština"
@@ -217,7 +217,7 @@
           "label": "Japonština"
         },
         {
-          "label": "Javanese"
+          "label": "Javánština"
         },
         {
           "label": "Kannada"
@@ -226,7 +226,7 @@
           "label": "Korejština"
         },
         {
-          "label": "Lao"
+          "label": "Laoština"
         },
         {
           "label": "Latina"
@@ -238,19 +238,19 @@
           "label": "Litevština"
         },
         {
-          "label": "Malayalam"
+          "label": "Malajálamština"
         },
         {
-          "label": "Malaysian"
+          "label": "Malajština"
         },
         {
-          "label": "Mandarin Chinese"
+          "label": "Mandarinská čínština"
         },
         {
-          "label": "Marathi"
+          "label": "Maráthština"
         },
         {
-          "label": "Nepali"
+          "label": "Nepálština"
         },
         {
           "label": "Norština"
@@ -277,7 +277,7 @@
           "label": "Srbština"
         },
         {
-          "label": "Sinhalese"
+          "label": "Sinhálština"
         },
         {
           "label": "Slovenština"
@@ -346,37 +346,37 @@
           "label": "Španělština (Venezuela)"
         },
         {
-          "label": "Sundanese"
+          "label": "Sundánština"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Svahilština (Kenya)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Svahilština (Tanzania)"
         },
         {
           "label": "Švédština"
         },
         {
-          "label": "Tamil (India)"
+          "label": "Tamilština (India)"
         },
         {
-          "label": "Tamil (Malaysia)"
+          "label": "Tamilština (Malaysia)"
         },
         {
-          "label": "Tamil (Singapore)"
+          "label": "Tamilština (Singapore)"
         },
         {
-          "label": "Tamil (Sri Lanka)"
+          "label": "Tamilština (Sri Lanka)"
         },
         {
-          "label": "Telugu"
+          "label": "Telugština"
         },
         {
-          "label": "Thai (Thailand)"
+          "label": "Thajština (Thailand)"
         },
         {
-          "label": "Traditional Taiwan"
+          "label": "Tradiční Tchaj-wan"
         },
         {
           "label": "Turečtina"
@@ -391,10 +391,10 @@
           "label": "Urdu (Pakistan)"
         },
         {
-          "label": "Vietnamese"
+          "label": "Vietnamština"
         },
         {
-          "label": "Yue Chinese (Traditional Hong Kong)"
+          "label": "Yue čínština (Traditional Hong Kong)"
         },
         {
           "label": "Zulu"
