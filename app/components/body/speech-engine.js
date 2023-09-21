@@ -66,9 +66,11 @@ export default class SpeechEngine {
    * @returns {bool}
    */
   isCorrectAnswer(userSaid) {
+    // Remove dots, trim it, and ignore case
+    userSaid = userSaid.replace(/\./g, '').trim().toLowerCase();
     return this.params.acceptedAnswers.some(function (correct) {
       // Remove dots, trim it, and ignore case
-      return userSaid.replace(/\./g, '').trim().toLowerCase() === correct.replace(/\./g, '').trim().toLowerCase();
+      return userSaid === correct.replace(/\./g, '').trim().toLowerCase();
     })
   }
 
