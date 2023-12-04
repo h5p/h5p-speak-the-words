@@ -1,14 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Medios",
       "fields": [
         {
-          "label": "Type",
-          "description": "Optional media to display above the question."
+          "label": "Tipo",
+          "description": "Medios opcionais amosados enriba das preguntas."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Desactivar zoom de imaxe"
         }
       ]
     },
@@ -37,7 +37,7 @@
           "label": "Afrikaans"
         },
         {
-          "label": "Amharic"
+          "label": "Amárico"
         },
         {
           "label": "Árabe (Alxer)"
@@ -88,7 +88,7 @@
           "label": "Armenio"
         },
         {
-          "label": "Azerbaijani"
+          "label": "Azerbaiyano"
         },
         {
           "label": "Vasco"
@@ -349,10 +349,10 @@
           "label": "Sundanés"
         },
         {
-          "label": "Swahili (Kenya)"
+          "label": "Suahili (Kenia)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Suahili (Tanzania)"
         },
         {
           "label": "Sueco"
@@ -385,7 +385,7 @@
           "label": "Ucraniano (Ucrania)"
         },
         {
-          "label": "Urdu (India)"
+          "label": "Urdú (India)"
         },
         {
           "label": "Urdu (Pakistán)"
