@@ -18,6 +18,7 @@
     },
     {
       "label": "Možni odgovori",
+      "entity": "answer",
       "field": {
         "label": "Možni odgovor"
       }
