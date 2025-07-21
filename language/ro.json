@@ -1,0 +1,454 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Tip",
+          "description": "Media opțională de afișat deasupra întrebării."
+        },
+        {
+          "label": "Dezactivează mărirea imaginii"
+        }
+      ]
+    },
+    {
+      "label": "Descrieți sarcina",
+      "placeholder": "Cum se spune „Da” în spaniolă?"
+    },
+    {
+      "label": "Răspunsuri acceptate",
+      "field": {
+        "label": "Răspuns acceptat"
+      }
+    },
+    {
+      "label": "Text pentru răspuns incorect",
+      "default": "Răspuns incorect"
+    },
+    {
+      "label": "Text pentru răspuns corect",
+      "default": "Răspuns corect"
+    },
+    {
+      "label": "Limba de intrare vocală",
+      "options": [
+        {
+          "label": "Afrikaans"
+        },
+        {
+          "label": "Amharică"
+        },
+        {
+          "label": "Arabă (Algeria)"
+        },
+        {
+          "label": "Arabă (Bahrain)"
+        },
+        {
+          "label": "Arabă (Egipt)"
+        },
+        {
+          "label": "Arabă (Irak)"
+        },
+        {
+          "label": "Arabă (Iordania)"
+        },
+        {
+          "label": "Arabă (Kuweit)"
+        },
+        {
+          "label": "Arabă (Liban)"
+        },
+        {
+          "label": "Arabă (Libia)"
+        },
+        {
+          "label": "Arabă (Maroc)"
+        },
+        {
+          "label": "Arabă (Oman)"
+        },
+        {
+          "label": "Arabă (Qatar)"
+        },
+        {
+          "label": "Arabă (Arabia Saudită)"
+        },
+        {
+          "label": "Arabă (Tunisia)"
+        },
+        {
+          "label": "Arabă (EAU)"
+        },
+        {
+          "label": "Arabă (Yemen)"
+        },
+        {
+          "label": "Armeană"
+        },
+        {
+          "label": "Azeră"
+        },
+        {
+          "label": "Bască"
+        },
+        {
+          "label": "Bengaleză (Bangladesh)"
+        },
+        {
+          "label": "Bengaleză (India)"
+        },
+        {
+          "label": "Bulgară"
+        },
+        {
+          "label": "Catalană"
+        },
+        {
+          "label": "Khmeră Centrală"
+        },
+        {
+          "label": "Chineză, Mandarină (Tradițională, Taiwan)"
+        },
+        {
+          "label": "Chineză, Cantoneză (Tradițională, Hong Kong)"
+        },
+        {
+          "label": "Chineză, Mandarină (Simplificată, China)"
+        },
+        {
+          "label": "Chineză, Mandarină (Simplificată, Hong Kong)"
+        },
+        {
+          "label": "Croată"
+        },
+        {
+          "label": "Cehă"
+        },
+        {
+          "label": "Daneză"
+        },
+        {
+          "label": "Olandeză"
+        },
+        {
+          "label": "Engleză (Australia)"
+        },
+        {
+          "label": "Engleză (Canada)"
+        },
+        {
+          "label": "Engleză (Ghana)"
+        },
+        {
+          "label": "Engleză (India)"
+        },
+        {
+          "label": "Engleză (Kenya)"
+        },
+        {
+          "label": "Engleză (Noua Zeelandă)"
+        },
+        {
+          "label": "Engleză (Nigeria)"
+        },
+        {
+          "label": "Engleză (Filipine)"
+        },
+        {
+          "label": "Engleză (Africa de Sud)"
+        },
+        {
+          "label": "Engleză (Tanzania)"
+        },
+        {
+          "label": "Engleză (Regatul Unit)"
+        },
+        {
+          "label": "Engleză (SUA)"
+        },
+        {
+          "label": "Filipineză"
+        },
+        {
+          "label": "Finlandeză"
+        },
+        {
+          "label": "Franceză"
+        },
+        {
+          "label": "Galițiană"
+        },
+        {
+          "label": "Georgiană"
+        },
+        {
+          "label": "Germană"
+        },
+        {
+          "label": "Greacă"
+        },
+        {
+          "label": "Gujarati"
+        },
+        {
+          "label": "Ebraică"
+        },
+        {
+          "label": "Hindi (India)"
+        },
+        {
+          "label": "Maghiară"
+        },
+        {
+          "label": "Islandeză"
+        },
+        {
+          "label": "Indoneziană"
+        },
+        {
+          "label": "Italiană"
+        },
+        {
+          "label": "Italiană (Elveția)"
+        },
+        {
+          "label": "Japoneză"
+        },
+        {
+          "label": "Javaneză"
+        },
+        {
+          "label": "Kannada"
+        },
+        {
+          "label": "Coreeană"
+        },
+        {
+          "label": "Laoțiană"
+        },
+        {
+          "label": "Latină"
+        },
+        {
+          "label": "Letonă"
+        },
+        {
+          "label": "Lituaniană"
+        },
+        {
+          "label": "Malayalam"
+        },
+        {
+          "label": "Malaeziană"
+        },
+        {
+          "label": "Chineză Mandarină"
+        },
+        {
+          "label": "Marathi"
+        },
+        {
+          "label": "Nepaleză"
+        },
+        {
+          "label": "Norvegiană"
+        },
+        {
+          "label": "Pig Latin"
+        },
+        {
+          "label": "Poloneză"
+        },
+        {
+          "label": "Portugheză"
+        },
+        {
+          "label": "Portugheză (Brazilia)"
+        },
+        {
+          "label": "Română"
+        },
+        {
+          "label": "Rusă"
+        },
+        {
+          "label": "Sârbă"
+        },
+        {
+          "label": "Sinhaleză"
+        },
+        {
+          "label": "Slovacă"
+        },
+        {
+          "label": "Slovenă"
+        },
+        {
+          "label": "Spaniolă (Argentina)"
+        },
+        {
+          "label": "Spaniolă (Bolivia)"
+        },
+        {
+          "label": "Spaniolă (Chile)"
+        },
+        {
+          "label": "Spaniolă (Columbia)"
+        },
+        {
+          "label": "Spaniolă (Costa Rica)"
+        },
+        {
+          "label": "Spaniolă (Republica Dominicană)"
+        },
+        {
+          "label": "Spaniolă (Ecuador)"
+        },
+        {
+          "label": "Spaniolă (El Salvador)"
+        },
+        {
+          "label": "Spaniolă (Guatemala)"
+        },
+        {
+          "label": "Spaniolă (Honduras)"
+        },
+        {
+          "label": "Spaniolă (Mexic)"
+        },
+        {
+          "label": "Spaniolă (Nicaragua)"
+        },
+        {
+          "label": "Spaniolă (Panama)"
+        },
+        {
+          "label": "Spaniolă (Paraguay)"
+        },
+        {
+          "label": "Spaniolă (Peru)"
+        },
+        {
+          "label": "Spaniolă (Puerto Rico)"
+        },
+        {
+          "label": "Spaniolă (Spania)"
+        },
+        {
+          "label": "Spaniolă (SUA)"
+        },
+        {
+          "label": "Spaniolă (Uruguay)"
+        },
+        {
+          "label": "Spaniolă (Venezuela)"
+        },
+        {
+          "label": "Sundaneză"
+        },
+        {
+          "label": "Swahili (Kenya)"
+        },
+        {
+          "label": "Swahili (Tanzania)"
+        },
+        {
+          "label": "Suedeză"
+        },
+        {
+          "label": "Tamilă (India)"
+        },
+        {
+          "label": "Tamilă (Malaezia)"
+        },
+        {
+          "label": "Tamilă (Singapore)"
+        },
+        {
+          "label": "Tamilă (Sri Lanka)"
+        },
+        {
+          "label": "Telugu"
+        },
+        {
+          "label": "Thailandeză (Thailanda)"
+        },
+        {
+          "label": "Chineză Tradițională (Taiwan)"
+        },
+        {
+          "label": "Turcă"
+        },
+        {
+          "label": "Ucraineană (Ucraina)"
+        },
+        {
+          "label": "Urdu (India)"
+        },
+        {
+          "label": "Urdu (Pakistan)"
+        },
+        {
+          "label": "Vietnameză"
+        },
+        {
+          "label": "Chineză Yue (Tradițională Hong Kong)"
+        },
+        {
+          "label": "Zulu"
+        }
+      ]
+    },
+    {
+      "label": "Etichete și texte pentru „Rostește cuvintele”",
+      "fields": [
+        {
+          "label": "Eticheta butonului „Reîncearcă”",
+          "default": "Reîncearcă"
+        },
+        {
+          "label": "Eticheta butonului „Arată soluția”",
+          "default": "Arată soluția"
+        },
+        {
+          "label": "Eticheta butonului „Vorbește”",
+          "default": "Apasă pentru a vorbi"
+        },
+        {
+          "label": "Eticheta butonului „Vorbește” în timpul ascultării",
+          "default": "Se ascultă..."
+        },
+        {
+          "label": "Text care precede răspunsurile corecte în modul soluție",
+          "default": "Răspunsul/răspunsurile corecte:"
+        },
+        {
+          "label": "Text care informează utilizatorul cum a fost interpretat răspunsul său",
+          "default": "Răspunsul tău a fost interpretat ca:"
+        },
+        {
+          "label": "Text de afișat când nu s-a înregistrat niciun sunet de la utilizator",
+          "default": "Nu te-am putut auzi, asigură-te că microfonul este activat"
+        },
+        {
+          "label": "Text antet de afișat dacă browserul nu suportă recunoașterea vocală",
+          "default": "Se pare că browserul tău nu suportă recunoașterea vocală"
+        },
+        {
+          "label": "Text de afișat în corpul paginii dacă browserul nu suportă recunoașterea vocală",
+          "default": "Te rugăm să încerci din nou într-un browser precum Chrome"
+        },
+        {
+          "label": "Descriere pentru tehnologia asistivă pentru butonul „Arată soluția”",
+          "default": "Arată soluția. Sarcina va fi marcată cu soluția sa corectă."
+        },
+        {
+          "label": "Descriere pentru tehnologia asistivă pentru butonul „Reîncearcă”",
+          "default": "Reîncearcă sarcina. Resetează toate răspunsurile și începe sarcina din nou."
+        }
+      ]
+    }
+  ]
+}
