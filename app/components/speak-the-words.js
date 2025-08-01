@@ -7,6 +7,7 @@ import { decode } from 'he';
 import SpeechEngine from './body/speech-engine';
 import RecordButton from './body/record-button';
 import ShowSolution from './body/show-solution';
+import Util from './speak-the-words-util';
 
 /**
  * Speak the words
@@ -49,8 +50,28 @@ export default class {
    * @param {Object} question H5P Question instance with button and event functionality
    */
   constructor(params, question) {
-    params.acceptedAnswers = params.acceptedAnswers || [];
-    params.acceptedAnswers = params.acceptedAnswers.map(decode);
+    // Set defaults
+    this.params = Util.extend({
+      question: '',
+      acceptedAnswers: [],
+      incorrectAnswerText: 'Incorrect answer',
+      correctAnswerText: 'Correct answer',
+      inputLanguage: 'en-US',
+      l10n: {
+        retryLabel: 'Retry',
+        showSolutionLabel: 'Show solution',
+        speakLabel: 'Push to speak',
+        listeningLabel: 'Listening...',
+        correctAnswersText: 'The correct answer(s):',
+        userAnswersText: 'Your answer(s) was interpreted as:',
+        noSound: 'I could not hear you, make sure your microphone is enabled',
+        unsupportedBrowserHeader: 'It looks like your browser does not support speech recognition',
+        unsupportedBrowserDetails: 'Please try again in a browser like Chrome'
+      }
+    }, params);
+
+    this.params.acceptedAnswers = this.params.acceptedAnswers.map(decode);
+
     this.question = question;
     this.hasAnswered = false;
     this.score = 0;
@@ -284,10 +305,78 @@ export default class {
   }
 
   /**
+   * Get maximum score.
+   * @return {number} Maximum score.
+   */
+  getMaxScore() {
+    return 1;
+  }
+
+  /**
    * Check if question is answered.
    * @returns {boolean}
    */
   isQuestionAnswered() {
     return this.hasAnswered;
+  }
+
+  /**
+   * Get xAPI data.
+   * @param {object} wrapper H5P instance.
+   * @return {object} XAPI statement.
+   * @see contract at {@link https://h5p.org/documentation/developers/contracts#guides-header-6}
+   */
+  getXAPIData(wrapper) {
+    return ({
+      statement: this.getXAPIAnswerEvent(wrapper).data.statement
+    });
+  }
+
+  /**
+   * Build xAPI answer event.
+   * @param {object} wrapper H5P instance.
+   * @return {H5P.XAPIEvent} XAPI answer event.
+   */
+  getXAPIAnswerEvent(wrapper) {
+    const xAPIEvent = this.createXAPIEvent('answered', wrapper);
+
+    xAPIEvent.setScoredResult(this.getScore(), this.getMaxScore(), wrapper,
+      true, this.getScore() === this.getMaxScore());
+
+    return xAPIEvent;
+  }
+
+  /**
+   * Create an xAPI event for SpeakTheWords.
+   * @param {string} verb Short id of the verb we want to trigger.
+   * @param {object} wrapper H5P instance.
+   * @return {H5P.XAPIEvent} Event template.
+   */
+  createXAPIEvent(verb, wrapper = {}) {
+
+    const xAPIEvent = new H5P.XAPIEvent();
+
+    xAPIEvent.setActor();
+    xAPIEvent.setVerb(verb);
+    xAPIEvent.setObject(wrapper);
+    xAPIEvent.setContext(wrapper);
+
+    Util.extend(
+      xAPIEvent.getVerifiedStatementValue(['object', 'definition']),
+      this.getxAPIDefinition());
+    return xAPIEvent;
+  }
+
+  /**
+   * Get the xAPI definition for the xAPI object.
+   * @return {object} XAPI definition.
+   */
+  getxAPIDefinition() {
+    return ({
+      name: {'en-US': H5P.createTitle('Speak the Words')},
+      description: {'en-US': this.params.question},
+      type: 'http://adlnet.gov/expapi/activities/cmi.interaction',
+      interactionType: 'other'
+    });
   }
 }
