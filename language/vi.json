@@ -18,6 +18,7 @@
     },
     {
       "label": "Câu trả lời được chấp nhận",
+      "entity": "answer",
       "field": {
         "label": "Câu trả lời được chấp nhận"
       }

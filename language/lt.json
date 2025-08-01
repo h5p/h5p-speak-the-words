@@ -17,10 +17,11 @@
       "label": "Aprašykite užduotį"
     },
     {
+      "label": "Priimti atsakymai",
+      "entity": "answer",
       "field": {
         "label": "Priimtas atsakymas"
-      },
-      "label": "Priimti atsakymai"
+      }
     },
     {
       "default": "Neteisingas atsakymas",

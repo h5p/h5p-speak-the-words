@@ -18,6 +18,7 @@
     },
     {
       "label": "Korrekte svar",
+      "entity": "answer",
       "field": {
         "label": "Korrekt svar"
       }

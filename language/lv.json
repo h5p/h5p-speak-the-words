@@ -18,6 +18,7 @@
     },
     {
       "label": "Pieņemtās atbildes",
+      "entity": "answer",
       "field": {
         "label": "Pieņemtā atbilde"
       }

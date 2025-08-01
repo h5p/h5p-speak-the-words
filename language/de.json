@@ -18,6 +18,7 @@
     },
     {
       "label": "Richtige Antworten",
+      "entity": "Antwort",
       "field": {
         "label": "Richtige Antwort"
       }
