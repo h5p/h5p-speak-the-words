@@ -1,4 +1,5 @@
 import SpeakTheWords from '../components/speak-the-words';
+import Util from '../components/speak-the-words-util';
 import { decode } from 'he';
 
 /**
@@ -15,6 +16,13 @@ H5P.SpeakTheWords = (function (Question) {
    * @constructor
    */
   function WrapperClass(params) {
+    this.params = Util.extend({
+      behaviour: {
+        enableSolutionsButton: true, // Expected by question type contract
+        enableRetry: true // Expected by question type contract
+      }
+    }, params);
+
     Question.call(this, 'speak-the-words');
     const speakTheWords = new SpeakTheWords(params, this);
 
@@ -44,7 +52,7 @@ H5P.SpeakTheWords = (function (Question) {
       speakTheWords.question.hideButton('try-again');
 
       if (!speakTheWords.isQuestionAnswered()) {
-        this.setFeedback(decode(params.l10n.incorrectAnswerText), 0, 1);
+        this.setFeedback(decode(params.incorrectAnswerText), 0, 1);
       }
     };
 
@@ -56,6 +64,31 @@ H5P.SpeakTheWords = (function (Question) {
     this.getScore = () => {
       return speakTheWords.getScore();
     };
+
+    /**
+     * Contract for getting maxScore.
+     * @see {@link https://h5p.org/documentation/developers/contracts}
+     * @return {number} Maximum score.
+     */
+    this.getMaxScore = () => {
+      return speakTheWords.getMaxScore();
+    };
+
+    /**
+     * Contract for getting info on whether question was answered.
+     * @see {@link https://h5p.org/documentation/developers/contracts}
+     * @return {boolean} True, if an answer was given.
+     */
+    this.getAnswerGiven = () => {
+      return speakTheWords.isQuestionAnswered();
+    };
+
+    /**
+     * Get xAPI data.
+     * @return {object} XAPI statement.
+     * @see {@link https://h5p.org/documentation/developers/contracts}
+     */
+    this.getXAPIData = () => speakTheWords.getXAPIData(this);
 
     /**
      * Stop listening for voice.
