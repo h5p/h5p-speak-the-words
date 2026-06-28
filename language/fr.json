@@ -1,14 +1,14 @@
 {
   "semantics": [
     {
-      "label": "Media",
+      "label": "Média",
       "fields": [
         {
           "label": "Type",
-          "description": "Optional media to display above the question."
+          "description": "Média optionnel à afficher au-dessus de la question."
         },
         {
-          "label": "Disable image zooming"
+          "label": "Désactiver le zoom sur l'image"
         }
       ]
     },
@@ -353,7 +353,7 @@
           "label": "Swahili (Kénya)"
         },
         {
-          "label": "Swahili (Tanzania)"
+          "label": "Swahili (Tanzanie)"
         },
         {
           "label": "Suèdois"
@@ -365,10 +365,10 @@
           "label": "Tamil (Malaisie)"
         },
         {
-          "label": "Tamil (Singapore)"
+          "label": "Tamoul (Singapour)"
         },
         {
-          "label": "Tamil (Sri Lanka)"
+          "label": "Tamoul (Sri Lanka)"
         },
         {
           "label": "Télugu"
@@ -442,12 +442,12 @@
           "default": "Vous pouvez par exemple utiliser le navigateur Google Chrome."
         },
         {
-          "label": "Assistive technology description for \"Show Solution\" button",
-          "default": "Show the solution. The task will be marked with its correct solution."
+          "label": "Description pour les technologies d'assistance du bouton \"Afficher la solution\"",
+          "default": "Afficher la solution. La tâche sera marquée avec sa solution correcte."
         },
         {
-          "label": "Assistive technology description for \"Retry\" button",
-          "default": "Retry the task. Reset all responses and start the task over again."
+          "label": "Description pour les technologies d'assistance du bouton \"Recommencer\"",
+          "default": "Recommencer la tâche. Réinitialiser toutes les réponses et recommencer la tâche."
         }
       ]
     }
