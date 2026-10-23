@@ -18,6 +18,7 @@
     },
     {
       "label": "Răspunsuri acceptate",
+      "entity": "answer",
       "field": {
         "label": "Răspuns acceptat"
       }
